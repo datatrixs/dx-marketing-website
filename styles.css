@@ -419,7 +419,11 @@ body {
 
 /* CPA Firms */
 
-.cpa-section .cpaSection-box {
+.cpa-section {
+    background-color: #C8DDF1;
+}
+
+.cpaSection-box {
     text-align: left;
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
@@ -446,3 +450,38 @@ body {
     margin-bottom: 10px; /* Adds space below the subtitle */
     display: block;
 }
+
+/* Technology */
+
+.technology-section {
+    background-color: #E9D2C3;
+}
+
+.technologySection-box {
+    text-align: left;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.technologySection-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.technologySection-box h2 {
+    margin-top: 0; /* Adjusts spacing between subtitle and title */
+    font-size: 72px;
+    color: #000000; /* Main title color */
+    font-weight: 500;
+}
+
+.technology-subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF6600; /* Adjust color to suit the theme */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    text-transform: uppercase; /* Forces text to be uppercase */
+    margin-bottom: 10px; /* Adds space below the subtitle */
+    display: block;
+}
+
