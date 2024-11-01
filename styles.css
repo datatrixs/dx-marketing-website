@@ -401,7 +401,7 @@ body {
     opacity: 0.2;
   }
 
-/* Industries */
+/* Industries Header*/
 
 .industries {
     color: #000;
@@ -420,6 +420,17 @@ body {
     color: #00396D !important;
     box-shadow: 0 0 25px rgba(103, 169, 230, 0.8);
 
+}
+
+/* Initial hidden state */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* Fade-in active state */
+.fade-in.show {
+    opacity: 1;
 }
 
 /* CPA Firms */
