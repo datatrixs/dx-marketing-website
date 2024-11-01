@@ -407,8 +407,13 @@ body {
     color: #000;
 }
 
-.industries a div {
+.industries a {
     text-decoration: none;
+    color: #000;
+    border: 2px solid #F4F4F4; 
+    border-radius: 20px;
+    width: auto;
+    background-color: #ffffff;
 }
 
 .industries a:hover {
