@@ -1,4 +1,4 @@
-const slider = document.querySelector('.gallery');
+const slider = document.querySelector('.cpaGallery');
 let isDown = false;
 let startX;
 let scrollLeft;

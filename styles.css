@@ -484,3 +484,105 @@ body {
     margin-bottom: 10px; /* Adds space below the subtitle */
     display: block;
 }
+
+/* Financial Services */
+
+.financialServices-section {
+    background-color: #CAECCA;
+}
+
+.financialServicesSection-box {
+    text-align: left;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.financialServicesSection-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.financialServicesSection-box h2 {
+    margin-top: 0; /* Adjusts spacing between subtitle and title */
+    font-size: 72px;
+    color: #000000; /* Main title color */
+    font-weight: 500;
+}
+
+.financialServices-subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #006400; /* Adjust color to suit the theme */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    text-transform: uppercase; /* Forces text to be uppercase */
+    margin-bottom: 10px; /* Adds space below the subtitle */
+    display: block;
+}
+
+/* Health Care */
+
+.healthcare-section {
+    background-color: #D3FFFB;
+}
+
+.healthcareSection-box {
+    text-align: left;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.healthcareSection-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.healthcareSection-box h2 {
+    margin-top: 0; /* Adjusts spacing between subtitle and title */
+    font-size: 72px;
+    color: #000000; /* Main title color */
+    font-weight: 500;
+}
+
+.healthcare-subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #40E0D0; /* Adjust color to suit the theme */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    text-transform: uppercase; /* Forces text to be uppercase */
+    margin-bottom: 10px; /* Adds space below the subtitle */
+    display: block;
+}
+
+/* Real Estate */
+
+.realEstate-section {
+    background-color: #FED6BA;
+}
+
+.realEstateSection-box {
+    text-align: left;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.realEstateSection-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.realEstateSection-box h2 {
+    margin-top: 0; /* Adjusts spacing between subtitle and title */
+    font-size: 72px;
+    color: #000000; /* Main title color */
+    font-weight: 500;
+}
+
+.realEstate-subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8B4513; /* Adjust color to suit the theme */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    text-transform: uppercase; /* Forces text to be uppercase */
+    margin-bottom: 10px; /* Adds space below the subtitle */
+    display: block;
+}
