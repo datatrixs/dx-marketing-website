@@ -3,6 +3,8 @@ body {
     background: url(./assets/grid-2.svg) no-repeat;
     background-position-x: center;
     background-size: 100%;
+    background-color: #F8FAFC;
+    transition: background-color 0.5s ease; /* Smooth background color transition */
 }
 
 .navbar {
@@ -437,6 +439,7 @@ body {
 
 .cpa-section {
     background-color: #C8DDF1;
+    transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
 .cpaSection-box {
@@ -471,6 +474,7 @@ body {
 
 .technology-section {
     background-color: #E9D2C3;
+    transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
 .technologySection-box {
@@ -505,6 +509,7 @@ body {
 
 .financialServices-section {
     background-color: #CAECCA;
+    transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
 .financialServicesSection-box {
@@ -539,6 +544,7 @@ body {
 
 .healthcare-section {
     background-color: #D3FFFB;
+    transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
 .healthcareSection-box {
@@ -573,6 +579,7 @@ body {
 
 .realEstate-section {
     background-color: #FED6BA;
+    transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
 .realEstateSection-box {
