@@ -25,6 +25,8 @@ li {
     width: auto; 
 } */
 
+/* Gallery one */
+
 
 .gallery {
     padding: 1rem;
@@ -80,6 +82,68 @@ li {
 
 @media (max-width: 480px) {
     .gallery {
+        padding-left: 0.5rem; /* Further reduce padding on extra small screens */
+    }
+}
+
+/* Gallery Two */
+
+.gallery2 {
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(10, 24.3vw);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    overflow: scroll;
+    height: auto;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+    scrollbar-color: #00396D #ffffff; /* Track is white; thumb is #00396D */
+    scrollbar-width: thin; /* Firefox: thin scrollbar */
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.gallery2::-webkit-scrollbar {
+    width: 12px;
+}
+
+.gallery2::-webkit-scrollbar-track {
+    background: #ffffff; /* Track color */
+}
+
+.gallery2::-webkit-scrollbar-thumb {
+    background-color: #00396D; /* Scrollbar thumb color */
+    border-radius: 6px; /* Optional: rounded corners */
+    border: 3px solid #ffffff; /* Optional: adds padding around thumb */
+}
+
+.active {
+    scroll-snap-type: unset;
+}
+
+.gallery2 li {
+    scroll-snap-align: center;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 16px;
+    width: auto;
+    height: auto;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery2 {
+        padding-left: 1rem; /* Reduce padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery2 {
         padding-left: 0.5rem; /* Further reduce padding on extra small screens */
     }
 }
