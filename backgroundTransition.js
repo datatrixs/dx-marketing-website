@@ -32,11 +32,8 @@
 // });
 
 window.addEventListener("scroll", () => {
-    const sections = document.querySelectorAll("section, header");
+    const sections = document.querySelectorAll("section");
     const sectionColors = [
-        "#FED6BA",  // Fifth Section color (e.g., medium purple)
-
-        "#CAECCA", // Third Section color (e.g., red)
 
         "#C8DDF1", // CPA Section color
         "#E9D2C3", // Technology Section color
