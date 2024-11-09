@@ -32,22 +32,30 @@
 // });
 
 window.addEventListener("scroll", () => {
-    const sections = document.querySelectorAll("section");
-    const transitionColors = [
+    const sections = document.querySelectorAll("section, header");
+    const sectionColors = [
+        "#FED6BA",  // Fifth Section color (e.g., medium purple)
+
+        "#CAECCA", // Third Section color (e.g., red)
+
         "#C8DDF1", // CPA Section color
         "#E9D2C3", // Technology Section color
         "#CAECCA", // Third Section color (e.g., red)
         "#D3FFFB", // Fourth Section color (e.g., light green)
-        "#FED6BA"  // Fifth Section color (e.g., medium purple)
+        "#FED6BA",  // Fifth Section color (e.g., medium purple)
+        "transparant", // CPA Section color
+
     ];
 
     sections.forEach((section, index) => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+        const scrollPos = window.scrollY;
 
-        // If section's top reaches close to the viewport, apply transition
-        if (sectionTop < windowHeight * 0.50 && sectionTop > 0) {
-            document.body.style.backgroundColor = transitionColors[index];
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        // Adjust to check if the section is fully or partially in view
+        if (scrollPos >= sectionTop - window.innerHeight / 2 && scrollPos < sectionTop + sectionHeight - window.innerHeight / 2) {
+            document.body.style.backgroundColor = sectionColors[index];
         }
     });
 });

@@ -45,6 +45,17 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* .feature-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+}
+.feature-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+} */
+
 .btn-primary, .btn-primary:active, .btn-primary:visited {
     background: #00396D !important;
     border-color: #00396D !important;
@@ -485,7 +496,6 @@ body {
 /* Technology */
 
 .technology-section {
-    background-color: #E9D2C3;
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
@@ -520,7 +530,6 @@ body {
 /* Financial Services */
 
 .financialServices-section {
-    background-color: #CAECCA;
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
@@ -555,7 +564,6 @@ body {
 /* Health Care */
 
 .healthcare-section {
-    background-color: #D3FFFB;
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
@@ -590,7 +598,6 @@ body {
 /* Real Estate */
 
 .realEstate-section {
-    background-color: #FED6BA;
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 

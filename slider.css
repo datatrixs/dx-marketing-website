@@ -89,14 +89,11 @@ li {
 /* Gallery Two */
 
 .gallery2 {
-    padding-left: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    display: grid;
-    grid-template-columns: repeat(10, 24.3vw);
-    grid-template-rows: 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    padding: 2rem;
+
     overflow: scroll;
     height: auto;
     scroll-snap-type: both mandatory;
@@ -125,25 +122,45 @@ li {
 }
 
 .gallery2 li {
-    scroll-snap-align: center;
     display: inline-block;
+    min-width: 300px; /* Ensure enough space for each item */
     border-radius: 30px;
     font-size: 16px;
-    width: auto;
-    height: auto;
+
+    scroll-snap-align: center;
+}
+
+/* Gallery Three */
+
+/* Automatic Scrolling Animation */
+
+.gallery-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.gallery3 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    animation: scroll 50s linear infinite;}
+
+.gallery3:hover {
+    animation-play-state: paused; /* Pauses scrolling on hover */
 }
 
 
+.gallery3 li {
+    display: inline-block;
+    min-width: 300px; /* Ensure enough space for each item */
+    border-radius: 30px;
+    font-size: 16px;}
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .gallery2 {
-        padding-left: 1rem; /* Reduce padding on smaller screens */
-    }
+/* Keyframes for continuous scrolling */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } /* Scrolls halfway for loop */
 }
 
-@media (max-width: 480px) {
-    .gallery2 {
-        padding-left: 0.5rem; /* Further reduce padding on extra small screens */
-    }
-}
+

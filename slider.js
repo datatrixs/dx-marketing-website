@@ -1,4 +1,4 @@
-const slider = document.querySelector('.gallery, .gallery2');
+const slider = document.querySelector('.gallery, .gallery2, .gallery3');
 let isDown = false;
 let startX;
 let scrollLeft;

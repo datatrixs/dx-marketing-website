@@ -438,7 +438,6 @@ body {
 /* CPA Firms */
 
 .cpa-section {
-    background-color: #C8DDF1;
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
@@ -473,7 +472,6 @@ body {
 /* Technology */
 
 .technology-section {
-    background-color: #E9D2C3;
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
@@ -508,7 +506,6 @@ body {
 /* Financial Services */
 
 .financialServices-section {
-    background-color: #CAECCA;
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
@@ -543,7 +540,6 @@ body {
 /* Health Care */
 
 .healthcare-section {
-    background-color: #D3FFFB;
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
@@ -578,7 +574,6 @@ body {
 /* Real Estate */
 
 .realEstate-section {
-    background-color: #FED6BA;
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
