@@ -13,6 +13,10 @@ body {
     border-bottom: 2px solid #F4F4F4;
 }
 
+.container {
+    max-width: 1200px;
+}
+
 .hero-section {
     padding: 100px 0;
     /* background: #F8FAFC; */
@@ -24,6 +28,17 @@ body {
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
 }
+
+.features-section .section-box {
+    transition: all 0.5s ease-in-out;
+}
+
+.features-section .section-box.reveal {
+    transform: translateY(0);
+    opacity: 1;
+    border-radius: 50px;
+}
+
 
 /* .features-section .section-box:hover {
     border-color: #0d6efd;
@@ -192,16 +207,20 @@ body {
 }
 
 
-.features-section .section-box {
-    transition: all 0.5s ease-in-out;
+
+/* Product */
+
+
+.product-border {
+    /* background: linear-gradient(45deg, #ff6b6b, #4d8aff); */
+    padding: 20px; /* Equal to border thickness */
+    display: inline-block;
 }
 
-.features-section .section-box.reveal {
-    transform: translateY(0);
-    opacity: 1;
-    border-radius: 50px;
+.product-border img {
+    border-radius: 38px;
+    box-shadow: 0 14px 15px rgb(255, 107, 107, 0.4);
 }
-
 @media (max-width: 768px) {
     .navbar-brand img {
         width: 120px;
