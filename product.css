@@ -7,15 +7,19 @@ body {
     transition: background-color 0.5s ease; /* Smooth background color transition */
 }
 
+body p {
+    font-size: 1.375rem;
+}
+
 .navbar {
     background: #F8FAFC;
     /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
     border-bottom: 2px solid #F4F4F4;
 }
 
-.container {
+/* .container {
     max-width: 1200px;
-}
+} */
 
 .hero-section {
     padding: 100px 0;
@@ -155,6 +159,10 @@ body {
     color: #000;
 }
 
+.cta-box h2 {
+    font-size: 3.75rem; 
+}
+
 .footer {
     padding: 40px 0;
 }
@@ -231,8 +239,12 @@ body {
     }
 
     .cta-box {
-        padding: 30px;
+        padding: 20px;
     }
+
+    .cta-box h2 {
+        font-size: 2.75rem; 
+    }    
 
     .section-subtitle {
         font-size: 12px; /* Smaller font size for mobile */

@@ -7,9 +7,13 @@ body {
     transition: background-color 0.5s ease; /* Smooth background color transition */
 }
 
-.container {
-    max-width: 1200px;
+body p {
+    font-size: 1.375rem;
 }
+
+/* .container {
+    max-width: 1200px;
+} */
 
 .navbar {
     background: #F8FAFC;
@@ -121,6 +125,10 @@ body {
     color: #000;
 }
 
+.cta-box h2 {
+    font-size: 3.75rem; 
+}
+
 .footer {
     padding: 40px 0;
 }
@@ -197,13 +205,17 @@ body {
     }
 
     .cta-box {
-        padding: 30px;
+        padding: 20px;
+    }
+
+    .cta-box h2 {
+        font-size: 2.75rem; 
     }
 
     .section-subtitle {
         font-size: 12px; /* Smaller font size for mobile */
         letter-spacing: 1.5px; /* Adjust letter spacing */
-    }
+    }    
 }
 
   /* Logo Slider */
