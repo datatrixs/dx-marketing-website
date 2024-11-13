@@ -13,23 +13,13 @@
         }
 
         /* Header */
-        header {
-            background: #0073bf;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2rem;
-            margin: 0;
-        }
 
         /* Blog Container */
-        .container {
+        /* .container {
             width: 90%;
             max-width: 800px;
             margin: 20px auto;
-        }
+        } */
 
         /* Blog Post List */
         .post-list {
@@ -95,7 +85,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body style="background-image: none; background-color: #F8FAFC;">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -157,31 +147,36 @@
     </nav>
 
     <header class="hero-section">
-        <h1>My Blog</h1>
+        <h1 class="display-3" style="font-weight: 600;">Notes</h1>
     </header>
 
-    <div class="container">
-        <!-- Blog Post List -->
-        <ul class="post-list">
-            <!-- Example Post -->
-            <li>
-                <img src="https://via.placeholder.com/800x400" alt="Post Image">
-                <h2>Post Title 1</h2>
-                <p>This is a short excerpt for the first blog post...</p>
-                <a href="/blog/post1.html" class="read-more">Read More</a>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/800x400" alt="Post Image">
-                <h2>Post Title 2</h2>
-                <p>This is a short excerpt for the second blog post...</p>
-                <a href="/post2.html" class="read-more">Read More</a>
-            </li>
-            <!-- Add more posts as needed -->
-        </ul>
-        
+    <!-- Blog Post List -->
+    <section style="text-align: left; border-bottom: #FFFFFF 1px solid; margin-bottom: 30px; background-color: #00396D; color: #FFFFFF; border-top-left-radius: 50px; border-top-right-radius: 50px;">
+        <div class="mt-3" style="text-align: left;">
+            <div class="row">
+                <div class="col-md-5 order-1 order-md-1" style="display: flex; align-items: flex-start; background-image: url(/assets/grid-2.svg);">
+                    <img class="" src="https://blog.datatrixs.com/hubfs/reconnect-QBO-blog.png" width="100%">
+                </div>
 
-    </div>
-
+                <div class="col-md-7 order-2 order-md-2 margin-left-5" style="margin-top: 100px; margin-bottom: 100px;">
+                    <h2 class="display-4 m-5" style="font-weight: 600; text-wrap: pretty;">
+                        <a class="" href="/blog/how-to-reconnect-quickBooks-online-to-datatrixs-after-disconnection.html">
+                        How to Reconnect QuickBooks Online to Datatrixs After Disconnection
+                        </a>
+                    </h2>
+                    <!-- Author Info -->
+                    <div class="post-meta m-5" style="display: flex; align-items: center;">
+                        <img src="https://via.placeholder.com/50" alt="Author Avatar" class="author-avatar" style="border-radius: 50%; margin-right: 10px;">
+                        <div class="author-info">
+                            <p>By Datatrixs Team</p>
+                        </div>
+                    </div> 
+                    <a class="btn btn-outline-secondary btn-lg m-5" href="/blog/how-to-reconnect-quickBooks-online-to-datatrixs-after-disconnection.html">Read article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+            
     <!-- Footer -->
     <footer class="footer text-white" style="background: #F8FAFC;">
         <div class="container">

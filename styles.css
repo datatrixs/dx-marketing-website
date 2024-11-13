@@ -43,31 +43,31 @@ body p {
 }
 
 .btn-primary, .btn-primary:active, .btn-primary:visited {
-    background: #067CE9 !important;
-    border-color: #067CE9 !important;
+    background: #00396D !important;
+    border-color: #00396D !important;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .btn-primary:hover {
-    border-color: #067CE9 !important;
+    border-color: #00396D !important;
     border-radius: 5px;
     transition: border-radius 0.3s ease;
 }
 
 .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary:visited {
-    border-color: #067CE9 !important;
-    color: #067CE9 !important;
+    border-color: #00396D !important;
+    color: #00396D !important;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .btn-outline-primary:hover {
-    border-color: #067CE9 !important;
+    border-color: #00396D !important;
     background: #fff;
-    color: #067CE9 !important;
+    color: #00396D !important;
     border-radius: 5px;
     transition: border-radius 0.3s ease;
 }
@@ -102,6 +102,38 @@ body p {
     transition: border-radius 0.3s ease;
 
 }
+
+.btn-tertiary, .btn-tertiary:active, .btn-tertiary:visited {
+    background: #00FF85 !important;
+    border-color: #00FF85 !important;
+    color: #00396D !important;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-tertiary:hover {
+    border-color: #01E98F !important;
+    border-radius: 5px;
+    transition: border-radius 0.3s ease;
+}
+
+.btn-outline-tertiary, .btn-outline-tertiary:active, .btn-outline-tertiary:visited {
+    border-color: #00FF85 !important;
+    color: #00FF85 !important;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-outline-tertiary:hover {
+    border-color: #00FF85 !important;
+    color: #000000 !important;
+    border-radius: 5px;
+    transition: border-radius 0.3s ease;
+
+}
+
 
 .rotating-questions {
     padding: 20px;
@@ -166,7 +198,7 @@ body p {
 .section-subtitle {
     font-size: 14px;
     font-weight: bold;
-    color: #067CE9; /* Adjust color to suit the theme */
+    color: #00FF85; /* Adjust color to suit the theme */
     letter-spacing: 2px; /* Adds spacing between letters */
     text-transform: uppercase; /* Forces text to be uppercase */
     margin-bottom: 10px; /* Adds space below the subtitle */
@@ -180,6 +212,16 @@ body p {
     font-weight: 500;
 }
 
+.features-section {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: border-radius 0.3s ease; /* Smooth transition */
+}
+
+.features-section.radius-transition {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 
 .features-section .section-box {
     transition: all 0.5s ease-in-out;
@@ -478,7 +520,7 @@ body p {
 .cpa-subtitle {
     font-size: 14px;
     font-weight: bold;
-    color: #067CE9; /* Adjust color to suit the theme */
+    color: #00396D; /* Adjust color to suit the theme */
     letter-spacing: 2px; /* Adds spacing between letters */
     text-transform: uppercase; /* Forces text to be uppercase */
     margin-bottom: 10px; /* Adds space below the subtitle */

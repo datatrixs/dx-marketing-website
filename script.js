@@ -28,3 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+window.addEventListener("scroll", () => {
+    const featuresSection = document.querySelector(".features-section");
+    const scrollPos = window.scrollY + window.innerHeight; // Current scroll position
+    const pageHeight = document.documentElement.scrollHeight; // Total page height
+    const threshold = 900; // Adjust this value to control when the effect starts
+
+    if (scrollPos >= pageHeight - threshold) {
+        featuresSection.classList.add("radius-transition");
+    } else {
+        featuresSection.classList.remove("radius-transition");
+    }
+});
