@@ -34,32 +34,25 @@
 window.addEventListener("scroll", () => {
     const sections = document.querySelectorAll("section");
     const sectionColors = [
+
         "#C8DDF1", // CPA Section color
         "#E9D2C3", // Technology Section color
         "#CAECCA", // Third Section color (e.g., red)
         "#D3FFFB", // Fourth Section color (e.g., light green)
-        "#FED6BA", // Fifth Section color (e.g., medium purple)
+        "#FED6BA",  // Fifth Section color (e.g., medium purple)
+
     ];
-
-    const defaultColor = "#F8FAFC"; // Default background color (e.g., white)
-
-    let backgroundColorSet = false;
 
     sections.forEach((section, index) => {
         const scrollPos = window.scrollY;
+
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
         // Adjust to check if the section is fully or partially in view
         if (scrollPos >= sectionTop - window.innerHeight / 2 && scrollPos < sectionTop + sectionHeight - window.innerHeight / 2) {
             document.body.style.backgroundColor = sectionColors[index];
-            backgroundColorSet = true; // Background color set to a section color
         }
     });
-
-    // If no section is in view, reset to the default color
-    if (!backgroundColorSet) {
-        document.body.style.backgroundColor = defaultColor;
-    }
 });
 
