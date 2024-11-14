@@ -104,30 +104,31 @@ body p {
 }
 
 .btn-tertiary, .btn-tertiary:active, .btn-tertiary:visited {
-    background: #00FF85 !important;
-    border-color: #00FF85 !important;
-    color: #00396D !important;
+    background: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color: #000000 !important;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .btn-tertiary:hover {
-    border-color: #01E98F !important;
+    border-color: #FFFFFF !important;
     border-radius: 5px;
     transition: border-radius 0.3s ease;
 }
 
 .btn-outline-tertiary, .btn-outline-tertiary:active, .btn-outline-tertiary:visited {
-    border-color: #00FF85 !important;
-    color: #00FF85 !important;
+    border-color: #FFFFFF !important;
+    color: #FFFFFF !important;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .btn-outline-tertiary:hover {
-    border-color: #00FF85 !important;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF !important;
     color: #000000 !important;
     border-radius: 5px;
     transition: border-radius 0.3s ease;

@@ -1,3 +1,15 @@
+.bg-primary {
+    background: #00396D !important;
+}
+
+.blog-header-section {
+    padding: 100px 0;
+    /* background: #F8FAFC; */
+    text-align: left;
+}
+
+
+
 /* Post Meta Styling */
 .post-meta {
     display: flex;
@@ -32,13 +44,8 @@ article {
 
 /* Social Sharing Styling */
 .social-sharing {
-    width: 200px;
-    background-color: #f8f9fa;
+    width: auto;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
 }
 
 .social-sharing h3 {
