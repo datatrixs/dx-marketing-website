@@ -141,10 +141,10 @@
         <section class="blog-post-section d-flex mb-4" style="gap: 50px;">
             <!-- Social Sharing Buttons (Left Section) -->
             <aside class="social-sharing d-flex flex-column align-items-start d-none d-md-flex" style="margin-bottom: 50px;">
-                <a class="btn btn-outline-tertiary btn-lg mb-2" href="https://twitter.com/intent/tweet?text=How%20to%20Reconnect%20QuickBooks%20Online%20to%20Datatrixs%20After%20Disconnection&url=https://yourwebsite.com/article-url" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                <a id="twitter-share" class="btn btn-outline-tertiary btn-lg mb-2" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
                     Twitter
                 </a>
-                <a class="btn btn-outline-tertiary btn-lg mb-2" href="https://www.linkedin.com/sharing/share-offsite/?url=https://yourwebsite.com/article-url" title="Share on LinkedIn" target="_blank" rel="noopener noreferrer">
+                <a id="linkedin-share" class="btn btn-outline-tertiary btn-lg mb-2" title="Share on LinkedIn" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                 </a>
             </aside>
@@ -198,10 +198,10 @@
         <div class="social-sharing d-flex flex-column align-items-center" style="margin-bottom: 50px;">
             <h3 class="display-3">Share article</h3>
             <div>
-                <a class="btn btn-outline-tertiary btn-lg me-2" href="https://twitter.com/intent/tweet?text=How%20to%20Reconnect%20QuickBooks%20Online%20to%20Datatrixs%20After%20Disconnection&url=https://yourwebsite.com/article-url" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
+                <a id="twitter-share" class="btn btn-outline-tertiary btn-lg mb-2" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
                     Twitter
-                </a>
-                <a class="btn btn-outline-tertiary btn-lg" href="https://www.linkedin.com/sharing/share-offsite/?url=https://yourwebsite.com/article-url" title="Share on LinkedIn" target="_blank" rel="noopener noreferrer">
+                </a>                
+                <a id="linkedin-share" class="btn btn-outline-tertiary btn-lg mb-2" title="Share on LinkedIn" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                 </a>
             </div>
@@ -259,6 +259,26 @@
     <script src="../logoSlider.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <script>
+        // Get the current page URL
+        const currentURL = window.location.href;
     
+        // Retrieve the H1 tag content
+        const h1Element = document.querySelector('h1');
+        const tweetText = h1Element ? h1Element.textContent.trim() : "Check this out!";
+    
+        // Twitter share URL
+        const twitterBaseURL = "https://twitter.com/intent/tweet";
+        const twitterShareURL = `${twitterBaseURL}?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(currentURL)}`;
+    
+        // LinkedIn share URL
+        const linkedInBaseURL = "https://www.linkedin.com/sharing/share-offsite/";
+        const linkedInShareURL = `${linkedInBaseURL}?url=${encodeURIComponent(currentURL)}`;
+    
+        // Set the href attributes for the share buttons
+        document.getElementById('twitter-share').setAttribute('href', twitterShareURL);
+        document.getElementById('linkedin-share').setAttribute('href', linkedInShareURL);
+    </script>    
 </body>
 </html>
