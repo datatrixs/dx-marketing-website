@@ -97,10 +97,19 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="" href="#" style="margin-right: 5px;">Contact Sales</a>
+                    <li class="nav-item">   
                         <a class="btn btn-outline-primary btn-lg m-1" href="https://app.datatrixs.com/login">Login</a>
-                        <a class="btn btn-primary btn-lg m-1" href="https://app.datatrixs.com/signup">Get Started Free</a>
+                        <a class="btn btn-primary btn-lg m-1" data-cal-link="serge-amouzou-boprul/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}'>Get a Demo</a>
+                        <!-- Cal element-click embed code begins -->
+                        <script type="text/javascript">
+                            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                        Cal("init", "30min", {origin:"https://cal.com"});
+                        
+                                            
+                            Cal.ns["30min"]("ui", {"styles":{"branding":{"brandColor":"#00396D"}},"hideEventTypeDetails":false,"layout":"month_view"});
+                            </script>
+                        <!-- Cal element-click embed code ends -->
+
                     </li>
                 </ul>
             </div>
@@ -600,8 +609,8 @@
         0 14px 35px rgb(11, 126, 234, 0.2); /* Even lighter blue at farthest distance */
         ">
             <h2 style="margin-top: 30px; margin-bottom: 30px; color: #012546;">Get the answers you need to drive success</h2>
-            <a href="https://app.datatrixs.com/signup" class="btn btn-primary btn-lg m-2">Get Started Free</a>
-            <a href="/demo-request.html" class="btn btn-outline-primary btn-lg m-2">Get a Demo</a>
+            <a  data-cal-link="serge-amouzou-boprul/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}' class="btn btn-primary btn-lg m-2">Get a Demo</a>
+            <a href="https://app.datatrixs.com/login" class="btn btn-outline-primary btn-lg m-2">Login</a>
         </div>
     </section>
 
