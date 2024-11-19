@@ -39,14 +39,16 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
 
-
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pricing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="background-image: none;">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -110,52 +112,131 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section" style="padding-bottom: 0;">
+    <header class="hero-section" style="background-color: #00396D; color: #FFFFFF;">
         <div class="container text-center mt-3 pt-3">
-            <div class="row mt-5 pt-5">
-                <img src="./assets/about-icon.svg" style="max-width: 500px;" class="ms-auto me-auto" alt="Hero Graphic">
-            </div>
+            <h1 class="display-3" style="font-weight: 600;">Plans that grow with you</h1>
         </div>
     </header>
+    
 
     <!-- Main Sections (6 with CTA) -->
-    <section class="features-section pb-5">
+    <section id="pricing" class="py-1 features-section" style="background-color: #00396D; margin-bottom: 100px;">
         <div class="container">
-            <section id="about-us" style="background-color: #f9f9f9; padding: 60px 20px; font-family: Arial, sans-serif;">
-                <div style="max-width: 900px; margin: 0 auto; text-align: left;">
-                  <h1 style="font-size: 2.8em; color: #333; font-weight: bold; margin-bottom: 20px;">The Future of Finance Starts Here</h1>
-                  <p style="font-size: 1.2em; color: #555; line-height: 1.8; margin-bottom: 40px;">
-                    Datatrixs began with a simple yet powerful realization: understanding your numbers can mean the difference between success 
-                    and failure. As an entrepreneur who nearly lost a business due to financial blind spots, I know this all too well. That moment 
-                    of struggle became the spark for something bigger — a mission to change how businesses and CPAs work together.
-                  </p>
-                  <h2 style="font-size: 2.2em; color: #333; font-weight: bold; margin-bottom: 20px;">Our Why</h2>
-                  <p style="font-size: 1.2em; color: #555; line-height: 1.8; margin-bottom: 40px;">
-                    Businesses rely on CPAs and financial professionals to make sense of their data and uncover insights. But the tools they have 
-                    are outdated, and the profession itself is facing a crisis — over 300,000 CPAs have left the industry in just four years. 
-                    The gap is growing, and businesses are feeling the strain. That’s why we built Datatrixs: to empower CPAs and finance teams 
-                    with an AI-powered platform that delivers clarity, speed, and actionable insights.
-                  </p>
-                  <h2 style="font-size: 2.2em; color: #333; font-weight: bold; margin-bottom: 20px;">What We Believe</h2>
-                  <p style="font-size: 1.2em; color: #555; line-height: 1.8; margin-bottom: 40px;">
-                    We believe in a future where every business, regardless of size, has access to the insights they need to thrive. 
-                    A future where financial data is no longer a mystery, but a powerful tool for growth. And a future where CPAs and CFOs are 
-                    equipped with the innovation they deserve to guide businesses forward.
-                  </p>
-                  <h2 style="font-size: 2.2em; color: #333; font-weight: bold; margin-bottom: 20px;">Our Vision</h2>
-                  <p style="font-size: 1.2em; color: #555; line-height: 1.8; margin-bottom: 40px;">
-                    At Datatrixs, we’re not just building software. We’re building a movement to transform an industry — 
-                    empowering CPAs and CFOs to see the future in their data and unlock new possibilities for the businesses they serve.
-                  </p>
-                  <p style="font-size: 1.5em; color: #333; font-weight: bold; margin-top: 40px;">
-                    The question is: <em>what will you build</em> with insights that truly matter?
-                  </p>
+            <div class="row justify-content-center">
+                <!-- Basic Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-left ms-3 me-3">
+                            <h3 class="card-title fw-semibold">Free Plan</h3>
+                            <p class="text-muted">For small teams starting out</p>
+                            <h2 class="fw-bold pt-5">Free</h2>
+                            <a href="https://app.datatrixs.com/signup" class="btn btn-primary btn-lg mb-3">Get Started</a>
+                            <hr />
+                            <ul class="list-unstyled my-4">
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>Three complimentary client trials</li>
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>Unleash the full power of our capabilities</li>
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>Lifetime access to an editor seat</li>
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>Access for an endless number of viewers</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </section>
-                            
+                <!-- Pro Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg h-100 border-primary">
+                        <div class="card-body text-left ms-3 me-3">
+                            <h3 class="card-title fw-semibold">Pro</h3>
+                            <p class="text-muted">For growing businesses</p>
+                            <h2 class="fw-bold pt-5">$100<span class="text-muted fs-5">/mo</span></h2>
+                            <a href="https://app.datatrixs.com/signup" class="btn btn-primary btn-lg mb-3">Get Started</a>
+                            <hr />
+                            <ul class="list-unstyled my-4">
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>Subsequent clients beyond the initial three will be charged at a rate of $100 per client per month.</li>
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>Get your hands on an editor seat for an unbeatable price of only $100 per month per editor.</li>
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>Unlock the potential of Ask AI</li>
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>Access for an endless number of viewers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Enterprise Plan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-left ms-3 me-3">
+                            <h3 class="card-title fw-semibold">Enterprise</h3>
+                            <p class="text-muted">For large organizations</p>
+                            <h2 class="fw-bold pt-5">Custom</h2>
+                            <a href="#" class="btn btn-primary btn-lg mb-3">Contact Us</a>
+                            <hr />
+                            <ul class="list-unstyled my-3">
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>All the features offered in the Paid Plan are included, along with</li>
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>Take advantage of our exclusive bulk pricing offer</li>
+                                <li class="py-3"><i class="bi bi-check-circle text-success me-2"></i>Access our dedicated team of experts for personalized support and guidance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- FAQ Section -->
+            <div class="row" style="margin-top: 200px; margin-bottom: 200px;">
+                <div class="col-md-4">
+                    <h3 class="fw-bold text-left mb-4 display-5" style="color: #FFFFFF;">Frequently Asked Questions</h3>
+                </div>
+                <div class="accordion col-md-8" id="faqAccordion" style="background-color: none; color: #FFFFFF;">
+                    <div class="accordion-item" style="background-color: none;">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                Is there a free trial available for Datatrixs?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Certainly, Datatrixs provides a complimentary plan that allows you to create up to 3 clients, giving you the opportunity to explore and test its features firsthand.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Is it possible for my clients to access the advisory reports?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Absolutely, you have the option to grant clients viewer (or editor) access, enabling them to securely access the entire advisory report at their convenience.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Does the financial data automatically update when I make changes in QuickBooks?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Indeed, Datatrixs is designed to facilitate seamless real-time data synchronization, ensuring compliance at every stage. Any updates you make in QuickBooks will be instantly incorporated by Datatrixs, eliminating the need to modify advisory reports unless you're introducing fresh content to the report.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                Does Datatrixs exclusively support QuickBooks integration, or are there other integration options available?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Currently, we offer seamless QuickBooks integrations and have exciting plans to incorporate Xero, along with the top 20 accounting software solutions, in the near future.                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
-
+    
     <!-- Rotating Questions Section -->
     <!-- <section>
         <div class="container text-center" style="color: #ffffff; margin-top: 60px;">
@@ -171,17 +252,10 @@
     </section>
  -->
     <!-- Call to Action Section -->
-    <section class="cta-box text-center mt-3">
-        <div class="container" style="border: #EBEEF1 solid 6px; border-radius: 30px; height: auto; margin-top: 70px; margin-bottom: 70px; padding-top: 70px; padding-bottom: 70px; background-color: #f8f9fa; 
-        box-shadow: 
-        0 -14px 25px rgba(203, 240, 226, 0.2), /* Lighter blue further out */
-        0 -14px 25px rgb(185, 249, 218, 0.3), /* Lighter blue further out */
-        0 14px 25px rgb(6, 124, 233, 0.4),
-        0 14px 35px rgb(11, 126, 234, 0.2); /* Even lighter blue at farthest distance */
-        ">
-            <h2 style="margin-top: 30px; margin-bottom: 30px; color: #012546;">Get the answers you need to drive success</h2>
-            <a href="https://app.datatrixs.com/signup" class="btn btn-primary btn-lg m-2">Get Started Free</a>
-            <a href="/demo-request.html" class="btn btn-outline-primary btn-lg m-2">Get a Demo</a>
+    <section class="cta-box text-center" style="margin-top: 100px; margin-bottom: 100px;;">
+        <div class="container">
+            <h2 style="color: #012546;" class="pb-3 fw-bold">Let’s get started</h2>
+            <a href="https://app.datatrixs.com/signup" class="btn btn-primary btn-lg m-3 fs-5 py-3 px-4">Buy online</a>
         </div>
     </section>
 
