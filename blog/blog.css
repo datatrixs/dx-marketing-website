@@ -36,6 +36,13 @@
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
+.blog-content {
+    width: auto;
+}
+
+.blog-content p {
+    font-size: 1.275rem;
+}
 /* Article Content Styling */
 article {
     flex: 1;
