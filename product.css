@@ -79,7 +79,7 @@ body p {
 .btn-primary, .btn-primary:active, .btn-primary:visited {
     background: #00396D !important;
     border-color: #00396D !important;
-    border-radius: 20px;
+    border-radius: 30px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -93,7 +93,7 @@ body p {
 .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary:visited {
     border-color: #00396D !important;
     color: #00396D !important;
-    border-radius: 20px;
+    border-radius: 30px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -110,7 +110,7 @@ body p {
     background: #00FF85 !important;
     border-color: #00FF85 !important;
     color: #00396D !important;
-    border-radius: 20px;
+    border-radius: 30px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -124,7 +124,7 @@ body p {
 .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary:visited {
     border-color: #00FF85 !important;
     color: #00FF85 !important;
-    border-radius: 20px;
+    border-radius: 30px;
     padding-left: 20px;
     padding-right: 20px;
 }

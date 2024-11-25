@@ -1,0 +1,17 @@
+#pricing {
+    background-color: #00396D;
+}
+.card {
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.accordion-button {
+    font-weight: bold;
+}
+.accordion-item {
+    border: none;
+    margin-bottom: 50px;
+}
