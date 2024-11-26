@@ -500,6 +500,10 @@ body p {
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
+.cpa-section p {
+    font-size: 16px;
+}
+
 .cpaSection-box {
     text-align: left;
     border: 2px solid transparent;
@@ -532,6 +536,10 @@ body p {
 
 .technology-section {
     transition: background-color 1.0s ease; /* Smooth background color transition */
+}
+
+.technology-section p {
+    font-size: 16px;
 }
 
 .technologySection-box {
@@ -568,6 +576,10 @@ body p {
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
+.financialServices-section p {
+    font-size: 16px;
+}
+
 .financialServicesSection-box {
     text-align: left;
     border: 2px solid transparent;
@@ -602,6 +614,10 @@ body p {
     transition: background-color 1.0s ease; /* Smooth background color transition */
 }
 
+.healthcare-section p {
+    font-size: 16px;
+}
+
 .healthcareSection-box {
     text-align: left;
     border: 2px solid transparent;
@@ -634,6 +650,10 @@ body p {
 
 .realEstate-section {
     transition: background-color 1.0s ease; /* Smooth background color transition */
+}
+
+.realEstate-section p {
+    font-size: 16px;
 }
 
 .realEstateSection-box {
