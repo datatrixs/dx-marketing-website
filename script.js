@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const questionContainer = document.getElementById('question-carousel');
     
     function rotateQuestions() {
-        questionContainer.innerHTML = `<p>${questions[questionIndex]}</p>`;
+        questionContainer.innerHTML = `<h2>${questions[questionIndex]}</h2>`;
         questionIndex = (questionIndex + 1) % questions.length;
     }
 
