@@ -121,7 +121,15 @@
             <p class="text-muted" style="text-wrap: balance;">From seamless data integration to automated reporting, our tools empower CPA firms to unlock deeper insights, enhance client service, and drive growth—all in one platform.</p>
             <a href="https://app.datatrixs.com/login" class="btn btn-outline-primary btn-lg m-2">Login</a>
             <a  data-cal-link="serge-amouzou-boprul/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}' class="btn btn-primary btn-lg m-2">Get a Demo</a>
-        
+            <!-- Cal element-click embed code begins -->
+            <script type="text/javascript">
+                (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+            Cal("init", "30min", {origin:"https://cal.com"});
+            
+                                
+                Cal.ns["30min"]("ui", {"styles":{"branding":{"brandColor":"#00396D"}},"hideEventTypeDetails":false,"layout":"month_view"});
+                </script>
+            <!-- Cal element-click embed code ends -->
         </div>
     </header>
     <div class="container mt-5 pt-5">
@@ -176,7 +184,7 @@
                 <div class="col-md-6">
                     <p class="text-muted">Explore how Mira and Warren reveal key insights into client data, helping you deliver the 'why' for your most valuable clients' decisions and actions.</p>
                 </div>
-                <a data-cal-link="serge-amouzou-boprul/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}' class="icon-link d-flex icon-link-hover text-decoration-none" style="color: #00396D;">
+                <a data-cal-link="serge-amouzou-boprul/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}' class="icon-link d-flex icon-link-hover text-decoration-none" style="color: #00396D; cursor: pointer;">
                     Get a Demo
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M10.854 8.354a.5.5 0 0 0 0-.708l-5-5a.5.5 0 1 0-.708.708L9.293 8l-4.147 4.146a.5.5 0 0 0 .708.708l5-5z"/>
