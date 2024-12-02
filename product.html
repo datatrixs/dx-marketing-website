@@ -57,23 +57,30 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="productsDropdown">
                             <li><a class="dropdown-item" href="product.html">Streamline your firm</a></li>
-                            <!-- <li><a class="dropdown-item" href="#">Product 2</a></li> -->
+                         <li><a class="dropdown-item" href="#">Product 2</a></li>
                         </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html" id="" role="button">Product</a>
                     </li>
-                    <li class="nav-item dropdown">
+
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Solutions
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                            <!-- <li><a class="dropdown-item" href="#">Teams</a></li> -->
+                            <li><a class="dropdown-item" href="#">Teams</a></li>
                             <li><a class="dropdown-item" href="industries.html">Industries</a></li>
                         </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="industries.html" id="" role="button">Industries</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -96,19 +103,10 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">                        
+                    <li class="nav-item">
+                        
                         <a class="btn btn-outline-primary btn-lg m-1" href="https://app.datatrixs.com/login">Login</a>
                         <a class="btn btn-primary btn-lg m-1" data-cal-link="serge-amouzou-boprul/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}'>Get a Demo</a>
-                        <!-- Cal element-click embed code begins -->
-                        <script type="text/javascript">
-                            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-                        Cal("init", "30min", {origin:"https://cal.com"});
-                        
-                                            
-                            Cal.ns["30min"]("ui", {"styles":{"branding":{"brandColor":"#00396D"}},"hideEventTypeDetails":false,"layout":"month_view"});
-                            </script>
-                        <!-- Cal element-click embed code ends -->
-
                     </li>
                 </ul>
             </div>
@@ -138,8 +136,8 @@
             <!-- Instant Client Insights section -->
             <div class="row text-center text-md-start">
                 <div class="col-md-8 section-box text-muted mb-5">
-                    <h2 class="fw-bold text-dark">Enhance Client Engagement & Drive Insight Adoption</h2>
-                    <p>Turn passive clients into power users. Understand their needs, address their pain points, and deepen engagement to grow your client base.</p>
+                    <h2 class="fw-bold text-dark">Deepen customer relationships and grow your business</h2>
+                    <p>Turn infrequent interactions into deeply rich success centers. Understand their needs, address their pain points, and deepen engagement to grow your customer base.</p>
                 </div>
             </div>
             <div class="row g-3 g-md-4">
@@ -283,9 +281,9 @@
                 <ul class="gallery2">
                     <li class="col feature-card h-150 text-left">
                         <img src="./assets/industry-section-graphic.png" class="img-fluid mb-3 w-100" alt="Company KPI Template Graphic"/>
-                        <h4 class="fw-bold px-3 mb-3">Company KPI Template</h4>
-                        <p class="text-muted px-3 mb-4">Nine reports that track engagement, retention, and growth metrics.</p>
-                        <a href="#" class="icon-link icon-link-hover px-3 pb-4 pt-3" style="text-decoration: none; color: #00396D;">Read blog
+                        <h4 class="fw-bold px-3 mb-3">The Importance of Financial Automation for Startups</h4>
+                        <p class="text-muted small px-3 mb-4">AI makes the fast-paced world of startups, more manageble to founders when it comes to the importance of efficient financial management.</p>
+                        <a href="blog/the-importance-of-financial-automation.html" class="icon-link icon-link-hover px-3 pb-4 pt-3" style="text-decoration: none; color: #00396D;">Read blog
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M10.854 8.354a.5.5 0 0 0 0-.708l-5-5a.5.5 0 1 0-.708.708L9.293 8l-4.147 4.146a.5.5 0 0 0 .708.708l5-5z"/>
                             </svg>                        
@@ -293,9 +291,9 @@
                     </li>
                     <li class="col feature-card h-150 text-left">
                         <img src="./assets/industry-section-graphic.png" class="img-fluid mb-3 w-100" alt="Company KPI Template Graphic"/>
-                        <h4 class="fw-bold px-3 mb-3">Company KPI Template</h4>
-                        <p class="text-muted px-3 mb-4">Nine reports that track engagement, retention, and growth metrics.</p>
-                        <a href="#" class="icon-link icon-link-hover px-3 pb-4 pt-3" style="text-decoration: none; color: #00396D;">Read blog
+                        <h4 class="fw-bold px-3 mb-3">Streamlining Financial Reporting: Best Tools and Practices</h4>
+                        <p class="text-muted small px-3 mb-4">Financial reporting is the cornerstone of sound decision-making for any organization. And, in the age of AI, gone are the days of long, manual labor to create reports.</p>
+                        <a href="blog/streamlining-financial-reporting.html" class="icon-link icon-link-hover px-3 pb-4 pt-3" style="text-decoration: none; color: #00396D;">Read blog
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M10.854 8.354a.5.5 0 0 0 0-.708l-5-5a.5.5 0 1 0-.708.708L9.293 8l-4.147 4.146a.5.5 0 0 0 .708.708l5-5z"/>
                             </svg>                        
@@ -304,9 +302,9 @@
 
                     <li class="col feature-card h-150 text-left">
                         <img src="./assets/industry-section-graphic.png" class="img-fluid mb-3 w-100" alt="Company KPI Template Graphic"/>
-                        <h4 class="fw-bold px-3 mb-3">Company KPI Template</h4>
-                        <p class="text-muted px-3 mb-4">Nine reports that track engagement, retention, and growth metrics.</p>
-                        <a href="#" class="icon-link icon-link-hover px-3 pb-4 pt-3" style="text-decoration: none; color: #00396D;">Read blog
+                        <h4 class="fw-bold px-3 mb-3">CPA Firms: The Benefits of Automating Financial Operations</h4>
+                        <p class="text-muted small px-3 mb-4">In an industry where accuracy, efficiency, and compliance are paramount, AI helps CPA firms maintain the highest levels of precision.</p>
+                        <a href="blog/cpa-firms-the-benefits-of-automating.html" class="icon-link icon-link-hover px-3 pb-4 pt-3" style="text-decoration: none; color: #00396D;">Read blog
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M10.854 8.354a.5.5 0 0 0 0-.708l-5-5a.5.5 0 1 0-.708.708L9.293 8l-4.147 4.146a.5.5 0 0 0 .708.708l5-5z"/>
                             </svg>                        
