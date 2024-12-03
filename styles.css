@@ -683,3 +683,49 @@ body p {
     margin-bottom: 10px; /* Adds space below the subtitle */
     display: block;
 }
+
+/* GDPR */
+
+.gdpr-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f8f9fa;
+    border-top: 2px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.gdpr-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gdpr-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.hidden {
+    display: none;
+}
+
+.gdpr-settings {
+    margin-top: 10px;
+}
+
+.gdpr-settings h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.gdpr-settings label {
+    display: block;
+    margin-bottom: 8px;
+}

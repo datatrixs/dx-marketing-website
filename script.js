@@ -41,3 +41,57 @@ window.addEventListener("scroll", () => {
         featuresSection.classList.remove("radius-transition");
     }
 });
+
+// GDPR
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const gdprPopup = document.getElementById("gdpr-popup");
+    const gdprSettings = document.getElementById("gdpr-settings");
+    const acceptAllButton = document.getElementById("accept-all");
+    const managePreferencesButton = document.getElementById("manage-preferences");
+    const savePreferencesButton = document.getElementById("save-preferences");
+
+    // Accept All Cookies
+    acceptAllButton.addEventListener("click", () => {
+        localStorage.setItem("gdpr-consent", JSON.stringify({
+            necessary: true,
+            analytics: true,
+            marketing: true,
+        }));
+        gdprPopup.style.display = "none";
+    });
+
+    // Show Settings
+    managePreferencesButton.addEventListener("click", () => {
+        gdprSettings.classList.remove("hidden");
+    });
+
+    // Save Preferences
+    savePreferencesButton.addEventListener("click", () => {
+        const analyticsCookies = document.getElementById("analytics-cookies").checked;
+        const marketingCookies = document.getElementById("marketing-cookies").checked;
+
+        localStorage.setItem("gdpr-consent", JSON.stringify({
+            necessary: true,
+            analytics: analyticsCookies,
+            marketing: marketingCookies,
+        }));
+
+        gdprPopup.style.display = "none";
+    });
+
+    // Check if consent is already given
+    if (!localStorage.getItem("gdpr-consent")) {
+        setTimeout(() => {
+            gdprPopup.style.display = "block";
+        }, 20000); // 5-second delay
+    } else {
+        gdprPopup.style.display = "none";
+    }
+
+    // Check if consent is already given
+    // if (localStorage.getItem("gdpr-consent")) {
+    //     gdprPopup.style.display = "none";
+    // }
+});
