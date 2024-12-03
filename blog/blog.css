@@ -95,4 +95,8 @@ article {
     .responsive-image {
         width: 100% !important;
     }
+
+    .feature-section {
+        margin: 0;
+    }
 }
