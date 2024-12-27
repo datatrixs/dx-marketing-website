@@ -697,7 +697,7 @@ body p {
     padding: 15px;
     z-index: 1000;
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .gdpr-content {
@@ -729,3 +729,11 @@ body p {
     display: block;
     margin-bottom: 8px;
 }
+
+#mc_embed_signup {
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif; 
+    width: auto;
+}
+
