@@ -816,6 +816,10 @@ body p {
     align-items: center;
 }
 
+.gdpr-content p {
+    color: #000;
+}
+
 .gdpr-buttons {
     display: flex;
     gap: 10px;
