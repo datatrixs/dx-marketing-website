@@ -57,6 +57,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        .accordion-button {
+            background: linear-gradient(135deg, #3a3a3a, #5a5a5a);
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+        }
+        .accordion-button:hover {
+            background-image: linear-gradient(135deg, #962727, #7a7a7a);
+        }
+        .accordion-button:not(.collapsed) {
+            background: black;
+        }
+        .accordion-body {
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding: 15px;
+        }
+    </style>
+
 </head>
 <body style="background-image: none;">
 
@@ -215,7 +238,7 @@
             </div>
     
             <!-- FAQ Section -->
-            <div class="row" style="margin-top: 200px; margin-bottom: 200px;">
+            <!-- <div class="row" style="margin-top: 200px; margin-bottom: 200px;">
                 <div class="col-md-4">
                     <h3 class="fw-bold text-left mb-4 display-5" style="color: #FFFFFF;">Frequently Asked Questions</h3>
                 </div>
@@ -353,7 +376,162 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="text-center mb-5">
+                            <h2 class="fw-bold display-5 text-white">Frequently Asked Questions</h2>
+                            <p class="text-light">Find answers to common questions about Datatrixs.</p>
+                        </div>
+            
+                        <div class="accordion" id="faqAccordion">
+                            <!-- FAQ Item -->
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq1">
+                                    <button class="accordion-button shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        What is Datatrixs, and how does it work?
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        Datatrixs is an AI-powered analytics copilot that helps businesses analyze financial data, generate instant charts and reports, and gain actionable insights.
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Repeat this structure for each FAQ item -->
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq2">
+                                    <button class="accordion-button collapsed shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        What’s included in each plan?
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        Each plan includes AI-powered financial insights, automated charts, seamless data integration, predictive analytics, and real-time financial monitoring.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq3">
+                                    <button class="accordion-button collapsed shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        How can I see Datatrixs in action before purchasing?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        We offer personalized demos where we walk you through the platform and show how it fits your needs. Contact us to schedule a session!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq4">
+                                    <button class="accordion-button collapsed shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        How does billing work?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        We offer both monthly and annual billing options. Annual plans come with a discount. You can manage your subscription through your account dashboard.                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq5">
+                                    <button class="accordion-button collapsed shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        How does billing work for additional team members?
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        The initial editor is included for free. If you need additional editors, they are billed on a per-user, per-month basis. However, collaborators with view-only access can be added at no additional cost.                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq6">
+                                    <button class="accordion-button collapsed shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        Are there any hidden fees?
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        No, our pricing is transparent. What you see on the pricing page is what you pay.                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq7">
+                                    <button class="accordion-button collapsed shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                        Can I change my plan later?
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        Absolutely! You can upgrade or downgrade your plan at any time through your account settings.                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq8">
+                                    <button class="accordion-button collapsed shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                        How does Datatrixs integrate with QuickBooks and other accounting software?
+                                    </button>
+                                </h2>
+                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        Our platform connects directly with QuickBooks and supports CSV uploads enabling seamless data import and real-time financial insights.                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq9">
+                                    <button class="accordion-button collapsed shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                        Can I customize reports and dashboards?
+                                    </button>
+                                </h2>
+                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="faq9" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        Yes! Datatrixs allows you to customize your financial dashboards and reports to match your business needs.                           
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq10">
+                                    <button class="accordion-button collapsed shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                        How secure is my financial data?
+                                    </button>
+                                </h2>
+                                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="faq10" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        Datatrixs prioritizes security with encrypted data storage, role-based access controls, and compliance with industry security standards.                           
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0">
+                                <h2 class="accordion-header" id="faq11">
+                                    <button class="accordion-button collapsed shadow-sm text-white bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                        Do you offer customer support?
+                                    </button>
+                                </h2>
+                                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="faq11" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-light">
+                                        Yes! We provide email and chat support for all plans, with priority support for higher-tier plans.                           
+                                    </div>
+                                </div>
+                            </div>
+
+
+            
+                            <!-- Add the rest of the FAQs in the same pattern -->
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+            
             
         </div>
     </section>
