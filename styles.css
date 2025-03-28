@@ -59,7 +59,7 @@ body p {
 .features-section {
     background: linear-gradient(135deg, #00396D 0%, #002B4D 100%);
     padding: 100px 0;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 
