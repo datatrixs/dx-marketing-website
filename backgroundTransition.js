@@ -35,8 +35,8 @@ window.addEventListener("scroll", () => {
     const sections = document.querySelectorAll("section");
     const sectionColors = [
 
-        "#C8DDF1", // CPA Section color
         "#E9D2C3", // Technology Section color
+        "#C8DDF1", // CPA Section color
         "#CAECCA", // Third Section color (e.g., red)
         "#D3FFFB", // Fourth Section color (e.g., light green)
         "#FED6BA",  // Fifth Section color (e.g., medium purple)

@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const questions = [
-        "How can I ensure this month's financial report is delivered on time?",
-        "What tools can help streamline my client's financial reporting process?",
-        "How can I effectively track my clients’ financial performance in real time?"
+        "What areas of my business have the highest growth potential, and how can I capitalize on them?",
+        "How can I predict and prepare for future cash flow fluctuations to maintain financial stability?",
+        "How can I leverage data-driven insights to optimize my business operations and improve profitability?",
     ];
     
     let questionIndex = 0;

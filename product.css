@@ -58,7 +58,7 @@ body p {
     overflow: hidden;
 }
 
-.features-section::before {
+/* .features-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -67,7 +67,7 @@ body p {
     bottom: 0;
     background: url(./assets/grid-2.svg) no-repeat center;
     opacity: 0.05;
-}
+} */
 
 .features-section .section-box {
     text-align: left;
@@ -215,7 +215,7 @@ body p {
     overflow: hidden;
 }
 
-.cta-box::before {
+/* .cta-box::before {
     content: '';
     position: absolute;
     top: 0;
@@ -224,7 +224,7 @@ body p {
     bottom: 0;
     background: radial-gradient(circle at bottom left, rgba(0, 255, 133, 0.1), transparent 70%);
     z-index: 0;
-}
+} */
 
 .cta-box .container {
     position: relative;
