@@ -30,7 +30,7 @@ body p {
     overflow: hidden;
 }
 
-/* .hero-section::before {
+.hero-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -39,7 +39,7 @@ body p {
     bottom: 0;
     background: radial-gradient(circle at top right, rgba(0, 255, 133, 0.1), transparent 70%);
     z-index: 0;
-} */
+}
 
 .hero-section .container {
     position: relative;
