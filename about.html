@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-HZ3K9DRTXM');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  gtag('config', 'G-HZ3K9DRTXM');
+  </script>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
     <!-- Basic SEO Metadata -->
     <title>About Us - Datatrixs: AI-Powered Insights for Smarter Business Decisions</title>
     <meta name="description" content="Discover Datatrixs, an AI-powered platform helping businesses turn financial and operational data into actionable insights. See how we empower entrepreneurs to make smarter, data-driven decisions for sustainable growth." />
@@ -24,281 +31,249 @@
     <meta property="og:description" content="Datatrixs empowers businesses with AI-driven insights, transforming financial and operational data into clear, strategic guidance. Make data-driven decisions with confidence." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.datatrixs.com/about-us" />
-    <meta property="og:image" content="https://www.datatrixs.com/assets/homepage-product.png" />
+    <meta property="og:image" content="https://www.datatrixs.com/assets/product-meta.png" />
     
     <!-- Twitter Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="About Us - Datatrixs: AI-Powered Insights for Smarter Business Decisions" />
     <meta name="twitter:description" content="Discover Datatrixs: AI-powered data analytics for entrepreneurs, helping businesses optimize financial and operational performance with real-time insights." />
-    <meta name="twitter:image" content="https://www.datatrixs.com/assets/homepage-product.png" />
+    <meta name="twitter:image" content="https://www.datatrixs.com/assets/product-meta.png" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.datatrixs.com/about-us" />
 
     <meta name="robots" content="index, follow" />
-    
 
-    <link rel="icon" type="image/png" href="assets/faveicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="assets/faveicon/favicon.svg" />
-    <link rel="shortcut icon" href="assets/faveicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/faveicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="assets/faveicon/site.webmanifest" />
+  <link rel="icon" type="image/png" href="assets/faveicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/faveicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/faveicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/faveicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Datatrixs" />
+  <link rel="manifest" href="assets/faveicon/site.webmanifest" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
-
-
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-    <style>
-        body p {
-            color: rgba(33, 37, 41, 0.75);
-        }
-    </style>
-
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body>
+<body class="bg-white text-gray-800">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container mt-1 mb-1">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/logo.png" alt="Company Logo" width="150">
+<nav class="fixed top-4 left-4 right-4 z-50 bg-black shadow-lg rounded-full px-6 py-2 flex items-center justify-between max-w-5xl mx-auto border border-gray-800">
+    <div class="text-xl font-bold text-white flex">
+        <a href="index.html" class="h-5">
+            <img src="assets/CoreLogo-w-with-gradient.png" class="h-5 mr-2" alt="Datatrixs Logo">
+        </a>
+    </div>
+    <div class="hidden md:flex space-x-6 text-[#00FF85] font-medium text-white">
+        <a href="index.html" class="hover:text-[#00FF85] transition">Home</a>
+        <a href="about.html" class="hover:text-[#00FF85] transition">About Us</a>
+        <a href="pricing.html" class="hover:text-[#00FF85] transition">Pricing</a>
+        <a href="blog/index.html" class="hover:text-[#00FF85] transition">Blog</a>
+    </div>
+    <div class="hidden md:flex space-x-4">
+        <a href="https://app.datatrixs.com" target="_blank" class="px-4 py-2 text-sm font-medium text-white hover:text-[#00FF85] transition">Login</a>
+        <a href="https://app.datatrixs.com/signup" target="_blank" class="px-4 py-2 bg-[#00FF85] text-black rounded-xl text-sm font-medium hover:bg-[#00E67E] transition">Sign Up</a>
+    </div>
+    <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        </button>
+    </div>
+</nav>
+    
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden text-center fixed top-20 left-4 right-4 z-40 bg-black shadow-xl rounded-xl py-2 px-6 space-y-4 hidden">
+    <a href="index.html" class="block text-white font-medium hover:text-[#00FF85]">Home</a>
+    <a href="about.html" class="block text-white font-medium hover:text-[#00FF85]">About Us</a>
+    <a href="pricing.html" class="block text-white font-medium hover:text-[#00FF85]">Pricing</a>
+    <a href="blog/index.html" class="block text-white font-medium hover:text-[#00FF85]">Blog</a>
+    <a href="https://app.datatrixs.com" target="_blank" class="block text-white font-medium hover:text-[#00FF85]">Login</a>
+    <a href="https://app.datatrixs.com/signup" target="_blank" class="block text-black bg-[#00FF85] px-4 py-2 rounded-xl font-medium text-center hover:bg-[#00E67E]">Sign Up</a>
+</div>
+
+<script>
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+</script>
+  
+  <!-- <style>
+    body {
+      padding-top: 100px; /* ensure space for fixed nav */
+    }
+  </style> -->
+<style>
+    @keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+    .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out forwards;
+    }  
+</style>  
+
+<!-- HERO -->
+<section class="bg-black text-white px-4 pt-24 pb-100 mb-16 text-center min-h-[50vh] rounded-2xl flex flex-col justify-center items-center overflow-visible">
+    <span class="text-sm text-rose-500 px-4 py-2 mt-12 font-semibold tracking-widest border border-gray-800 rounded-full">About Us</span>
+    <h1 class="text-3xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up max-w-5xl pt-12">
+        Empowering Entrepreneurs with AI-Driven Insights    
+    </h1>
+    <p class="text-lg md:text-xl mb-8 max-w-4xl">
+        Datatrixs was built on a simple but powerful realization: understanding your numbers is the key to business success. 
+        As an entrepreneur, I experienced firsthand how financial blind spots can make or break a company. That challenge inspired 
+        a mission—to help business owners take control of their financial data and make informed, confident decisions.
+    </p>
+  
+</section>
+    
+<section id="about-us" class="py-16 px-5 font-sans">
+    <div class="max-w-4xl mx-auto text-left">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Why We Exist</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-10">
+        Running a business means making critical decisions every day—decisions that should be based on data, not guesswork. 
+        Yet, financial insights are often locked behind outdated tools and slow processes, leaving business owners struggling to 
+        get the clarity they need. Datatrixs changes that by putting real-time, AI-powered analytics directly in the hands of 
+        entrepreneurs, helping them make faster, smarter financial decisions.
+      </p>
+  
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">What We Stand For</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-10">
+        We believe every entrepreneur should have access to the insights that fuel success. Financial data shouldn't be a barrier; 
+        it should be a tool that drives growth. Our mission is to simplify financial analytics, so business owners can focus on what matters— 
+        scaling their vision, optimizing cash flow, and unlocking new opportunities.
+      </p>
+  
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Vision</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-10">
+        Datatrixs is more than just software; it's a movement. We’re transforming how businesses harness data—giving 
+        entrepreneurs and business leaders the ability to see patterns, predict outcomes, and make smarter decisions. 
+        Whether it’s streamlining operations, improving profitability, or enhancing customer experiences, 
+        our AI-powered copilot provides the insights needed to unlock new possibilities.
+      </p>
+  
+      <p class="text-xl font-bold text-gray-800 mt-10">
+        The question is: <em>what will you build</em> with insights that truly move your business forward?
+      </p>
+  
+      <div class="py-8">
+        <img src="assets/serge-signature.png" alt="Signature of Serge Amouzou" class="w-36 h-20 mb-2 shadow-none">
+        <p class="text-gray-700">Serge Amouzou <br>Founder and CEO</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA -->
+  <section class="max-w-7xl mx-auto rounded-2xl py-20 bg-gray-900 mb-16 text-white text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Start Understanding Your Business — Instantly</h2>
+      <p class="text-lg mb-6">Sign up today and transform the way you see your data.</p>
+      <a href="https://app.datatrixs.com/signup" target="_blank" class="bg-[#00FF85] text-black px-6 py-3 rounded-xl hover:bg-[#00E67E] transition">Sign Up</a>
+    </div>
+  </section>
+
+  <!-- GDPR Cookie Consent Popup -->
+<div id="gdpr-popup" class="fixed bottom-6 left-6 right-6 md:left-8 md:right-auto md:max-w-lg bg-white text-gray-700 shadow-lg rounded-lg p-6 z-50">
+    <div class="mb-4">
+      <p class="text-sm">
+        We use cookies to personalize content, analyze traffic, and improve your experience.
+        By clicking "Accept All," you consent to the use of all cookies. To manage your preferences, click "Settings."
+      </p>
+    </div>
+  
+    <!-- Settings Panel -->
+    <div id="gdpr-settings" class="hidden border-t border-gray-200 pt-4 mt-4">
+      <h4 class="text-sm font-semibold mb-3">Cookie Preferences</h4>
+      <form class="space-y-2 text-sm">
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" id="necessary-cookies" checked disabled class="accent-blue-600 cursor-not-allowed">
+          <span>Necessary Cookies (Always Enabled)</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" id="analytics-cookies" class="accent-blue-600">
+          <span>Analytics Cookies</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" id="marketing-cookies" class="accent-blue-600">
+          <span>Marketing Cookies</span>
+        </label>
+  
+        <div class="pt-4">
+          <button id="save-preferences" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Save Preferences</button>
+        </div>
+      </form>
+    </div>
+  
+    <!-- Action Buttons -->
+    <div class="mt-4 flex flex-col md:flex-row md:justify-end space-y-2 md:space-y-0 md:space-x-3">
+      <button id="accept-all" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Accept All</button>
+      <button id="manage-preferences" class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition">Settings</button>
+    </div>
+  </div>
+  
+
+  <!-- Footer Section -->
+  <footer class="bg-black text-white py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Logo and Tagline (50%) -->
+        <div class="flex flex-col items-center md:items-start">
+          <div class="text-xl font-bold text-white mb-4">
+            <a href="index.html">
+              <img src="assets/CoreLogo-w-with-gradient.png" class="h-5 mr-2" alt="Datatrixs Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                            <li><a class="dropdown-item" href="product.html">Streamline your firm</a></li>
-                         <li><a class="dropdown-item" href="#">Product 2</a></li>
-                        </ul>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="product.html" id="" role="button">Product</a>
-                    </li>
-
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Solutions
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                            <li><a class="dropdown-item" href="#">Teams</a></li>
-                            <li><a class="dropdown-item" href="industries.html">Industries</a></li>
-                        </ul>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="industries.html" id="" role="button">Industries</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Resources
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                            <li><a class="dropdown-item" href="integrations.html">Integrations</a></li>
-                            <li><a class="dropdown-item" href="blog/index.html">Blog</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pricing.html" id="" role="button">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html" id="" role="button">
-                            Company
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        
-                        <a class="btn btn-outline-primary btn-lg m-1" href="https://app.datatrixs.com/login">Login</a>
-                        <a class="btn btn-primary btn-lg m-1" href="https://app.datatrixs.com/signup">Sign Up</a>
-                        <!-- <a class="btn btn-primary btn-lg m-1" data-cal-link="serge-amouzou-boprul/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}'>Get a Demo</a> -->
-                        <!-- Cal element-click embed code begins -->
-                        <script type="text/javascript">
-                            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-                            Cal("init", "30min", {origin:"https://cal.com"});
-                        
-                                            
-                            Cal.ns["30min"]("ui", {"styles":{"branding":{"brandColor":"#00396D"}},"hideEventTypeDetails":false,"layout":"month_view"});
-                        </script>
-                        <!-- Cal element-click embed code ends -->
-
-                    </li>
-                </ul>
-            </div>
-
+          </div>
+          <p class="text-gray-400 mb-6">The Fastest Way to Understand Your Business</p>
+          <a href="https://app.datatrixs.com/signup" target="_blank" class="bg-[#00FF85] text-black px-6 py-3 rounded-xl hover:bg-[#00E67E] transition">Sign Up</a>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section" style="padding-bottom: 0;">
-        <div class="container text-center mt-3 pt-3">
-            <div class="row mt-5 pt-5">
-                <img src="./assets/about-icon.svg" style="max-width: 500px;" class="ms-auto me-auto" alt="Hero Graphic">
-            </div>
+  
+        <!-- Menu + Contact (50%) -->
+        <div class="flex flex-col md:flex-row justify-around space-y-8 md:space-y-0 md:space-x-12">
+          <!-- Menu Section -->
+          <div class="flex flex-col items-center md:items-start space-y-4">
+            <h4 class="text-lg font-semibold text-white">Menu</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="index.html" class="hover:text-white">Home</a></li>
+              <li><a href="about.html" class="hover:text-white">About Us</a></li>
+              <li><a href="pricing.html" class="hover:text-white">Pricing</a></li>
+              <li><a href="blog/index.html" class="hover:text-white">Blog</a></li>
+            </ul>
+          </div>
+  
+          <!-- Contact Section -->
+          <div class="flex flex-col items-center md:items-start space-y-4">
+            <h4 class="text-lg font-semibold text-white">Contact</h4>
+            <p class="text-gray-400">1 Ferry Building, Suite 201<br>San Francisco, CA 94105</p>
+            <p class="text-gray-400">support@datatrixs.com</p>
+            <a href="https://www.linkedin.com/company/datatrixs" target="_blank" class="text-gray-400 hover:text-white">
+              <img src="assets/linkedin.png" alt="LinkedIn" class="h-5 inline-block mr-2">
+            </a>
+          </div>
         </div>
-    </header>
-
-    <!-- Main Sections (6 with CTA) -->
-    <section class="features-section pb-5">
-        <div class="container">
-            <section id="about-us" style="background-color: #f9f9f9; padding: 60px 20px; font-family: Arial, sans-serif;">
-                <div style="max-width: 900px; margin: 0 auto; text-align: left;">
-                  <h1 style="font-size: 2.8em; color: #333; font-weight: bold; margin-bottom: 20px;">Empowering Entrepreneurs with AI-Driven Insights</h1>
-                  <p style="font-size: 1.2em; color: #555; line-height: 1.8; margin-bottom: 40px;">
-                    Datatrixs was built on a simple but powerful realization: understanding your numbers is the key to business success. 
-                    As an entrepreneur, I experienced firsthand how financial blind spots can make or break a company. That challenge inspired 
-                    a mission—to help business owners take control of their financial data and make informed, confident decisions.
-                  </p>
-                  <h2 style="font-size: 2.2em; color: #333; font-weight: bold; margin-bottom: 20px;">Why We Exist</h2>
-                  <p style="font-size: 1.2em; color: #555; line-height: 1.8; margin-bottom: 40px;">
-                    Running a business means making critical decisions every day—decisions that should be based on data, not guesswork. 
-                    Yet, financial insights are often locked behind outdated tools and slow processes, leaving business owners struggling to 
-                    get the clarity they need. Datatrixs changes that by putting real-time, AI-powered analytics directly in the hands of 
-                    entrepreneurs, helping them make faster, smarter financial decisions.
-                  </p>
-                  <h2 style="font-size: 2.2em; color: #333; font-weight: bold; margin-bottom: 20px;">What We Stand For</h2>
-                  <p style="font-size: 1.2em; color: #555; line-height: 1.8; margin-bottom: 40px;">
-                    We believe every entrepreneur should have access to the insights that fuel success. Financial data shouldn't be a barrier; 
-                    it should be a tool that drives growth. Our mission is to simplify financial analytics, so business owners can focus on what matters— 
-                    scaling their vision, optimizing cash flow, and unlocking new opportunities.
-                  </p>
-                  <h2 style="font-size: 2.2em; color: #333; font-weight: bold; margin-bottom: 20px;">Our Vision</h2>
-                  <p style="font-size: 1.2em; color: #555; line-height: 1.8; margin-bottom: 40px;">
-                    Datatrixs is more than just software; it's a movement. We’re transforming how businesses harness data—giving 
-                    entrepreneurs and business leaders the ability to see patterns, predict outcomes, and make smarter decisions. 
-                    Whether it’s streamlining operations, improving profitability, or enhancing customer experiences, 
-                    our AI-powered copilot provides the insights needed to unlock new possibilities.                  
-                    </p>
-                  <p style="font-size: 1.5em; color: #333; font-weight: bold; margin-top: 40px;">
-                    The question is: <em>what will you build</em> with insights that truly move your business forward?
-                  </p>
-                  <div class="py-5">
-                    <img src="assets/serge-signature.png" style="width: 150px; height: 78px; box-shadow: none;">
-                    <p>Serge Amouzou <br>Founder and CEO </p>  
-                  </div>
-                </div>
-            </section>
+      </div>
+  
+      <hr class="my-6 border-gray-700" />
+  
+      <!-- Copyright and Terms -->
+      <div class="text-left text-gray-400 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <p>&copy; 2025 Datatrixs. All rights reserved.</p>
+        <div class="space-x-6 md:text-right">
+          <a href="privacy-policy.html" class="hover:text-white">Privacy Policy</a>
+          <a href="terms-of-service.html" class="hover:text-white">Terms of Use</a>
         </div>
-    </section>
-                                            
-        </div>
-    </section>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Rotating Questions Section -->
-    <!-- <section>
-        <div class="container text-center" style="color: #ffffff; margin-top: 60px;">
-            <div>
-                <h2>It's okay not to have all the answers right away</h2>
-                <div id="question-carousel" class="rotating-questions">
-                    <p>How can I ensure this month's financial report is delivered on time?</p>
-                    <p>What tools can help streamline my client's financial reporting process?</p>
-                    <p>How can I effectively track my clients’ financial performance in real time?</p>
-                </div>
-            </div>
-        </div>
-    </section>
- -->
-    <!-- Call to Action Section -->
-    <section class="cta-box text-center mt-3">
-        <div class="container" style="border: #EBEEF1 solid 6px; border-radius: 30px; height: auto; margin-top: 70px; margin-bottom: 70px; padding-top: 70px; padding-bottom: 70px; background-color: #f8f9fa; 
-        box-shadow: 
-        0 -14px 25px rgba(203, 240, 226, 0.2), /* Lighter blue further out */
-        0 -14px 25px rgb(185, 249, 218, 0.3), /* Lighter blue further out */
-        0 14px 25px rgb(6, 124, 233, 0.4),
-        0 14px 35px rgb(11, 126, 234, 0.2); /* Even lighter blue at farthest distance */
-        ">
-            <h2 style="margin-top: 30px; margin-bottom: 30px; color: #012546;">Get the answers you need to drive success</h2>
-            <!-- <a  data-cal-link="serge-amouzou-boprul/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}' class="btn btn-primary btn-lg m-2">Get a Demo</a> -->
-            <a href="https://app.datatrixs.com/signup" class="btn btn-primary btn-lg m-2">Sign Up</a>
-            <a href="https://app.datatrixs.com/login" class="btn btn-outline-primary btn-lg m-2">Login</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-white" style="background: #F8FAFC;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h5>Products</h5>
-                    <ul class="footer-links">
-                        <li><a href="product.html">Streamline your firm</a></li>
-                        <!-- <li><a href="#">Start free trial</a></li>
-                        <li><a href="#">Log in</a></li> -->
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Solutions</h5>
-                    <ul class="footer-links">
-                        <li><a href="industries.html">Industries</a></li>
-                        <!-- <li><a href="#">Start free trial</a></li>
-                        <li><a href="#">Log in</a></li> -->
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Resources</h5>
-                    <ul class="footer-links">
-                        <li><a href="integrations.html">Integrations</a></li>
-                        <li><a href="blog/index.html">Blog</a></li>
-                        <!-- <li><a href="#">Log in</a></li> -->
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Company</h5>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <!-- <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Support</a></li> -->
-                        <li><a href="terms-of-service.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom footer-brand">
-                <img src="./assets/logo.png" alt="Company Logo" width="120">
-                <p>&copy; <span id="year"></span> Datatrixs. All rights reserved. <a href="privacy-policy.html">Privacy Policy</a></p>
-
-                <script>
-                  document.getElementById('year').textContent = new Date().getFullYear();
-                </script>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="logoSlider.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
-
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Datatrixs",
-          "url": "https://datatrixs.com/about.html",
-          "description": "AI-powered analytics copilot that helps businesses optimize financial, operational, and customer data for smarter decision-making and growth.",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Datatrixs",
-            "logo": "https://datatrixs.com/assets/logo.png"
-          }
-        }
-    </script>
-                
+  <script src="script.js"></script>
+  
 </body>
 </html>
