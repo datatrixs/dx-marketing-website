@@ -21,42 +21,29 @@
     <meta name="twitter:image" content="https://datatrixs.com/assets/product-meta.png" />
     <meta name="twitter:site" content="@datatrixs" />
   
-    <title>Purchase — Datatrixs</title>    
-    <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #222; }
-        .container { max-width: 960px; margin: auto; padding: 2rem; }
-        .hero { text-align: center; padding: 4rem 1rem; }
-        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
-        .service-section { background: #fff; padding: 3rem 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-        .service-section h2 { font-size: 2rem; margin-bottom: 1rem; }
-        .service-section p, .service-section li { font-size: 1rem; line-height: 1.6; }
-        .service-section ul { padding-left: 1rem; margin-bottom: 1.5rem; }
-        .pricing-table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
-        .pricing-table th, .pricing-table td { padding: 0.75rem 1rem; border: 1px solid #ddd; text-align: left; }
-        .checkout-btn { display: inline-block; margin-top: 1.5rem; padding: 0.75rem 1.25rem; background-color: black; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; }
-        footer { text-align: center; padding: 2rem 1rem; font-size: 0.9rem; color: #555; }
-    </style>
-</head>
-<body>
+    <title>Purchase — Datatrixs</title>   
 
-<div class="container">
-    <div class="hero">
-        <h1>🧾 Financial Health Check</h1>
-        <p><strong>Get a report-worthy snapshot of your startup’s financials — in days, not weeks.</strong><br>Powered by Datatrixs.</p>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold mb-4">🧾 Financial Health Check</h1>
+        <p class="text-lg">Get a report-worthy snapshot of your startup’s financials — in days, not weeks. Powered by Datatrixs.</p>
     </div>
 
-    <div class="service-section">
+    <div class="bg-white rounded-2xl shadow-md p-8">
         <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
         <stripe-pricing-table pricing-table-id="prctbl_1RGnxEIAWwtv4OdWLHPqL29E"
         publishable-key="pk_live_51HhOLjIAWwtv4OdWpNl9JHfGHwMkAvxKjTdDTJUhagPJZoisrNrYB63RNPSeGZAwQF6sSojTwFzjRgZEdYjJ0A6H002yGU7tnd">
         </stripe-pricing-table>    
     </div>
-
-    <footer>
-        Made with love by Datatrixs. All proceeds go toward building Datatrixs — your AI analytics copilot.
-    </footer>
 </div>
+
+<footer class="text-center text-sm text-gray-500 pb-8">
+    Made with love by Datatrixs.
+</footer>
 
 </body>
 </html>
