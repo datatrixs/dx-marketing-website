@@ -22,7 +22,6 @@
     <meta name="twitter:site" content="@datatrixs" />
   
     <title>Financial Health Check — Datatrixs</title>   
-
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" type="image/png" href="assets/faveicon/favicon-96x96.png" sizes="96x96" />
@@ -31,11 +30,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/faveicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Datatrixs" />
     <link rel="manifest" href="assets/faveicon/site.webmanifest" />
-  
+
 </head>
 <body class="bg-gray-50 text-gray-900">
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div class="text-center mb-12">
         <h1 class="text-4xl font-bold mb-4">🧾 Financial Health Check</h1>
         <p class="text-lg">Get a report-worthy snapshot of your startup’s financials — in days, not weeks. Powered by Datatrixs.</p>
@@ -58,34 +57,44 @@
             <li>Anyone who feels like “my spreadsheet’s not telling me anything”</li>
         </ul>
 
-        <h2 class="text-2xl font-semibold mb-4">💵 Pricing</h2>
-        <div class="overflow-x-auto mb-8">
-            <table class="w-full text-left border border-gray-200">
-                <thead>
-                    <tr class="bg-gray-100">
-                        <th class="px-4 py-2 border">Tier</th>
-                        <th class="px-4 py-2 border">Price</th>
-                        <th class="px-4 py-2 border">Best For</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="px-4 py-3 border font-medium">Starter</td>
-                        <td class="px-4 py-3 border">$299</td>
-                        <td class="px-4 py-3 border">Quick sanity check before a big convo</td>
-                    </tr>
-                    <tr class="bg-gray-50">
-                        <td class="px-4 py-3 border font-medium">Pro</td>
-                        <td class="px-4 py-3 border">$599</td>
-                        <td class="px-4 py-3 border">Full charts, insights, and fundraising-ready slides</td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border font-medium">Custom</td>
-                        <td class="px-4 py-3 border">$999+</td>
-                        <td class="px-4 py-3 border">Includes metrics deep dive & async walkthrough</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2 class="text-2xl font-semibold mb-4">💵 Pricing Tiers</h2>
+        <div class="grid gap-6 md:grid-cols-3 mb-12">
+            <!-- Starter Plan -->
+            <div class="border rounded-xl p-6 bg-gray-50 shadow">
+                <h3 class="text-xl font-bold mb-2">Starter</h3>
+                <p class="text-gray-600 mb-4">Quick sanity check before a big convo</p>
+                <p class="text-3xl font-bold mb-4">$299</p>
+                <ul class="list-disc list-inside space-y-1 mb-6 text-sm">
+                    <li>High-level financial overview</li>
+                    <li>1-page PDF report</li>
+                    <li>Lightweight analysis</li>
+                </ul>
+                <a href="https://buy.stripe.com/8wMcNMa3scf7fNS3ch" target="_blank" class="block text-center bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition">Buy Starter</a>
+            </div>
+            <!-- Pro Plan -->
+            <div class="border rounded-xl p-6 bg-white shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Pro</h3>
+                <p class="text-gray-600 mb-4">Charts, insights & fundraising-ready slides</p>
+                <p class="text-3xl font-bold mb-4">$599</p>
+                <ul class="list-disc list-inside space-y-1 mb-6 text-sm">
+                    <li>Executive PDF report</li>
+                    <li>Data visualization slides</li>
+                    <li>Tailored insights and recommendations</li>
+                </ul>
+                <a href="https://buy.stripe.com/fZe9BAb7wenfeJO28e" target="_blank" class="block text-center bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition">Buy Pro</a>
+            </div>
+            <!-- Custom Plan -->
+            <div class="border rounded-xl p-6 bg-gray-50 shadow">
+                <h3 class="text-xl font-bold mb-2">Custom</h3>
+                <p class="text-gray-600 mb-4">Deep dive & async walkthrough</p>
+                <p class="text-3xl font-bold mb-4">$999</p>
+                <ul class="list-disc list-inside space-y-1 mb-6 text-sm">
+                    <li>Custom KPI analysis</li>
+                    <li>Async Loom walkthrough</li>
+                    <li>Ongoing email Q&A</li>
+                </ul>
+                <a href="https://buy.stripe.com/00g9BA4J8gvndFK8wD" target="_blank" class="block text-center bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition">Buy Custom</a>
+            </div>
         </div>
 
         <h2 class="text-2xl font-semibold mb-4">📦 How It Works</h2>
@@ -96,16 +105,10 @@
         </ul>
 
         <p class="font-semibold mb-8">🛡️ 100% Confidential. Your data stays private and secure.</p>
-
-        <!-- <a href="purchase.html" class="inline-block bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition">Purchase Now</a> -->
-        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-        <stripe-pricing-table pricing-table-id="prctbl_1RGnxEIAWwtv4OdWLHPqL29E"
-        publishable-key="pk_live_51HhOLjIAWwtv4OdWpNl9JHfGHwMkAvxKjTdDTJUhagPJZoisrNrYB63RNPSeGZAwQF6sSojTwFzjRgZEdYjJ0A6H002yGU7tnd">
-        </stripe-pricing-table>    
     </div>
 </div>
 
-<footer class="text-center text-sm text-gray-500 pb-8">
+<footer class="text-center text-sm text-gray-500 mt-12 mb-8">
     Made with love by Datatrixs.
 </footer>
 
