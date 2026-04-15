@@ -1,539 +1,993 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
-    <script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-HZ3K9DRTXM');
-    </script>
-    
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datatrixs — The Fastest Way To Understand Your Business</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Datatrixs — Financial Intelligence for Multi-Unit Businesses</title>
+  <meta name="description" content="Connect your accounting systems, ask questions in plain English, and get financial clarity across every business unit. Built for CFOs managing 5 to 500 entities.">
+  <meta name="robots" content="index, follow" />
 
-    <meta name="description" content="Datatrixs is your AI-powered analytics copilot — turning messy spreadsheets and disconnected systems into instant insights and clear decisions.">
-    <meta name="keywords" content="Datatrixs, business analytics, financial dashboards, QuickBooks, CSV analytics, AI copilot, startup insights, data tools">
-    <meta name="author" content="Datatrixs">
-    <meta name="robots" content="index, follow" />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://datatrixs.com/">
-    <meta property="og:title" content="Datatrixs — The Fastest Way To Understand Your Business">
-    <meta property="og:description" content="AI-powered analytics for founders, finance teams, and operators. Turn spreadsheets and systems into insight.">
-    <meta property="og:image" content="https://datatrixs.com/assets/product-meta.png"> <!-- Replace with your OG image -->
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://datatrixs.com/">
+  <meta property="og:title" content="Datatrixs — Financial Intelligence for Multi-Unit Businesses">
+  <meta property="og:description" content="One normalized view of financial performance across all your business units. AI analyst included.">
+  <meta property="og:image" content="https://datatrixs.com/assets/product-meta.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:image" content="https://datatrixs.com/assets/product-meta.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://datatrixs.com/">
-    <meta property="twitter:title" content="Datatrixs — The Fastest Way To Understand Your Business">
-    <meta property="twitter:description" content="AI-powered analytics for founders, finance teams, and operators. Turn spreadsheets and systems into insight.">
-    <meta property="twitter:image" content="https://datatrixs.com/assets/product-meta.png"> <!-- Replace with your Twitter image -->
-
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/faveicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="assets/faveicon/favicon.svg" />
   <link rel="shortcut icon" href="assets/faveicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/faveicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Datatrixs" />
   <link rel="manifest" href="assets/faveicon/site.webmanifest" />
 
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-  </style>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Design system -->
+  <link rel="stylesheet" href="dx-design.css">
 </head>
-<body class="bg-white text-gray-800">
+<body>
 
-<nav class="fixed top-4 left-4 right-4 z-50 bg-black shadow-lg rounded-full px-6 py-2 flex items-center justify-between max-w-5xl mx-auto border border-gray-800">
-    <div class="text-xl font-bold text-white flex">
-        <a href="index.html" class="h-5">
-            <img src="assets/CoreLogo-w-with-gradient.png" class="h-5 mr-2" alt="Datatrixs Logo">
-        </a>
-    </div>
-    <div class="hidden md:flex space-x-6 text-[#00FF85] font-medium text-white">
-        <a href="index.html" class="hover:text-[#00FF85] transition">Home</a>
-        <a href="about.html" class="hover:text-[#00FF85] transition">About Us</a>
-        <a href="pricing.html" class="hover:text-[#00FF85] transition">Pricing</a>
-        <a href="blog/index.html" class="hover:text-[#00FF85] transition">Blog</a>
-    </div>
-    <div class="hidden md:flex space-x-4">
-        <a href="https://app.datatrixs.com" target="_blank" class="px-4 py-2 text-sm font-medium text-white hover:text-[#00FF85] transition">Login</a>
-        <a href="https://app.datatrixs.com/signup" target="_blank" class="px-4 py-2 bg-[#00FF85] text-black rounded-xl text-sm font-medium hover:bg-[#00E67E] transition">Sign Up</a>
-    </div>
-    <div class="md:hidden">
-        <button id="mobile-menu-button" class="text-white focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        </button>
-    </div>
-</nav>
-    
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="md:hidden text-center fixed top-20 left-4 right-4 z-40 bg-black shadow-xl rounded-xl py-2 px-6 space-y-4 hidden">
-    <a href="index.html" class="block text-white font-medium hover:text-[#00FF85]">Home</a>
-    <a href="about.html" class="block text-white font-medium hover:text-[#00FF85]">About Us</a>
-    <a href="pricing.html" class="block text-white font-medium hover:text-[#00FF85]">Pricing</a>
-    <a href="blog/index.html" class="block text-white font-medium hover:text-[#00FF85]">Blog</a>
-    <a href="https://app.datatrixs.com" target="_blank" class="block text-white font-medium hover:text-[#00FF85]">Login</a>
-    <a href="https://app.datatrixs.com/signup" target="_blank" class="block text-black bg-[#00FF85] px-4 py-2 rounded-xl font-medium text-center hover:bg-[#00E67E]">Sign Up</a>
-</div>
-
-<script>
-    const menuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-</script>
-  
-  <!-- <style>
-    body {
-      padding-top: 100px; /* ensure space for fixed nav */
-    }
-  </style> -->
-<style>
-    @keyframes fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    }
-    .animate-fade-in-up {
-    animation: fade-in-up 0.5s ease-out forwards;
-    }  
-</style>  
-
-<!-- HERO -->
-<section class="bg-black text-white px-4 pt-24 pb-100 mb-24 text-center min-h-[50vh] rounded-2xl flex flex-col justify-center items-center overflow-visible">
-    <span class="text-sm text-rose-500 px-4 py-2 mt-12 font-semibold tracking-widest border border-gray-800 rounded-full">Warren</span>
-    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up max-w-4xl pt-12">
-      The Fastest Way To Understand Your Business
-    </h1>
-    <p class="text-lg md:text-xl mb-8 max-w-xl">
-      Datatrixs is your AI-powered analytics copilot — turning messy spreadsheets and disconnected systems into instant insights and clear decisions.
-    </p>
-    <a href="https://app.datatrixs.com/signup" class="bg-[#00FF85] text-black px-6 py-3 rounded-xl shadow-md hover:bg-[#00E67E] transition">
-      Sign Up
+<!-- ══════════════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════════════ -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Datatrixs home">
+      <img src="assets/CoreLogo-w-with-gradient.png" alt="Datatrixs">
     </a>
-  
-    <!-- Overlapping Product Image -->
-    <div class="relative -bottom-24 w-full flex justify-center z-10">
-      <img src="assets/homepage-product-new.png" alt="Datatrixs Dashboard Screenshot" class="rounded-xl w-full max-w-6xl" />
+
+    <ul class="nav-links">
+      <li><a href="product.html">Product</a></li>
+      <li><a href="integrations.html">Integrations</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="https://app.datatrixs.com" target="_blank" rel="noopener" class="nav-login">Login</a>
+      <a href="demo-request.html" class="nav-cta">Request a Demo</a>
     </div>
-</section>
-    
-<!-- CLIENT LOGOS -->
-<!-- <section class="py-10 bg-white">
-<div class="container mx-auto px-6 text-center">
-    <p class="text-gray-500 text-sm uppercase mb-4">Trusted by innovative teams</p>
-    <div class="flex flex-wrap justify-center gap-6">
-    <img src="/assets/client1.svg" class="h-10" alt="Client 1">
-    <img src="/assets/client2.svg" class="h-10" alt="Client 2">
-    <img src="/assets/client3.svg" class="h-10" alt="Client 3">
-    <img src="/assets/client4.svg" class="h-10" alt="Client 4">
-    </div>
+
+    <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav overlay -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-btn" id="mobileNavClose" aria-label="Close menu">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+  <a href="product.html">Product</a>
+  <a href="integrations.html">Integrations</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="blog/index.html">Blog</a>
+  <a href="https://app.datatrixs.com" target="_blank">Login</a>
+  <a href="demo-request.html" style="color: var(--primary);">Request a Demo</a>
 </div>
-</section> -->
 
-  <!-- Feature Section -->
-  <section id="features" class="max-w-7xl mx-auto px-6 py-20">
-    <div class="text-center mb-16">
-        <span class="text-sm text-rose-500 font-semibold tracking-widest px-4 py-2 mt-12 font-semibold tracking-widest border border-rose-500 bg-rose-50 rounded-full">Powerful Capabilities</span>
-        <h2 class="text-4xl font-bold text-gray-900 mt-8">What Can Datatrixs Do For You?</h2>
-        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">From smarter insights to time-saving automation, here's how Datatrixs empowers founders, finance teams, accounting firms, and operators to move faster.</p>
-        <!-- <span class="text-sm uppercase text-rose-500 font-semibold tracking-widest">Powerful Capabilities</span>
-        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">One Dashboard. Every Insight.</h2> -->
-    </div>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-gradient-to-b from-white to-gray-100 rounded-2xl shadow-md p-6 text-left transition-transform transform hover:-translate-y-1 hover:shadow-xl">
-        <div class="mb-4 bg-gray-200 rounded-2xl w-20 h-20 flex flex-row justify-center items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8">
-                <path fill-rule="evenodd" d="M12 5.25c1.213 0 2.415.046 3.605.135a3.256 3.256 0 0 1 3.01 3.01c.044.583.077 1.17.1 1.759L17.03 8.47a.75.75 0 1 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 0 0-1.06-1.06l-1.752 1.751c-.023-.65-.06-1.296-.108-1.939a4.756 4.756 0 0 0-4.392-4.392 49.422 49.422 0 0 0-7.436 0A4.756 4.756 0 0 0 3.89 8.282c-.017.224-.033.447-.046.672a.75.75 0 1 0 1.497.092c.013-.217.028-.434.044-.651a3.256 3.256 0 0 1 3.01-3.01c1.19-.09 2.392-.135 3.605-.135Zm-6.97 6.22a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.752-1.751c.023.65.06 1.296.108 1.939a4.756 4.756 0 0 0 4.392 4.392 49.413 49.413 0 0 0 7.436 0 4.756 4.756 0 0 0 4.392-4.392c.017-.223.032-.447.046-.672a.75.75 0 0 0-1.497-.092c-.013.217-.028.434-.044.651a3.256 3.256 0 0 1-3.01 3.01 47.953 47.953 0 0 1-7.21 0 3.256 3.256 0 0 1-3.01-3.01 47.759 47.759 0 0 1-.1-1.759L6.97 15.53a.75.75 0 0 0 1.06-1.06l-3-3Z" clip-rule="evenodd" />
-            </svg>
-              
-          <!-- <img src="assets/in-time.png" alt="Datatrixs Product View" class="h-10 w-10"> -->
-        </div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2 pt-24">Real-Time Financial Clarity</h3>
-        <p class="text-gray-600">Instantly understand your revenue, expenses, and profitability with live reports powered by QuickBooks, CSVs, and more.</p>
-      </div>
-      <div class="bg-gradient-to-b from-white to-gray-100 rounded-2xl shadow-md p-6 text-left transition-transform transform hover:-translate-y-1 hover:shadow-xl">
-        <div class="mb-4 bg-gray-200 rounded-2xl w-20 h-20 flex flex-row justify-center items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
-          </svg>
-                        
-            <!-- <img src="assets/ai.png" alt="Datatrixs Product View" class="h-10 w-10"> -->
-        </div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2 pt-24">Operational Intelligence</h3>
-        <p class="text-gray-600">Track what matters most across sales, ops, and marketing—Datatrixs brings all your business data together for smarter decisions.</p>
-      </div>
-      <div class="bg-gradient-to-b from-white to-gray-100 rounded-2xl shadow-md p-6 text-left transition-transform transform hover:-translate-y-1 hover:shadow-xl">
-        <div class="mb-4 bg-gray-200 rounded-2xl w-20 h-20 flex flex-row justify-center items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-          </svg>
-                                  
-            <!-- <img src="assets/insight.png" alt="Datatrixs Product View" class="h-10 w-10"> -->
-        </div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2 pt-24">AI Copilot at Your Side</h3>
-        <p class="text-gray-600">Ask anything. Get answers instantly. Our AI copilot helps you uncover insights without the need for spreadsheets or analysts.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- PRODUCT OVERVIEW -->
+<!-- ══════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════ -->
+<section class="hero-bg" style="padding: 160px 0 80px; position: relative; overflow: hidden;">
+  <!-- Grid background -->
+  <div class="hero-grid" style="position: absolute; inset: 0; pointer-events: none;"></div>
 
-  <section id="benefits" class="max-w-7xl mx-auto px-6 py-24">
-    <div class="text-center mb-16">
-      <span class="text-sm text-rose-500 font-semibold tracking-widest px-4 py-2 mt-12 font-semibold tracking-widest border border-rose-500 bg-rose-50 rounded-full">Powerful Capabilities</span>
-      <h2 class="text-4xl font-bold text-gray-900 mt-8">See Why Teams Choose Datatrixs</h2>
-      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">From smarter insights to time-saving automation, here's how Datatrixs empowers founders, finance teams, accounting firms, and operators to move faster.</p>
+  <div class="container" style="position: relative; text-align: center;">
+
+    <!-- Badge -->
+    <div style="display: flex; justify-content: center; margin-bottom: 24px;">
+      <span class="label">
+        <span class="pulse-dot"></span>
+        AI-Powered Financial Intelligence
+      </span>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-        <!-- 1/3 Benefits or Content -->
-        <div class="rounded-2xl border border-[#FF6B6B] p-6 shadow-sm space-y-8">
-            <img src="assets/ai-powered-insights.png" alt="Datatrixs Product View" class="w-full">
-            <div>
-                <h3 class="text-xl font-semibold text-gray-800">AI-Powered Insights</h3>
-                <p class="text-sm text-gray-600 mt-2 mb-1">Ask questions in plain English and get back answers, charts, and benchmarks.</p>
-            </div>
-        </div>
-          
-        <!-- 2/3 Visual or Collage Content -->
-        <div class="rounded-2xl border border-[#FF6B6B] p-6 shadow-sm md:col-span-2 space-y-8">
-          <img src="assets/instant-answers.png" alt="Datatrixs Product View" class="w-full">
-          <div>
-            <h3 class="text-xl font-semibold text-gray-800">Instant Clarity</h3>
-            <p class="text-sm text-gray-600 mt-2 mb-4">One place for all your business metrics, automatically organized and ready to explore.</p>
-          </div>
-        </div>
-    
-    </div>
-  
-    <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-      <div class="rounded-2xl border border-[#FF6B6B] p-6 shadow-sm md:col-span-2">
-        <img src="/path-to-your-product-collage.png" alt="Datatrixs Product View" class="rounded-2xl shadow-xl border border-gray-100 w-full">
-        <div>
-            <h3 class="text-xl font-semibold text-gray-800">Collaboration Ready</h3>
-            <p class="text-sm text-gray-600 mt-2">Share insights with your team, investors, or clients effortlessly. No logins or spreadsheets required.</p>
-        </div>  
-      </div>
-  
-      <div class="rounded-2xl border border-[#FF6B6B] p-6 shadow-sm space-y-8">
-        <img src="assets/fast-set-up.png" alt="Datatrixs Product View" class="rounded-2xl border border-gray-100 w-full">
-        <div>
-        <h3 class="text-xl font-semibold text-gray-800">Fast Setup</h3>
-        <p class="text-sm text-gray-600 mt-2">Works out of the box with spreadsheets, QuickBooks, and Airtable. No engineers required.</p>
-        </div>
-      </div>
-    </div>   -->
-    
-  </section>
-  
+    <!-- Headline -->
+    <h1 style="font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800; line-height: 1.09; letter-spacing: -0.03em; margin-bottom: 24px; max-width: 820px; margin-left: auto; margin-right: auto;">
+      Financial clarity across<br>
+      <span class="text-gradient">every business unit.</span>
+    </h1>
 
-  <!-- PRODUCT OVERVIEW -->
-  <!-- <section id="demo" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">One Dashboard. Every Insight.</h2>
-        <p class="text-lg mb-6">QuickBooks, Stripe, CSVs, spreadsheets — unified in a single, searchable dashboard powered by AI.</p>
-        <ul class="space-y-4">
-          <li>📊 Instant Profit & Loss, Balance Sheets, Cash Flow</li>
-          <li>🔍 Visualize trends with AI-powered charts</li>
-          <li>🤖 Ask questions and get answers in real-time</li>
-          <li>⏳ No more waiting for reports or bottlenecks</li>
-        </ul>
-      </div>
-      <div class="mt-5" style="margin-bottom: 60px;">
-        <img src="./assets/warren-short-demo.gif" alt="Warren Demo">
-    </div>    
+    <!-- Subheadline -->
+    <p style="font-size: 1.125rem; color: var(--text-2); max-width: 560px; margin: 0 auto 40px; line-height: 1.75;">
+      Connect QuickBooks, NetSuite, or Sage Intacct. Ask your AI analyst questions in plain English. Get answers your board will trust — without touching a spreadsheet.
+    </p>
 
-    </div>
-  </section> -->
-
-  <!-- PEOPLE WHO DRIVE THE BUSINESS FORWARD -->
-  <section class="mx-auto px-6 py-24 bg-black">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-          <span class="text-sm uppercase text-rose-500 px-4 py-2 mt-12 font-semibold tracking-widest border border-gray-800 rounded-full">Business Accelerators</span>
-          <h2 class="text-4xl font-bold text-white mt-8">Built for People Who Drive the Business Forward</h2>
-          <p class="text-lg text-gray-400 mb-12 mt-4 max-w-2xl mx-auto">
-            Whether you're scaling a startup, leading a finance team, running client books, or just need clarity fast — Datatrixs is your AI copilot.
-          </p>  
-      </div>
-        <div class="mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Founder Card -->
-            <div class="bg-gray-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition text-left">
-                <div class="mb-4 bg-gray-200 rounded-2xl w-20 h-20 flex flex-row justify-center items-center">
-                    <svg class="h-10 w-10 text-indigo-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                </div>  
-                <h3 class="text-xl font-bold text-gray-800 mb-3 pt-24">Founders</h3>
-                <p class="text-gray-600 mb-4">
-                  Make confident decisions without digging through spreadsheets. Get charts, insights, and trends instantly — powered by AI.
-                </p>
-                <a href="demo-request.html" class="text-blue-600 font-medium hover:underline pt-12">Know more →</a>
-            </div>
-            <!-- Finance Teams Card -->
-            <div class="bg-gray-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition text-left">
-                <div class="mb-4 bg-gray-200 rounded-2xl w-20 h-20 flex flex-row justify-center items-center">
-                    <svg class="h-10 w-10 text-indigo-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                </div>  
-                <h3 class="text-xl font-bold text-gray-800 mb-3 pt-24">Finance Teams</h3>
-                <p class="text-gray-600 mb-4">
-                  Automate analysis, streamline reporting, and focus on strategic impact. Spend less time wrangling data, more time driving outcomes.
-                </p>
-                <a href="demo-request.html" class="text-blue-600 font-medium hover:underline pt-12">Know more →</a>
-            </div>
-            <!-- Accounting Firms Card -->
-            <div class="bg-gray-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition text-left">
-                <div class="mb-4 bg-gray-200 rounded-2xl w-20 h-20 flex flex-row justify-center items-center">
-                    <svg class="h-10 w-10 text-indigo-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                </div>  
-                <h3 class="text-xl font-bold text-gray-800 mb-3 pt-24">Accounting Firms</h3>
-                <p class="text-gray-600 mb-4">
-                  Enhance client services with AI-driven insights. Scale advisory offerings without adding headcount — or hours.
-                </p>
-                <a href="demo-request.html" class="text-blue-600 font-medium hover:underline pt-12">Know more →</a>
-            </div>
-            <!-- Operators Card -->
-            <div class="bg-gray-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition text-left">
-              <div class="mb-4 bg-gray-200 rounded-2xl w-20 h-20 flex flex-row justify-center items-center">
-                  <svg class="h-10 w-10 text-indigo-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-              </div>  
-              <h3 class="text-xl font-bold text-gray-800 mb-3 pt-24">Operators</h3>
-              <p class="text-gray-600 mb-4">
-                See the full picture across departments. Use Datatrixs to ask, explore, and visualize your KPIs in seconds.
-              </p>
-              <a href="demo-request.html" class="text-blue-600 font-medium hover:underline pt-12">Know more →</a>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="py-20 bg-white max-w-7xl mx-auto">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-12">What Our Users Say</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-gray-50 p-6 rounded-xl shadow text-left">
-          <p class="mb-4 italic">“Datatrixs gave us clarity we didn't know we needed — and decision-making speed we've never had.”</p>
-          <h4 class="font-bold">Sarah T., Startup COO</h4>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow text-left">
-          <p class="mb-4 italic">“As a solopreneur, I needed answers fast. Datatrixs delivers that — no spreadsheet gymnastics.”</p>
-          <h4 class="font-bold">Jamal R., Ecommerce Founder</h4>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow text-left">
-          <p class="mb-4 italic">“This is the modern finance stack we've been waiting for. Every business should use it.”</p>
-          <h4 class="font-bold">Lisa W., Fractional CFO</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG SECTION -->
-  <section class="max-w-7xl mx-auto py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-8 text-center">From The Blog</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Blog Post 1 -->
-        <a href="blog/data-accessibility-enterprise.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-          <img src="assets/data-accessibility-enterprise.png" alt="Data Accessibility Enterprise" class="w-full h-48 object-cover">
-          <div class="p-6 flex flex-col justify-between flex-grow">
-              <div>
-                <p class="text-sm text-gray-500 mb-1">May 7, 2025</p>
-                <h3 class="font-semibold text-lg mb-2">Why Enterprises Must Rethink Data Analytics Accessibility—Now</h3>
-                <p class="text-sm text-gray-600 mb-6">In an era where data is the new oil, enterprises are still struggling to
-                  democratize access to financial insights. Here’s why it matters.</p>
-              </div>
-      
-              <!-- Bottom row: Author info and read more -->
-              <div class="flex justify-between items-center mt-auto">
-                <div class="flex items-center">
-                  <img src="assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                  <div class="text-sm">
-                    <p class="font-semibold">Datatrixs Team</p>
-                  </div>
-                </div>
-                <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-              </div>
-          </div>      
+    <!-- CTAs -->
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px;">
+      <a href="demo-request.html" class="btn btn-primary btn-lg">Request a Demo</a>
+      <a href="product.html" class="btn btn-secondary btn-lg">
+        See how it works
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
       </a>
-      <!-- Blog Post 2 -->
-
-      <a href="blog/read-pl-like-a-pro.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-        <img src="assets/solopreneurs-blog-banner.png" alt="Blog Post 1" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col justify-between flex-grow">
-            <div>
-              <p class="text-sm text-gray-500 mb-1">April 12, 2025</p>
-              <h3 class="font-semibold text-lg mb-2">How to Read Your P&L Like a Pro</h3>
-              <p class="text-sm text-gray-600 mb-6">Learn the essentials of interpreting financial reports for smarter decisions.</p>
-            </div>
-    
-            <!-- Bottom row: Author info and read more -->
-            <div class="flex justify-between items-center mt-auto">
-              <div class="flex items-center">
-                <img src="assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                <div class="text-sm">
-                  <p class="font-semibold">Datatrixs Team</p>
-                </div>
-              </div>
-              <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-            </div>
-        </div>      
-      </a>
-      <!-- Blog Post 3 -->
-      <a href="blog/rise-of-ai-in-finance.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-          <img src="assets/ai-cfo-blog-banner.png" alt="Blog Post 2" class="w-full h-48 object-cover">
-          <div class="p-6 flex flex-col justify-between flex-grow">
-              <div>
-                  <p class="text-sm text-gray-500 mb-1">April 5, 2025</p>
-                  <h3 class="font-semibold text-lg mb-2">The Rise of AI in Finance</h3>
-                  <p class="text-sm text-gray-600 mb-6">Why more founders and finance teams are turning to AI-powered copilots.</p>
-              </div>
-              <!-- Bottom row: Author info and read more -->
-              <div class="flex justify-between items-center mt-auto">
-                  <div class="flex items-center">
-                    <img src="assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                    <div class="text-sm">
-                      <p class="font-semibold">Datatrixs Team</p>
-                    </div>
-                  </div>
-                  <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-              </div>
-          </div>
-      </a>
-
-      </div>
     </div>
-  </section>
 
-  <!-- CTA -->
-  <section class="max-w-7xl mx-auto rounded-2xl py-20 bg-gray-900 mb-16 text-white text-center">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Start Understanding Your Business — Instantly</h2>
-      <p class="text-lg mb-6">Sign up today and transform the way you see your data.</p>
-      <a href="https://app.datatrixs.com/signup" target="_blank" class="bg-[#00FF85] text-black px-6 py-3 rounded-xl hover:bg-[#00E67E] transition">Sign Up</a>
+    <!-- Integration badges -->
+    <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; align-items: center; margin-bottom: 64px;">
+      <span style="font-size: 12px; color: var(--text-3); margin-right: 4px;">Connects to:</span>
+      <span class="int-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" stroke="#2CA01C" stroke-width="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="#2CA01C" stroke-width="2"/></svg>
+        QuickBooks
+      </span>
+      <span class="int-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#E0401A" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#E0401A" stroke-width="2" stroke-linecap="round"/></svg>
+        NetSuite
+      </span>
+      <span class="int-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#00857A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Sage Intacct
+      </span>
+      <span class="int-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#217346" stroke-width="2" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8" stroke="#217346" stroke-width="2"/></svg>
+        Excel / CSV
+      </span>
     </div>
-  </section>
 
-  <!-- GDPR Cookie Consent Popup -->
-<div id="gdpr-popup" class="fixed bottom-6 left-6 right-6 md:left-8 md:right-auto md:max-w-lg bg-white text-gray-700 shadow-lg rounded-lg p-6 z-50">
-    <div class="mb-4">
-      <p class="text-sm">
-        We use cookies to personalize content, analyze traffic, and improve your experience.
-        By clicking "Accept All," you consent to the use of all cookies. To manage your preferences, click "Settings."
-      </p>
-    </div>
-  
-    <!-- Settings Panel -->
-    <div id="gdpr-settings" class="hidden border-t border-gray-200 pt-4 mt-4">
-      <h4 class="text-sm font-semibold mb-3">Cookie Preferences</h4>
-      <form class="space-y-2 text-sm">
-        <label class="flex items-center space-x-2">
-          <input type="checkbox" id="necessary-cookies" checked disabled class="accent-blue-600 cursor-not-allowed">
-          <span>Necessary Cookies (Always Enabled)</span>
-        </label>
-        <label class="flex items-center space-x-2">
-          <input type="checkbox" id="analytics-cookies" class="accent-blue-600">
-          <span>Analytics Cookies</span>
-        </label>
-        <label class="flex items-center space-x-2">
-          <input type="checkbox" id="marketing-cookies" class="accent-blue-600">
-          <span>Marketing Cookies</span>
-        </label>
-  
-        <div class="pt-4">
-          <button id="save-preferences" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Save Preferences</button>
+    <!-- Hero screenshot in browser frame -->
+    <div style="max-width: 1020px; margin: 0 auto; position: relative;">
+      <!-- Glow behind screenshot -->
+      <div style="position: absolute; inset: 30px; background: radial-gradient(ellipse 70% 50% at 50% 70%, rgba(0,255,133,0.12) 0%, transparent 70%); pointer-events: none; z-index: 0;"></div>
+      <div class="browser-frame glow-primary reveal" style="position: relative; z-index: 1;" data-delay="200">
+        <div class="browser-chrome">
+          <div class="browser-dot" style="background: #FF5F57;"></div>
+          <div class="browser-dot" style="background: #FFBD2E;"></div>
+          <div class="browser-dot" style="background: #28C840;"></div>
+          <div class="browser-url">app.datatrixs.com/dashboard</div>
         </div>
-      </form>
-    </div>
-  
-    <!-- Action Buttons -->
-    <div class="mt-4 flex flex-col md:flex-row md:justify-end space-y-2 md:space-y-0 md:space-x-3">
-      <button id="accept-all" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Accept All</button>
-      <button id="manage-preferences" class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover:bg-gray-300 transition">Settings</button>
+        <img src="assets/homepage-product-new.png" alt="Datatrixs financial dashboard showing multi-unit KPIs" style="width: 100%; display: block; max-height: 560px; object-fit: cover; object-position: top;">
+      </div>
     </div>
   </div>
-  
+</section>
 
-  <!-- Footer Section -->
-  <footer class="bg-black text-white py-12">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- Logo and Tagline (50%) -->
-        <div class="flex flex-col items-center md:items-start">
-          <div class="text-xl font-bold text-white mb-4">
-            <a href="index.html">
-              <img src="assets/CoreLogo-w-with-gradient.png" class="h-5 mr-2" alt="Datatrixs Logo">
-            </a>
-          </div>
-          <p class="text-gray-400 mb-6">The Fastest Way to Understand Your Business</p>
-          <a href="https://app.datatrixs.com/signup" target="_blank" class="bg-[#00FF85] text-black px-6 py-3 rounded-xl hover:bg-[#00E67E] transition">Sign Up</a>
-        </div>
-  
-        <!-- Menu + Contact (50%) -->
-        <div class="flex flex-col md:flex-row justify-around space-y-8 md:space-y-0 md:space-x-12">
-          <!-- Menu Section -->
-          <div class="flex flex-col items-center md:items-start space-y-4">
-            <h4 class="text-lg font-semibold text-white">Menu</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="index.html" class="hover:text-white">Home</a></li>
-              <li><a href="about.html" class="hover:text-white">About Us</a></li>
-              <li><a href="pricing.html" class="hover:text-white">Pricing</a></li>
-              <li><a href="blog/index.html" class="hover:text-white">Blog</a></li>
-            </ul>
-          </div>
-  
-          <!-- Contact Section -->
-          <div class="flex flex-col items-center md:items-start space-y-4">
-            <h4 class="text-lg font-semibold text-white">Contact</h4>
-            <p class="text-gray-400">1 Ferry Building, Suite 201<br>San Francisco, CA 94105</p>
-            <p class="text-gray-400">support@datatrixs.com</p>
-            <a href="https://www.linkedin.com/company/datatrixs" target="_blank" class="text-gray-400 hover:text-white">
-              <img src="assets/linkedin.png" alt="LinkedIn" class="h-5 inline-block mr-2">
-            </a>
-          </div>
-        </div>
+
+<!-- ══════════════════════════════════════════════════════
+     SOCIAL PROOF BAR
+══════════════════════════════════════════════════════ -->
+<section style="padding: 28px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); overflow: hidden;">
+  <div style="display: flex; align-items: center; gap: 0; width: 100%; overflow: hidden;">
+    <div style="flex-shrink: 0; padding: 0 32px; font-size: 12px; color: var(--text-3); white-space: nowrap; border-right: 1px solid var(--border); margin-right: 32px;">
+      BUILT FOR
+    </div>
+    <!-- Scrolling marquee -->
+    <div style="overflow: hidden; flex: 1; position: relative;">
+      <div id="marqueeTrack" style="display: flex; gap: 48px; animation: marquee 28s linear infinite; width: max-content;">
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">Retail Chains</span>
+        <span style="color: var(--text-3);">·</span>
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">SaaS Companies</span>
+        <span style="color: var(--text-3);">·</span>
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">Biotech &amp; Life Sciences</span>
+        <span style="color: var(--text-3);">·</span>
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">Professional Services</span>
+        <span style="color: var(--text-3);">·</span>
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">Hardware &amp; Manufacturing</span>
+        <span style="color: var(--text-3);">·</span>
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">Private Equity Portfolios</span>
+        <span style="color: var(--text-3);">·</span>
+        <!-- Duplicate for seamless loop -->
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">Retail Chains</span>
+        <span style="color: var(--text-3);">·</span>
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">SaaS Companies</span>
+        <span style="color: var(--text-3);">·</span>
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">Biotech &amp; Life Sciences</span>
+        <span style="color: var(--text-3);">·</span>
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">Professional Services</span>
+        <span style="color: var(--text-3);">·</span>
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">Hardware &amp; Manufacturing</span>
+        <span style="color: var(--text-3);">·</span>
+        <span style="font-size: 14px; color: var(--text-2); font-weight: 500; white-space: nowrap;">Private Equity Portfolios</span>
       </div>
-  
-      <hr class="my-6 border-gray-700" />
-  
-      <!-- Copyright and Terms -->
-      <div class="text-left text-gray-400 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <p>&copy; 2025 Datatrixs. All rights reserved.</p>
-        <div class="space-x-6 md:text-right">
-          <a href="privacy-policy.html" class="hover:text-white">Privacy Policy</a>
-          <a href="terms-of-service.html" class="hover:text-white">Terms of Use</a>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PROBLEM STATEMENT
+══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;" id="problem-grid">
+      <!-- Left: problem -->
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-3); margin-bottom: 20px;">The problem</p>
+        <h2 style="font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.025em; color: var(--text-1); margin-bottom: 24px;">
+          Managing 10 entities means 10 logins, 10 closing cycles, and still no clean P&amp;L.
+        </h2>
+        <p style="font-size: 1rem; color: var(--text-2); line-height: 1.75;">
+          Finance teams at multi-unit businesses spend more time compiling data than analyzing it. Every entity has its own chart of accounts, its own QuickBooks instance, its own export format. Getting a consolidated view means someone lives in Excel for a week.
+        </p>
+      </div>
+
+      <!-- Right: solution -->
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary); margin-bottom: 20px;">The fix</p>
+        <h3 style="font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text-1); margin-bottom: 24px;">
+          One normalized view. Every unit. Real time.
+        </h3>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: flex; gap: 14px; align-items: flex-start;">
+            <div style="width: 20px; height: 20px; border-radius: 50%; background: var(--primary-glow); border: 1px solid var(--primary-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#00FF85" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p style="font-size: 14px; color: var(--text-2); line-height: 1.6;"><strong style="color: var(--text-1);">Normalized across every entity</strong> — consistent chart of accounts, regardless of how each unit was set up.</p>
+          </div>
+          <div style="display: flex; gap: 14px; align-items: flex-start;">
+            <div style="width: 20px; height: 20px; border-radius: 50%; background: var(--primary-glow); border: 1px solid var(--primary-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#00FF85" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p style="font-size: 14px; color: var(--text-2); line-height: 1.6;"><strong style="color: var(--text-1);">Compare any unit to any other</strong> — instantly. Revenue, margin, COGS, or any metric that matters for your vertical.</p>
+          </div>
+          <div style="display: flex; gap: 14px; align-items: flex-start;">
+            <div style="width: 20px; height: 20px; border-radius: 50%; background: var(--primary-glow); border: 1px solid var(--primary-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#00FF85" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p style="font-size: 14px; color: var(--text-2); line-height: 1.6;"><strong style="color: var(--text-1);">No engineering required</strong> — connect in minutes with direct integrations or CSV upload.</p>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
-  
+
+<!-- ══════════════════════════════════════════════════════
+     FEATURE GRID
+══════════════════════════════════════════════════════ -->
+<section style="padding: 0 0 96px;">
+  <div class="container">
+    <div class="reveal" style="text-align: center; margin-bottom: 56px;">
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 16px;">
+        Everything your finance team needs.
+      </h2>
+      <p style="font-size: 1rem; color: var(--text-2); max-width: 520px; margin: 0 auto;">
+        Built specifically for multi-entity financial management — not bolted on as an afterthought.
+      </p>
+    </div>
+
+    <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+
+      <!-- Feature: Global Dashboard -->
+      <div class="card" style="padding: 28px;">
+        <div class="feature-icon fi-green" style="margin-bottom: 16px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
+        </div>
+        <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Global Dashboard</h3>
+        <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">Aggregated KPIs across all units — revenue, margin, COGS, and a vertical-specific metric tailored to your business type.</p>
+      </div>
+
+      <!-- Feature: AI Analyst -->
+      <div class="card" style="padding: 28px; border-color: var(--amber-border); background: linear-gradient(160deg, rgba(245,158,11,0.04) 0%, var(--bg-surface) 60%);">
+        <div class="feature-icon fi-amber" style="margin-bottom: 16px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+          <h3 style="font-size: 16px; font-weight: 700;">AI Financial Analyst</h3>
+          <span class="label label-amber" style="font-size: 10px; padding: 2px 8px;">Warren</span>
+        </div>
+        <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">Ask questions in plain English. "Which unit had the worst margin last quarter?" gets a real answer — with a chart and a CSV export.</p>
+      </div>
+
+      <!-- Feature: Multi-Unit -->
+      <div class="card" style="padding: 28px;">
+        <div class="feature-icon fi-blue" style="margin-bottom: 16px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="6" height="14"/><rect x="9" y="3" width="6" height="18"/><rect x="16" y="10" width="6" height="11"/>
+          </svg>
+        </div>
+        <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Multi-Unit Management</h3>
+        <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">Add locations, subsidiaries, product lines, or client accounts — each with its own data source and its own access controls.</p>
+      </div>
+
+      <!-- Feature: Reports -->
+      <div class="card" style="padding: 28px;">
+        <div class="feature-icon fi-purple" style="margin-bottom: 16px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/>
+          </svg>
+        </div>
+        <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Reports &amp; Exports</h3>
+        <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">One-click formal financial reports and structured data exports. Share audit-ready statements without reformatting anything.</p>
+      </div>
+
+      <!-- Feature: Integrations -->
+      <div class="card" style="padding: 28px;">
+        <div class="feature-icon fi-green" style="margin-bottom: 16px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+          </svg>
+        </div>
+        <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Data Integrations</h3>
+        <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">QuickBooks Online, Oracle NetSuite, Sage Intacct, or CSV/Excel. Direct connections with no engineering required.</p>
+      </div>
+
+      <!-- Feature: Holding / Org structure -->
+      <div class="card" style="padding: 28px;">
+        <div class="feature-icon fi-blue" style="margin-bottom: 16px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="5" r="3"/><circle cx="5" cy="19" r="3"/><circle cx="19" cy="19" r="3"/>
+            <path d="M12 8v3M9.5 17.5l-2.5-4M14.5 17.5l2.5-4"/>
+          </svg>
+        </div>
+        <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Org Structure &amp; Access</h3>
+        <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">Multi-company parent-subsidiary structures with role-based access. Each user sees exactly what they should.</p>
+      </div>
+
+    </div>
+
+    <div class="reveal" style="text-align: center; margin-top: 40px;">
+      <a href="product.html" class="btn btn-secondary">View all features →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     AI ANALYST SPOTLIGHT
+══════════════════════════════════════════════════════ -->
+<section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" id="ai-grid">
+
+      <!-- Left: copy -->
+      <div class="reveal">
+        <span class="label label-amber" style="margin-bottom: 20px; display: inline-flex;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Meet Warren, your AI Analyst
+        </span>
+        <h2 style="font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 20px;">
+          Ask any financial question. Get a real answer.
+        </h2>
+        <p style="font-size: 1rem; color: var(--text-2); line-height: 1.75; margin-bottom: 28px;">
+          Warren is your always-on financial analyst. Ask in plain English. Warren queries your live data, builds the table, generates the chart, and exports the CSV — all in one message.
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px;">
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: var(--amber); font-size: 18px; line-height: 1; flex-shrink: 0;">→</span>
+            <p style="font-size: 14px; color: var(--text-2);">"Compare R&amp;D burn across programs Q1 vs Q2"</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: var(--amber); font-size: 18px; line-height: 1; flex-shrink: 0;">→</span>
+            <p style="font-size: 14px; color: var(--text-2);">"Which locations had the worst gross margin last quarter?"</p>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <span style="color: var(--amber); font-size: 18px; line-height: 1; flex-shrink: 0;">→</span>
+            <p style="font-size: 14px; color: var(--text-2);">"Show me churn rate trends across all SaaS products this year"</p>
+          </div>
+        </div>
+        <a href="demo-request.html" class="btn btn-primary">See Warren in action</a>
+      </div>
+
+      <!-- Right: chat mock UI -->
+      <div class="reveal" data-delay="150">
+        <div class="chat-wrap">
+          <!-- Header -->
+          <div class="chat-head">
+            <div class="chat-avatar">⚡</div>
+            <div>
+              <div style="font-size: 14px; font-weight: 600; color: var(--text-1);">Warren</div>
+              <div style="font-size: 11px; color: var(--amber); display: flex; align-items: center; gap: 5px;">
+                <span style="width: 6px; height: 6px; background: var(--amber); border-radius: 50%; display: inline-block;"></span>
+                Connected to 12 business units
+              </div>
+            </div>
+          </div>
+
+          <!-- Messages -->
+          <div class="chat-body">
+            <div class="chat-user">Which business units had the worst gross margin last quarter?</div>
+
+            <div class="chat-ai">
+              <p style="color: var(--text-2); margin-bottom: 10px; font-size: 13px;">
+                I analyzed all 12 of your business units for Q4 2024. Here are the 5 with the lowest gross margin:
+              </p>
+              <table class="chat-table">
+                <thead>
+                  <tr>
+                    <th>Location</th>
+                    <th>Revenue</th>
+                    <th>Gross Margin</th>
+                    <th>vs Q3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: var(--text-1); font-weight: 500;">Chicago – North</td>
+                    <td>$284K</td>
+                    <td class="neg">18.2%</td>
+                    <td class="neg">↓ 6.8pp</td>
+                  </tr>
+                  <tr>
+                    <td style="color: var(--text-1); font-weight: 500;">Austin – South</td>
+                    <td>$312K</td>
+                    <td class="neg">21.4%</td>
+                    <td class="neg">↓ 3.1pp</td>
+                  </tr>
+                  <tr>
+                    <td style="color: var(--text-1); font-weight: 500;">Dallas – Central</td>
+                    <td>$198K</td>
+                    <td class="neg">23.1%</td>
+                    <td class="neg">↓ 2.7pp</td>
+                  </tr>
+                  <tr>
+                    <td style="color: var(--text-1);">Seattle – East</td>
+                    <td>$267K</td>
+                    <td class="neu">24.8%</td>
+                    <td class="pos">↑ 0.4pp</td>
+                  </tr>
+                  <tr>
+                    <td style="color: var(--text-1);">Miami – Brickell</td>
+                    <td>$341K</td>
+                    <td class="neu">25.2%</td>
+                    <td class="pos">↑ 1.2pp</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="color: var(--text-2); margin-top: 12px; font-size: 12px;">Chicago – North declined 6.8pp vs Q3. Want me to break down what drove the drop?</p>
+            </div>
+
+            <div class="chat-user">Yes — what drove the Chicago North decline?</div>
+
+            <div class="chat-ai">
+              <p style="color: var(--text-2); margin-bottom: 8px; font-size: 13px;">The 6.8pp decline in <strong style="color: var(--text-1);">Chicago – North</strong> came from three factors:</p>
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <div style="display: flex; gap: 8px; align-items: baseline; font-size: 12px;">
+                  <span style="color: var(--primary); font-weight: 600; flex-shrink: 0;">01</span>
+                  <span style="color: var(--text-2);"><strong style="color: var(--text-1);">COGS +$47K</strong> — shipping costs spiked in October, up 18% vs Q3 average.</span>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: baseline; font-size: 12px;">
+                  <span style="color: var(--primary); font-weight: 600; flex-shrink: 0;">02</span>
+                  <span style="color: var(--text-2);"><strong style="color: var(--text-1);">Labor as % of revenue +3.2pp</strong> — headcount added in Q3 without proportional revenue growth.</span>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: baseline; font-size: 12px;">
+                  <span style="color: var(--primary); font-weight: 600; flex-shrink: 0;">03</span>
+                  <span style="color: var(--text-2);"><strong style="color: var(--text-1);">Revenue flat at −0.4%</strong> — fixed costs had larger per-unit impact.</span>
+                </div>
+              </div>
+              <p style="color: var(--text-2); margin-top: 10px; font-size: 12px;">This pattern appears in 3 other Midwest locations. Show comparison?</p>
+            </div>
+          </div>
+
+          <!-- Input row -->
+          <div class="chat-footer">
+            <div class="chat-input-mock" style="pointer-events: none;">Ask Warren anything about your financials…</div>
+            <div style="width: 32px; height: 32px; background: var(--primary-glow); border: 1px solid var(--primary-border); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     VERTICAL TABS — "Built for your industry"
+══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="text-align: center; margin-bottom: 48px;">
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 16px;">
+        Adapts to your vertical.
+      </h2>
+      <p style="font-size: 1rem; color: var(--text-2); max-width: 480px; margin: 0 auto;">
+        Whether you run 50 retail stores or 10 clinical trial programs, Datatrixs surfaces the KPIs and workflows that matter for your business type.
+      </p>
+    </div>
+
+    <!-- Tab bar -->
+    <div class="reveal vtab-bar" style="margin-bottom: 32px; justify-content: center;" role="tablist">
+      <button class="vtab active" onclick="switchTab('retail')" role="tab" aria-selected="true">Retail Chains</button>
+      <button class="vtab" onclick="switchTab('saas')" role="tab" aria-selected="false">SaaS</button>
+      <button class="vtab" onclick="switchTab('biotech')" role="tab" aria-selected="false">Biotech</button>
+      <button class="vtab" onclick="switchTab('services')" role="tab" aria-selected="false">Professional Services</button>
+      <button class="vtab" onclick="switchTab('hardware')" role="tab" aria-selected="false">Hardware</button>
+    </div>
+
+    <!-- Retail -->
+    <div class="vtab-panel active reveal" id="panel-retail">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+        <div class="card" style="padding: 32px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Key metrics tracked</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+            <span class="kpi-chip">📊 Revenue</span>
+            <span class="kpi-chip">📉 Gross Margin</span>
+            <span class="kpi-chip">🏪 Same-Store Sales Growth</span>
+            <span class="kpi-chip">🛒 Avg Transaction Value</span>
+          </div>
+          <p style="font-size: 13px; color: var(--text-2); line-height: 1.7;">Compare performance across every location side-by-side. Identify underperforming stores before the quarter closes. Drill from the portfolio view down to a single store's P&amp;L in one click.</p>
+        </div>
+        <div class="card-elevated" style="padding: 24px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Example AI query</p>
+          <div style="background: var(--bg-surface); border: 1px solid var(--primary-border); border-radius: 8px; padding: 12px 14px; font-size: 14px; color: var(--text-1); margin-bottom: 16px; font-style: italic;">
+            "Compare same-store sales growth across all 40 locations this quarter vs last year"
+          </div>
+          <table class="chat-table" style="font-size: 12px;">
+            <thead><tr><th>Location</th><th>Q4 Revenue</th><th>SSSG</th></tr></thead>
+            <tbody>
+              <tr><td style="color:var(--text-1);">NYC – Midtown</td><td>$892K</td><td class="pos">+11.4%</td></tr>
+              <tr><td style="color:var(--text-1);">LA – West Side</td><td>$743K</td><td class="pos">+8.2%</td></tr>
+              <tr><td style="color:var(--text-1);">Chicago – Loop</td><td>$612K</td><td class="neg">−3.7%</td></tr>
+              <tr><td style="color:var(--text-1);">Seattle – Pike</td><td>$531K</td><td class="neg">−6.1%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SaaS -->
+    <div class="vtab-panel" id="panel-saas">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+        <div class="card" style="padding: 32px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Key metrics tracked</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+            <span class="kpi-chip">💰 MRR</span>
+            <span class="kpi-chip">📉 Churn Rate</span>
+            <span class="kpi-chip">🎯 CAC</span>
+            <span class="kpi-chip">📈 LTV / CAC Ratio</span>
+          </div>
+          <p style="font-size: 13px; color: var(--text-2); line-height: 1.7;">Track MRR, churn, and unit economics across product lines or customer segments. Identify which growth motions are working and where CAC is creeping up.</p>
+        </div>
+        <div class="card-elevated" style="padding: 24px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Example AI query</p>
+          <div style="background: var(--bg-surface); border: 1px solid var(--primary-border); border-radius: 8px; padding: 12px 14px; font-size: 14px; color: var(--text-1); margin-bottom: 16px; font-style: italic;">
+            "Which product lines have declining net revenue retention over the last 3 months?"
+          </div>
+          <table class="chat-table" style="font-size: 12px;">
+            <thead><tr><th>Product</th><th>MRR</th><th>NRR (90d)</th></tr></thead>
+            <tbody>
+              <tr><td style="color:var(--text-1);">Enterprise Plan</td><td>$184K</td><td class="pos">118%</td></tr>
+              <tr><td style="color:var(--text-1);">Growth Plan</td><td>$97K</td><td class="neg">94%</td></tr>
+              <tr><td style="color:var(--text-1);">Starter Plan</td><td>$41K</td><td class="neg">88%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Biotech -->
+    <div class="vtab-panel" id="panel-biotech">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+        <div class="card" style="padding: 32px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Key metrics tracked</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+            <span class="kpi-chip">🔬 R&amp;D Burn Rate</span>
+            <span class="kpi-chip">💊 Program Costs</span>
+            <span class="kpi-chip">🏛️ Grant Revenue</span>
+            <span class="kpi-chip">🛣️ Runway</span>
+          </div>
+          <p style="font-size: 13px; color: var(--text-2); line-height: 1.7;">Monitor spend across active research programs with the granularity your board and investors expect. Track actuals vs budget by program, PI, or trial phase.</p>
+        </div>
+        <div class="card-elevated" style="padding: 24px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Example AI query</p>
+          <div style="background: var(--bg-surface); border: 1px solid var(--primary-border); border-radius: 8px; padding: 12px 14px; font-size: 14px; color: var(--text-1); margin-bottom: 16px; font-style: italic;">
+            "Compare R&amp;D burn across active programs Q1 vs Q2 vs budget"
+          </div>
+          <table class="chat-table" style="font-size: 12px;">
+            <thead><tr><th>Program</th><th>Q1 Spend</th><th>Q2 Spend</th><th>vs Budget</th></tr></thead>
+            <tbody>
+              <tr><td style="color:var(--text-1);">Phase II – Alpha</td><td>$1.2M</td><td>$1.4M</td><td class="neg">+17%</td></tr>
+              <tr><td style="color:var(--text-1);">Phase I – Beta</td><td>$680K</td><td>$590K</td><td class="pos">−13%</td></tr>
+              <tr><td style="color:var(--text-1);">Preclinical – C3</td><td>$210K</td><td>$230K</td><td class="neu">+5%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="vtab-panel" id="panel-services">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+        <div class="card" style="padding: 32px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Key metrics tracked</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+            <span class="kpi-chip">💼 Revenue</span>
+            <span class="kpi-chip">⏱️ Utilization Rate</span>
+            <span class="kpi-chip">📐 Project Margin</span>
+            <span class="kpi-chip">👤 Revenue per FTE</span>
+          </div>
+          <p style="font-size: 13px; color: var(--text-2); line-height: 1.7;">See utilization, project margin, and revenue per head across offices, practices, or client accounts. Catch margin compression early — before it shows up in the year-end review.</p>
+        </div>
+        <div class="card-elevated" style="padding: 24px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Example AI query</p>
+          <div style="background: var(--bg-surface); border: 1px solid var(--primary-border); border-radius: 8px; padding: 12px 14px; font-size: 14px; color: var(--text-1); margin-bottom: 16px; font-style: italic;">
+            "Show me all projects with gross margin below 20% this quarter"
+          </div>
+          <table class="chat-table" style="font-size: 12px;">
+            <thead><tr><th>Project</th><th>Revenue</th><th>Margin</th></tr></thead>
+            <tbody>
+              <tr><td style="color:var(--text-1);">Acme – Phase 2</td><td>$340K</td><td class="neg">14.2%</td></tr>
+              <tr><td style="color:var(--text-1);">Vertex – Integration</td><td>$218K</td><td class="neg">17.8%</td></tr>
+              <tr><td style="color:var(--text-1);">Northgate – Audit</td><td>$95K</td><td class="neg">19.1%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hardware -->
+    <div class="vtab-panel" id="panel-hardware">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+        <div class="card" style="padding: 32px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Key metrics tracked</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
+            <span class="kpi-chip">📦 Revenue</span>
+            <span class="kpi-chip">🏭 COGS</span>
+            <span class="kpi-chip">🔄 Inventory Turnover</span>
+            <span class="kpi-chip">📊 Product Line Margin</span>
+          </div>
+          <p style="font-size: 13px; color: var(--text-2); line-height: 1.7;">Track revenue, COGS, and margin at the product line or SKU level across facilities. Spot which lines are dragging overall margin before committing to the next production run.</p>
+        </div>
+        <div class="card-elevated" style="padding: 24px;">
+          <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Example AI query</p>
+          <div style="background: var(--bg-surface); border: 1px solid var(--primary-border); border-radius: 8px; padding: 12px 14px; font-size: 14px; color: var(--text-1); margin-bottom: 16px; font-style: italic;">
+            "Which product lines have the lowest gross margin this quarter?"
+          </div>
+          <table class="chat-table" style="font-size: 12px;">
+            <thead><tr><th>Product Line</th><th>Revenue</th><th>Gross Margin</th></tr></thead>
+            <tbody>
+              <tr><td style="color:var(--text-1);">Legacy Series A</td><td>$1.1M</td><td class="neg">22.4%</td></tr>
+              <tr><td style="color:var(--text-1);">Pro Series</td><td>$2.3M</td><td class="neu">34.1%</td></tr>
+              <tr><td style="color:var(--text-1);">Enterprise Kit</td><td>$890K</td><td class="pos">41.7%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     INTEGRATIONS
+══════════════════════════════════════════════════════ -->
+<section style="padding: 0 0 96px;">
+  <div class="container">
+    <div class="reveal" style="text-align: center; margin-bottom: 56px;">
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 16px;">
+        Connect in minutes, not months.
+      </h2>
+      <p style="font-size: 1rem; color: var(--text-2); max-width: 480px; margin: 0 auto;">
+        Direct integrations with the accounting systems your teams already use. No custom development. No IT ticket.
+      </p>
+    </div>
+
+    <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+
+      <div class="card" style="padding: 28px;">
+        <div style="width: 44px; height: 44px; background: rgba(44,160,28,0.12); border: 1px solid rgba(44,160,28,0.25); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" stroke="#2CA01C" stroke-width="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="#2CA01C" stroke-width="2"/></svg>
+        </div>
+        <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 6px;">QuickBooks Online</h3>
+        <p style="font-size: 13px; color: var(--text-2); line-height: 1.65; margin-bottom: 14px;">Direct OAuth connection. Each business unit links its own QBO instance. Syncs in under 2 minutes.</p>
+        <a href="integrations.html#quickbooks" style="font-size: 13px; color: var(--primary); text-decoration: none; font-weight: 500;">Learn more →</a>
+      </div>
+
+      <div class="card" style="padding: 28px;">
+        <div style="width: 44px; height: 44px; background: rgba(224,64,26,0.12); border: 1px solid rgba(224,64,26,0.25); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#E0401A" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#E0401A" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 6px;">Oracle NetSuite</h3>
+        <p style="font-size: 13px; color: var(--text-2); line-height: 1.65; margin-bottom: 14px;">API integration with full multi-subsidiary support. Pulls across entities without custom SuiteScripts.</p>
+        <a href="integrations.html#netsuite" style="font-size: 13px; color: var(--primary); text-decoration: none; font-weight: 500;">Learn more →</a>
+      </div>
+
+      <div class="card" style="padding: 28px;">
+        <div style="width: 44px; height: 44px; background: rgba(0,133,122,0.12); border: 1px solid rgba(0,133,122,0.25); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#00857A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 6px;">Sage Intacct</h3>
+        <p style="font-size: 13px; color: var(--text-2); line-height: 1.65; margin-bottom: 14px;">Native API connection. Handles Intacct's multi-entity structures without any manual mapping.</p>
+        <a href="integrations.html#sage" style="font-size: 13px; color: var(--primary); text-decoration: none; font-weight: 500;">Learn more →</a>
+      </div>
+
+      <div class="card" style="padding: 28px;">
+        <div style="width: 44px; height: 44px; background: rgba(33,115,70,0.12); border: 1px solid rgba(33,115,70,0.25); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#217346" stroke-width="2" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8" stroke="#217346" stroke-width="2"/><line x1="8" y1="13" x2="16" y2="13" stroke="#217346" stroke-width="2" stroke-linecap="round"/><line x1="8" y1="17" x2="16" y2="17" stroke="#217346" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 6px;">Excel / CSV Upload</h3>
+        <p style="font-size: 13px; color: var(--text-2); line-height: 1.65; margin-bottom: 14px;">Manual upload anytime. Datatrixs auto-maps your columns and normalizes the data on import.</p>
+        <a href="integrations.html#csv" style="font-size: 13px; color: var(--primary); text-decoration: none; font-weight: 500;">Learn more →</a>
+      </div>
+
+    </div>
+
+    <div class="reveal" style="text-align: center; margin-top: 40px;">
+      <a href="integrations.html" class="btn btn-secondary">View all integration details →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PRICING TEASER
+══════════════════════════════════════════════════════ -->
+<section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div class="reveal" style="text-align: center; margin-bottom: 56px;">
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 16px;">
+        Simple, unit-based pricing.
+      </h2>
+      <p style="font-size: 1rem; color: var(--text-2); max-width: 480px; margin: 0 auto;">
+        You pay based on the number of connected business units — not seats, not data volume, not API calls.
+      </p>
+    </div>
+
+    <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; max-width: 940px; margin: 0 auto;">
+
+      <!-- Starter -->
+      <div class="pricing-card">
+        <p style="font-size: 13px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 12px;">Starter</p>
+        <div style="margin-bottom: 4px;">
+          <span style="font-size: 32px; font-weight: 800; letter-spacing: -0.03em;">Custom</span>
+        </div>
+        <p style="font-size: 13px; color: var(--text-3); margin-bottom: 24px;">Up to 5 business units</p>
+        <a href="demo-request.html" class="btn btn-secondary" style="width: 100%; justify-content: center; margin-bottom: 24px;">Get a quote</a>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Global dashboard
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            AI financial analyst
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Standard integrations
+          </div>
+        </div>
+      </div>
+
+      <!-- Growth (featured) -->
+      <div class="pricing-card featured">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+          <p style="font-size: 13px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.07em;">Growth</p>
+          <span style="background: var(--primary-glow); border: 1px solid var(--primary-border); color: var(--primary); font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 100px;">Most popular</span>
+        </div>
+        <div style="margin-bottom: 4px;">
+          <span style="font-size: 32px; font-weight: 800; letter-spacing: -0.03em;">Custom</span>
+        </div>
+        <p style="font-size: 13px; color: var(--text-3); margin-bottom: 24px;">Up to 25 business units</p>
+        <a href="demo-request.html" class="btn btn-primary" style="width: 100%; justify-content: center; margin-bottom: 24px;">Get a quote</a>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Everything in Starter
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Holding structure &amp; role-based access
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Saved AI library
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Priority support
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="pricing-card">
+        <p style="font-size: 13px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 12px;">Enterprise</p>
+        <div style="margin-bottom: 4px;">
+          <span style="font-size: 32px; font-weight: 800; letter-spacing: -0.03em;">Custom</span>
+        </div>
+        <p style="font-size: 13px; color: var(--text-3); margin-bottom: 24px;">Unlimited business units</p>
+        <a href="demo-request.html" class="btn btn-secondary" style="width: 100%; justify-content: center; margin-bottom: 24px;">Contact us</a>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Everything in Growth
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Custom data connectors
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Audit-ready exports &amp; SSO
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; font-size: 13px; color: var(--text-2);">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Dedicated success manager
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="reveal" style="text-align: center; margin-top: 40px;">
+      <a href="pricing.html" class="btn btn-secondary">See full pricing details →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     FINAL CTA
+══════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="text-align: center; max-width: 680px; margin: 0 auto;">
+      <h2 style="font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 24px;">
+        See your financials in a new light.
+      </h2>
+      <p style="font-size: 1.125rem; color: var(--text-2); margin-bottom: 40px; line-height: 1.75;">
+        Stop compiling. Start analyzing. Get a live demo with your own business units — we'll connect your data and show you what's possible in under 30 minutes.
+      </p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="demo-request.html" class="btn btn-primary btn-lg">Request a Demo</a>
+        <a href="https://app.datatrixs.com/signup" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">Start free trial</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 64px;" id="footer-grid">
+
+      <!-- Brand -->
+      <div>
+        <a href="index.html">
+          <img src="assets/CoreLogo-w-with-gradient.png" alt="Datatrixs" style="height: 22px; margin-bottom: 16px; display: block;">
+        </a>
+        <p style="font-size: 14px; color: var(--text-3); line-height: 1.75; max-width: 260px;">
+          Financial intelligence for multi-unit businesses. One view of every entity you manage.
+        </p>
+      </div>
+
+      <!-- Product -->
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Product</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="product.html" style="font-size: 14px; color: var(--text-2); text-decoration: none; transition: color .15s;" onmouseover="this.style.color='var(--text-1)'" onmouseout="this.style.color='var(--text-2)'">Features</a>
+          <a href="integrations.html" style="font-size: 14px; color: var(--text-2); text-decoration: none; transition: color .15s;" onmouseover="this.style.color='var(--text-1)'" onmouseout="this.style.color='var(--text-2)'">Integrations</a>
+          <a href="pricing.html" style="font-size: 14px; color: var(--text-2); text-decoration: none; transition: color .15s;" onmouseover="this.style.color='var(--text-1)'" onmouseout="this.style.color='var(--text-2)'">Pricing</a>
+          <a href="demo-request.html" style="font-size: 14px; color: var(--text-2); text-decoration: none; transition: color .15s;" onmouseover="this.style.color='var(--text-1)'" onmouseout="this.style.color='var(--text-2)'">Request Demo</a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Company</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="about.html" style="font-size: 14px; color: var(--text-2); text-decoration: none; transition: color .15s;" onmouseover="this.style.color='var(--text-1)'" onmouseout="this.style.color='var(--text-2)'">About</a>
+          <a href="blog/index.html" style="font-size: 14px; color: var(--text-2); text-decoration: none; transition: color .15s;" onmouseover="this.style.color='var(--text-1)'" onmouseout="this.style.color='var(--text-2)'">Blog</a>
+          <a href="https://app.datatrixs.com" target="_blank" rel="noopener" style="font-size: 14px; color: var(--text-2); text-decoration: none; transition: color .15s;" onmouseover="this.style.color='var(--text-1)'" onmouseout="this.style.color='var(--text-2)'">Login</a>
+        </div>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Legal</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="privacy-policy.html" style="font-size: 14px; color: var(--text-2); text-decoration: none; transition: color .15s;" onmouseover="this.style.color='var(--text-1)'" onmouseout="this.style.color='var(--text-2)'">Privacy Policy</a>
+          <a href="terms-of-service.html" style="font-size: 14px; color: var(--text-2); text-decoration: none; transition: color .15s;" onmouseover="this.style.color='var(--text-1)'" onmouseout="this.style.color='var(--text-2)'">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="border-top: 1px solid var(--border); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+      <p style="font-size: 13px; color: var(--text-3);">© 2025 Datatrixs. All rights reserved.</p>
+      <a href="https://www.linkedin.com/company/datatrixs" target="_blank" rel="noopener" style="color: var(--text-3); transition: color .15s;" onmouseover="this.style.color='var(--text-2)'" onmouseout="this.style.color='var(--text-3)'" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     SCRIPTS
+══════════════════════════════════════════════════════ -->
+<script>
+// Mobile menu
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileNavClose = document.getElementById('mobileNavClose');
+const mobileNav = document.getElementById('mobileNav');
+
+mobileMenuBtn.addEventListener('click', () => mobileNav.classList.add('open'));
+mobileNavClose.addEventListener('click', () => mobileNav.classList.remove('open'));
+
+// Vertical tabs
+function switchTab(id) {
+  document.querySelectorAll('.vtab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.vtab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelector(`[onclick="switchTab('${id}')"]`).classList.add('active');
+  document.getElementById(`panel-${id}`).classList.add('active');
+}
+
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const delay = entry.target.dataset.delay || 0;
+      setTimeout(() => entry.target.classList.add('visible'), parseInt(delay));
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+reveals.forEach(el => revealObserver.observe(el));
+
+// Responsive grids
+function applyMobileLayouts() {
+  const isMobile = window.innerWidth < 768;
+  const problemGrid = document.getElementById('problem-grid');
+  const aiGrid = document.getElementById('ai-grid');
+  const footerGrid = document.getElementById('footer-grid');
+
+  if (problemGrid) problemGrid.style.gridTemplateColumns = isMobile ? '1fr' : '1fr 1fr';
+  if (aiGrid) aiGrid.style.gridTemplateColumns = isMobile ? '1fr' : '1fr 1fr';
+  if (footerGrid) footerGrid.style.gridTemplateColumns = isMobile ? '1fr 1fr' : '2fr 1fr 1fr 1fr';
+}
+applyMobileLayouts();
+window.addEventListener('resize', applyMobileLayouts);
+
+// FAQ toggle (reused on other pages)
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => item.classList.toggle('open'));
+});
+</script>
+
 </body>
 </html>
