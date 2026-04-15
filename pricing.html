@@ -1,360 +1,431 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HZ3K9DRTXM');</script>
 
-  gtag('config', 'G-HZ3K9DRTXM');
-  </script>
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-    <!-- Primary Meta Tags -->
-    <title>Simple, Transparent Pricing | Datatrixs</title>
-    <meta name="title" content="Simple, Transparent Pricing | Datatrixs">
-    <meta name="description" content="Choose the Datatrixs plan that fits your business. No hidden fees. Get AI-powered financial insights, instant dashboards, and smarter decision-making—starting free.">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.datatrixs.com/pricing">
-    <meta property="og:title" content="Simple, Transparent Pricing | Datatrixs">
-    <meta property="og:description" content="Choose the Datatrixs plan that fits your business. No hidden fees. Get AI-powered financial insights, instant dashboards, and smarter decision-making—starting free.">
-    <meta property="og:image" content="https://www.datatrixs.com/assets/product-meta.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.datatrixs.com/pricing">
-    <meta property="twitter:title" content="Simple, Transparent Pricing | Datatrixs">
-    <meta property="twitter:description" content="Choose the Datatrixs plan that fits your business. No hidden fees. Get AI-powered financial insights, instant dashboards, and smarter decision-making—starting free.">
-    <meta property="twitter:image" content="https://www.datatrixs.com/assets/product-meta.png">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.datatrixs.com/pricing" />
-
-    <meta name="robots" content="index, follow" />
+  <title>Pricing — Datatrixs | Unit-Based Financial Intelligence</title>
+  <meta name="description" content="Datatrixs pricing is based on the number of connected business units. Simple, transparent, and scales with your organization.">
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Pricing — Datatrixs">
+  <meta property="og:description" content="Unit-based pricing for financial intelligence. Starter, Growth, and Enterprise tiers.">
+  <meta property="og:image" content="https://datatrixs.com/assets/product-meta.png">
+  <link rel="canonical" href="https://datatrixs.com/pricing" />
 
   <link rel="icon" type="image/png" href="assets/faveicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="assets/faveicon/favicon.svg" />
   <link rel="shortcut icon" href="assets/faveicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/faveicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Datatrixs" />
   <link rel="manifest" href="assets/faveicon/site.webmanifest" />
-  <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="dx-design.css">
 </head>
-<body class="bg-white text-gray-800">
+<body>
 
-<nav class="fixed top-4 left-4 right-4 z-50 bg-black shadow-lg rounded-full px-6 py-2 flex items-center justify-between max-w-5xl mx-auto border border-gray-800">
-    <div class="text-xl font-bold text-white flex">
-        <a href="index.html" class="h-5">
-            <img src="assets/CoreLogo-w-with-gradient.png" class="h-5 mr-2" alt="Datatrixs Logo">
-        </a>
+<!-- NAV -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/CoreLogo-w-with-gradient.png" alt="Datatrixs"></a>
+    <ul class="nav-links">
+      <li><a href="product.html">Product</a></li>
+      <li><a href="integrations.html">Integrations</a></li>
+      <li><a href="pricing.html" style="color: var(--text-1);">Pricing</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://app.datatrixs.com" target="_blank" rel="noopener" class="nav-login">Login</a>
+      <a href="demo-request.html" class="nav-cta">Request a Demo</a>
     </div>
-    <div class="hidden md:flex space-x-6 text-[#00FF85] font-medium text-white">
-        <a href="index.html" class="hover:text-[#00FF85] transition">Home</a>
-        <a href="about.html" class="hover:text-[#00FF85] transition">About Us</a>
-        <a href="pricing.html" class="hover:text-[#00FF85] transition">Pricing</a>
-        <a href="blog/index.html" class="hover:text-[#00FF85] transition">Blog</a>
-    </div>
-    <div class="hidden md:flex space-x-4">
-        <a href="https://app.datatrixs.com" target="_blank" class="px-4 py-2 text-sm font-medium text-white hover:text-[#00FF85] transition">Login</a>
-        <a href="https://app.datatrixs.com/signup" target="_blank" class="px-4 py-2 bg-[#00FF85] text-black rounded-xl text-sm font-medium hover:bg-[#00E67E] transition">Sign Up</a>
-    </div>
-    <div class="md:hidden">
-        <button id="mobile-menu-button" class="text-white focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        </button>
-    </div>
+    <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
 </nav>
-    
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="md:hidden text-center fixed top-20 left-4 right-4 z-40 bg-black shadow-xl rounded-xl py-2 px-6 space-y-4 hidden">
-    <a href="index.html" class="block text-white font-medium hover:text-[#00FF85]">Home</a>
-    <a href="about.html" class="block text-white font-medium hover:text-[#00FF85]">About Us</a>
-    <a href="pricing.html" class="block text-white font-medium hover:text-[#00FF85]">Pricing</a>
-    <a href="blog/index.html" class="block text-white font-medium hover:text-[#00FF85]">Blog</a>
-    <a href="https://app.datatrixs.com" target="_blank" class="block text-white font-medium hover:text-[#00FF85]">Login</a>
-    <a href="https://app.datatrixs.com/signup" target="_blank" class="block text-black bg-[#00FF85] px-4 py-2 rounded-xl font-medium text-center hover:bg-[#00E67E]">Sign Up</a>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-btn" id="mobileNavClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <a href="product.html">Product</a>
+  <a href="integrations.html">Integrations</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="blog/index.html">Blog</a>
+  <a href="https://app.datatrixs.com" target="_blank">Login</a>
+  <a href="demo-request.html" style="color: var(--primary);">Request a Demo</a>
 </div>
 
-<script>
-    const menuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-</script>
-  
-  <!-- <style>
-    body {
-      padding-top: 100px; /* ensure space for fixed nav */
-    }
-  </style> -->
-<style>
-    @keyframes fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    }
-    .animate-fade-in-up {
-    animation: fade-in-up 0.5s ease-out forwards;
-    }  
-</style>  
 
 <!-- HERO -->
-<section class="bg-black text-white px-4 pt-24 pb-100 mb-16 text-center min-h-[50vh] rounded-2xl flex flex-col justify-center items-center overflow-visible">
-    <span class="text-sm text-rose-500 px-4 py-2 mt-12 font-semibold tracking-widest border border-gray-800 rounded-full">Pricing</span>
-    <h1 class="text-3xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up max-w-5xl pt-12">
-        Plans that grow with you    
-    </h1>  
+<section class="hero-bg" style="padding: 140px 0 80px; position: relative; overflow: hidden;">
+  <div class="hero-grid" style="position: absolute; inset: 0; pointer-events: none;"></div>
+  <div class="container" style="position: relative; text-align: center;">
+    <div style="display: flex; justify-content: center; margin-bottom: 24px;">
+      <span class="label">Pricing</span>
+    </div>
+    <h1 style="font-size: clamp(2.2rem, 4.5vw, 3.6rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 20px; max-width: 720px; margin-left: auto; margin-right: auto;">
+      Simple pricing based<br><span class="text-gradient">on your scale.</span>
+    </h1>
+    <p style="font-size: 1.125rem; color: var(--text-2); max-width: 500px; margin: 0 auto; line-height: 1.75;">
+      You pay based on the number of connected business units — not seats, not data volume, not API calls. As your organization grows, your plan scales with it.
+    </p>
+  </div>
 </section>
-    
-<section id="pricing" class="py-4 bg-white mb-[100px]">
-    <div class="max-w-7xl mx-auto px-4">
-      <!-- Stripe pricing table -->
-      <div class="max-w-7xl mb-10 mt-5">
-        <stripe-pricing-table
-          pricing-table-id="prctbl_1R7OlKIAWwtv4OdWHpkvHjYS"
-          publishable-key="pk_live_51HhOLjIAWwtv4OdWpNl9JHfGHwMkAvxKjTdDTJUhagPJZoisrNrYB63RNPSeGZAwQF6sSojTwFzjRgZEdYjJ0A6H002yGU7tnd">
-        </stripe-pricing-table>
-      </div>
-  
-      <!-- FAQ Section -->
-      <section id="faq" class="bg-white py-12 mb-[100px] text-black">
-        <div class="max-w-4xl mx-auto px-4">
-          <h2 class="text-4xl font-bold text-center mb-4">Frequently Asked Questions</h2>
-          <p class="text-black text-center mb-8">Find answers to common questions about Datatrixs.</p>
-      
-          <div class="space-y-4">
-            <div class="faq-item border border-gray-300 rounded-md">
-              <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                <span>What is Datatrixs, and how does it work?</span>
-                <span class="icon transition-transform duration-300">&#9660;</span>
-              </button>
-              <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                Datatrixs is an AI-powered analytics copilot that helps businesses analyze financial data, generate instant charts and reports, and gain actionable insights.
-              </div>
-            </div>
 
-            <div class="faq-item border border-gray-300 rounded-md">
-                <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                  <span>What’s included in each plan?</span>
-                  <span class="icon transition-transform duration-300">&#9660;</span>
-                </button>
-                <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                    Each plan includes AI-powered financial insights, automated charts, seamless data integration, predictive analytics, and real-time financial monitoring.                
-                </div>
-            </div>
 
-            <div class="faq-item border border-gray-300 rounded-md">
-              <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                <span>How can I see Datatrixs in action before purchasing?</span>
-                <span class="icon transition-transform duration-300">&#9660;</span>
-              </button>
-              <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                We offer personalized demos where we walk you through the platform and show how it fits your needs. Contact us to schedule a session!
-              </div>
-            </div>
+<!-- PRICING TIERS -->
+<section style="padding: 48px 0 96px;">
+  <div class="container">
 
-            <div class="faq-item border border-gray-300 rounded-md">
-                <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                  <span>How does billing work?</span>
-                  <span class="icon transition-transform duration-300">&#9660;</span>
-                </button>
-                <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                    We offer both monthly and annual billing options. Annual plans come with a discount. You can manage your subscription through your account dashboard.
-                </div>
-            </div>
+    <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto 60px;">
 
-            <div class="faq-item border border-gray-300 rounded-md">
-                <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                  <span>How does billing work for additional team members?</span>
-                  <span class="icon transition-transform duration-300">&#9660;</span>
-                </button>
-                <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                    The initial editor is included for free. If you need additional editors, they are billed on a per-user, per-month basis. However, collaborators with view-only access can be added at no additional cost.
-                </div>
-            </div>
-
-            <div class="faq-item border border-gray-300 rounded-md">
-                <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                  <span>Are there any hidden fees?</span>
-                  <span class="icon transition-transform duration-300">&#9660;</span>
-                </button>
-                <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                    No, our pricing is transparent. What you see on the pricing page is what you pay. 
-                </div>
-            </div>
-
-            <div class="faq-item border border-gray-300 rounded-md">
-                <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                  <span>Can I change my plan later?</span>
-                  <span class="icon transition-transform duration-300">&#9660;</span>
-                </button>
-                <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                    Absolutely! You can upgrade or downgrade your plan at any time through your account settings.
-                </div>
-            </div>
-
-            <div class="faq-item border border-gray-300 rounded-md">
-                <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                  <span>How does Datatrixs integrate with QuickBooks and other accounting software?</span>
-                  <span class="icon transition-transform duration-300">&#9660;</span>
-                </button>
-                <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                    Our platform connects directly with QuickBooks and supports CSV uploads enabling seamless data import and real-time financial insights.
-                </div>
-            </div>
-
-            <div class="faq-item border border-gray-300 rounded-md">
-                <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                  <span>Can I customize reports and dashboards?</span>
-                  <span class="icon transition-transform duration-300">&#9660;</span>
-                </button>
-                <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                    Yes! Datatrixs allows you to customize your financial dashboards and reports to match your business needs.
-                </div>
-            </div>
-
-            <div class="faq-item border border-gray-300 rounded-md">
-                <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                  <span>How secure is my financial data?</span>
-                  <span class="icon transition-transform duration-300">&#9660;</span>
-                </button>
-                <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                    Datatrixs prioritizes security with encrypted data storage, role-based access controls, and compliance with industry security standards.
-                </div>
-            </div>
-
-            <div class="faq-item border border-gray-300 rounded-md">
-                <button class="faq-question w-full text-left px-4 rounded-md py-3 bg-gray-300 hover:bg-gray-400 flex justify-between items-center">
-                  <span>Do you offer customer support?</span>
-                  <span class="icon transition-transform duration-300">&#9660;</span>
-                </button>
-                <div class="faq-answer hidden transition-all duration-300 ease-in-out px-4 py-3 text-black">
-                    Yes! We provide email and chat support for all plans, with priority support for higher-tier plans.
-                </div>
-            </div>
-            
-            <!-- Repeat for other FAQ items -->
-          </div>
+      <!-- Starter -->
+      <div class="pricing-card">
+        <p style="font-size: 12px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;">Starter</p>
+        <div style="margin-bottom: 6px;">
+          <span style="font-size: 38px; font-weight: 800; letter-spacing: -0.03em;">Custom</span>
         </div>
-      </section>
-
-    </div>
-  </section>
-    
-  <!-- CTA -->
-  <!-- <section class="max-w-7xl mx-auto rounded-2xl py-20 bg-gray-900 mb-16 text-white text-center">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Start Understanding Your Business — Instantly</h2>
-      <p class="text-lg mb-6">Sign up today and transform the way you see your data.</p>
-      <a href="https://app.datatrixs.com/signup" target="_blank" class="bg-[#00FF85] text-black px-6 py-3 rounded-xl hover:bg-[#00E67E] transition">Sign Up</a>
-    </div>
-  </section> -->  
-
-  <!-- Footer Section -->
-  <footer class="bg-black text-white py-12">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- Logo and Tagline (50%) -->
-        <div class="flex flex-col items-center md:items-start">
-          <div class="text-xl font-bold text-white mb-4">
-            <a href="index.html">
-              <img src="assets/CoreLogo-w-with-gradient.png" class="h-5 mr-2" alt="Datatrixs Logo">
-            </a>
+        <p style="font-size: 13px; color: var(--text-3); margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border);">Up to 5 business units · Contact us for pricing</p>
+        <a href="demo-request.html" class="btn btn-secondary" style="width: 100%; justify-content: center; margin-bottom: 28px;">Get a quote</a>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Up to 5 connected business units
           </div>
-          <p class="text-gray-400 mb-6">The Fastest Way to Understand Your Business</p>
-          <a href="https://app.datatrixs.com/signup" target="_blank" class="bg-[#00FF85] text-black px-6 py-3 rounded-xl hover:bg-[#00E67E] transition">Sign Up</a>
-        </div>
-  
-        <!-- Menu + Contact (50%) -->
-        <div class="flex flex-col md:flex-row justify-around space-y-8 md:space-y-0 md:space-x-12">
-          <!-- Menu Section -->
-          <div class="flex flex-col items-center md:items-start space-y-4">
-            <h4 class="text-lg font-semibold text-white">Menu</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="index.html" class="hover:text-white">Home</a></li>
-              <li><a href="about.html" class="hover:text-white">About Us</a></li>
-              <li><a href="pricing.html" class="hover:text-white">Pricing</a></li>
-              <li><a href="blog/index.html" class="hover:text-white">Blog</a></li>
-            </ul>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Global dashboard
           </div>
-  
-          <!-- Contact Section -->
-          <div class="flex flex-col items-center md:items-start space-y-4">
-            <h4 class="text-lg font-semibold text-white">Contact</h4>
-            <p class="text-gray-400">1 Ferry Building, Suite 201<br>San Francisco, CA 94105</p>
-            <p class="text-gray-400">support@datatrixs.com</p>
-            <a href="https://www.linkedin.com/company/datatrixs" target="_blank" class="text-gray-400 hover:text-white">
-              <img src="assets/linkedin.png" alt="LinkedIn" class="h-5 inline-block mr-2">
-            </a>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Warren AI analyst
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Standard integrations (QBO, CSV)
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Reports &amp; exports
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Email support
           </div>
         </div>
       </div>
-  
-      <hr class="my-6 border-gray-700" />
-  
-      <!-- Copyright and Terms -->
-      <div class="text-left text-gray-400 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <p>&copy; 2025 Datatrixs. All rights reserved.</p>
-        <div class="space-x-6 md:text-right">
-          <a href="privacy-policy.html" class="hover:text-white">Privacy Policy</a>
-          <a href="terms-of-service.html" class="hover:text-white">Terms of Use</a>
+
+      <!-- Growth (featured) -->
+      <div class="pricing-card featured">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px;">
+          <p style="font-size: 12px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.08em;">Growth</p>
+          <span style="background: var(--primary-glow); border: 1px solid var(--primary-border); color: var(--primary); font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 100px; white-space: nowrap;">Most popular</span>
+        </div>
+        <div style="margin-bottom: 6px;">
+          <span style="font-size: 38px; font-weight: 800; letter-spacing: -0.03em;">Custom</span>
+        </div>
+        <p style="font-size: 13px; color: var(--text-3); margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border);">Up to 25 business units · Contact us for pricing</p>
+        <a href="demo-request.html" class="btn btn-primary" style="width: 100%; justify-content: center; margin-bottom: 28px;">Get a quote</a>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Everything in Starter
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Up to 25 connected business units
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            All integrations (QBO, NetSuite, Sage, CSV)
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Org structure &amp; role-based access
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Saved AI library (searchable)
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Vertical-aware KPIs &amp; terminology
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Priority support
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="pricing-card">
+        <p style="font-size: 12px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;">Enterprise</p>
+        <div style="margin-bottom: 6px;">
+          <span style="font-size: 38px; font-weight: 800; letter-spacing: -0.03em;">Custom</span>
+        </div>
+        <p style="font-size: 13px; color: var(--text-3); margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border);">Unlimited business units · Contact us</p>
+        <a href="demo-request.html" class="btn btn-secondary" style="width: 100%; justify-content: center; margin-bottom: 28px;">Contact us</a>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Everything in Growth
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Unlimited business units
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Custom data connectors &amp; ERP integrations
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Audit-ready exports &amp; SSO
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Dedicated customer success manager
+          </div>
+          <div style="font-size: 13px; color: var(--text-2); display: flex; gap: 10px; align-items: flex-start;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Custom onboarding &amp; training
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pricing note -->
+    <p style="text-align: center; font-size: 13px; color: var(--text-3);">
+      Pricing is per connected business unit. Final pricing depends on unit count, integration type, and contract length. <a href="demo-request.html" style="color: var(--primary); text-decoration: none;">Talk to us</a> for a custom quote.
+    </p>
+  </div>
+</section>
+
+
+<!-- COMPARISON TABLE -->
+<section style="padding: 0 0 96px; background: var(--bg-surface); border-top: 1px solid var(--border); padding-top: 64px;">
+  <div class="container">
+    <div class="reveal" style="text-align: center; margin-bottom: 48px;">
+      <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; letter-spacing: -0.02em;">What's included at each tier</h2>
+    </div>
+    <div class="reveal" style="overflow-x: auto;">
+      <table class="comp-table" style="min-width: 600px;">
+        <thead>
+          <tr>
+            <th style="width: 40%;">Feature</th>
+            <th style="text-align: center;">Starter</th>
+            <th style="text-align: center;">Growth</th>
+            <th style="text-align: center;">Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">Business units</td>
+            <td style="text-align: center; color: var(--text-2);">Up to 5</td>
+            <td style="text-align: center; color: var(--text-2);">Up to 25</td>
+            <td style="text-align: center; color: var(--text-2);">Unlimited</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">Global dashboard</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">Warren AI analyst</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">Reports &amp; exports</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">QuickBooks &amp; CSV integration</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">NetSuite &amp; Sage Intacct</td>
+            <td style="text-align: center;" class="dash">—</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">Org structure &amp; role-based access</td>
+            <td style="text-align: center;" class="dash">—</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">Saved AI library</td>
+            <td style="text-align: center;" class="dash">—</td>
+            <td style="text-align: center;" class="check">✓</td>
+            <td style="text-align: center;" class="check">✓</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">SSO &amp; audit-ready exports</td>
+            <td style="text-align: center;" class="dash">—</td>
+            <td style="text-align: center;" class="dash">—</td>
+            <td style="text-align: center;" class="check">✓</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">Custom data connectors</td>
+            <td style="text-align: center;" class="dash">—</td>
+            <td style="text-align: center;" class="dash">—</td>
+            <td style="text-align: center;" class="check">✓</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">Dedicated success manager</td>
+            <td style="text-align: center;" class="dash">—</td>
+            <td style="text-align: center;" class="dash">—</td>
+            <td style="text-align: center;" class="check">✓</td>
+          </tr>
+          <tr>
+            <td style="color: var(--text-1); font-weight: 500;">Support</td>
+            <td style="text-align: center; color: var(--text-2);">Email</td>
+            <td style="text-align: center; color: var(--text-2);">Priority</td>
+            <td style="text-align: center; color: var(--text-2);">Dedicated</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="max-width: 680px; margin: 0 auto;">
+      <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 40px; text-align: center;">Frequently asked questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What counts as a "business unit"?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">A business unit is any entity that connects its own data source — a retail location with its own QuickBooks, a subsidiary with its own NetSuite company, or a CSV upload for a standalone entity. One data source = one business unit. You can have multiple users accessing the same unit; users are not priced separately.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Can I mix integration types across business units?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Yes. You can have some units connected via QuickBooks, others via NetSuite, and others via CSV upload — all in the same organization. Datatrixs normalizes across all of them so you can compare units regardless of their data source.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Is there a free trial?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Yes. You can create an account and connect up to 2 business units to explore the platform. For a guided setup with your full data, we recommend booking a demo so our team can walk you through the connection and configuration for your specific setup.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>How does pricing change if I add more business units?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">You can add business units within your current tier at any time. If you exceed your tier's unit limit, we'll work with you to upgrade to the next tier — no automatic overages or surprise bills. Pricing is determined upfront based on your expected unit count.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Do you have annual vs. monthly billing?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Both are available. Annual billing includes a discount. Contact us to discuss what makes sense for your organization's budget cycle.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border); padding-top: 80px; padding-bottom: 80px;">
+  <div class="container">
+    <div class="reveal" style="text-align: center; max-width: 560px; margin: 0 auto;">
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 20px;">Get a quote for your organization.</h2>
+      <p style="font-size: 1rem; color: var(--text-2); margin-bottom: 36px; line-height: 1.75;">Tell us how many entities you manage, what systems you're on, and we'll send back a custom quote within 24 hours.</p>
+      <a href="demo-request.html" class="btn btn-primary btn-lg">Request a Demo</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 64px;" id="footer-grid">
+      <div>
+        <a href="index.html"><img src="assets/CoreLogo-w-with-gradient.png" alt="Datatrixs" style="height: 22px; margin-bottom: 16px; display: block;"></a>
+        <p style="font-size: 14px; color: var(--text-3); line-height: 1.75; max-width: 260px;">Financial intelligence for multi-unit businesses. One view of every entity you manage.</p>
+      </div>
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Product</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="product.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Features</a>
+          <a href="integrations.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Integrations</a>
+          <a href="pricing.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Pricing</a>
+          <a href="demo-request.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Request Demo</a>
+        </div>
+      </div>
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Company</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="about.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">About</a>
+          <a href="blog/index.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Blog</a>
+          <a href="https://app.datatrixs.com" target="_blank" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Login</a>
+        </div>
+      </div>
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Legal</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="privacy-policy.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Privacy Policy</a>
+          <a href="terms-of-service.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Terms of Service</a>
         </div>
       </div>
     </div>
-  </footer>
+    <div style="border-top: 1px solid var(--border); padding-top: 32px;">
+      <p style="font-size: 13px; color: var(--text-3);">©<script>document.write(new Date().getFullYear())</script> Datatrixs. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<script>
+document.getElementById('mobileMenuBtn').addEventListener('click', () => document.getElementById('mobileNav').classList.add('open'));
+document.getElementById('mobileNavClose').addEventListener('click', () => document.getElementById('mobileNav').classList.remove('open'));
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const faqItems = document.querySelectorAll(".faq-item");
-  
-      faqItems.forEach(item => {
-        const question = item.querySelector(".faq-question");
-        const answer = item.querySelector(".faq-answer");
-        const icon = item.querySelector(".icon");
-  
-        question.addEventListener("click", () => {
-          const isOpen = !answer.classList.contains("hidden");
-  
-          // Close all
-          document.querySelectorAll(".faq-answer").forEach(a => a.classList.add("hidden"));
-          document.querySelectorAll(".icon").forEach(i => i.style.transform = "rotate(0deg)");
-  
-          // Toggle current
-          if (!isOpen) {
-            answer.classList.remove("hidden");
-            icon.style.transform = "rotate(180deg)";
-          }
-        });
-      });
-    });
-  </script>
-  
-  
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+const fg = document.getElementById('footer-grid');
+function applyMobile() {
+  if (fg) fg.style.gridTemplateColumns = window.innerWidth < 768 ? '1fr 1fr' : '2fr 1fr 1fr 1fr';
+}
+applyMobile();
+window.addEventListener('resize', applyMobile);
+
+// FAQ
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => item.classList.toggle('open'));
+});
+</script>
+
 </body>
 </html>

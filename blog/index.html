@@ -1,515 +1,384 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
-    <script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-HZ3K9DRTXM');
-    </script>
-    
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Datatrixs | Finance Intelligence for Multi-Unit Businesses</title>
+  <meta name="description" content="Practical guides on multi-unit financial consolidation, AI-powered analysis, and closing the books faster. Written for CFOs and finance leaders." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.datatrixs.com/blog/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Datatrixs Blog — Finance Intelligence for Multi-Unit Businesses" />
+  <meta property="og:description" content="Practical guides on multi-unit financial consolidation, AI-powered analysis, and closing the books faster." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.datatrixs.com/blog/" />
+  <meta property="og:image" content="https://www.datatrixs.com/assets/product-meta.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Datatrixs Blog" />
+  <meta name="twitter:description" content="Practical guides on multi-unit financial consolidation and AI-powered analysis." />
+  <meta name="twitter:image" content="https://www.datatrixs.com/assets/product-meta.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="../assets/faveicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../assets/faveicon/favicon.svg" />
+  <link rel="shortcut icon" href="../assets/faveicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/faveicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Datatrixs" />
+  <link rel="manifest" href="../assets/faveicon/site.webmanifest" />
+
+  <!-- Fonts & Design System -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../dx-design.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-<!-- Primary Meta Tags -->
-<title>Insights & Impacts | Datatrixs Blog</title>
-<meta name="title" content="Insights & Impacts | Datatrixs Blog">
-<meta name="description" content="Actionable insights, product updates, and stories from the Datatrixs team. Learn how to make faster, smarter business decisions.">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.datatrixs.com/blog/">
-<meta property="og:title" content="Insights & Impacts | Datatrixs Blog">
-<meta property="og:description" content="Actionable insights, product updates, and stories from the Datatrixs team. Learn how to make faster, smarter business decisions.">
-<meta property="og:image" content="https://www.datatrixs.com/assets/og-datatrixs-blog.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://www.datatrixs.com/blog/">
-<meta property="twitter:title" content="Insights & Impacts | Datatrixs Blog">
-<meta property="twitter:description" content="Actionable insights, product updates, and stories from the Datatrixs team. Learn how to make faster, smarter business decisions.">
-<meta property="twitter:image" content="https://www.datatrixs.com/assets/og-datatrixs-blog.png">
-
-
-<!-- Canonical URL -->
-<link rel="canonical" href="https://www.datatrixs.com/blog/" />  <link rel="icon" type="image/png" href="assets/faveicon/favicon-96x96.png" sizes="96x96" />
-  
-<!-- Favicon -->
-
-<link rel="icon" type="image/svg+xml" href="assets/faveicon/favicon.svg" />
-<link rel="shortcut icon" href="./../assets/faveicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="./../assets/faveicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Datatrixs" />
-<link rel="manifest" href="assets/faveicon/site.webmanifest" />
-
-<style>
-    body { font-family: 'Inter', sans-serif; }
-</style>
-
-  <style>
-     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
-      color: #111827;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 60px 24px;
-    }
-
-    h1 {
-      font-size: 2.75rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    p.subtitle {
-      font-size: 1.125rem;
-      color: #6b7280;
-      margin-bottom: 40px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-
-    @media (min-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr 1fr;
+  <!-- JSON-LD Blog listing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Datatrixs Blog",
+    "url": "https://www.datatrixs.com/blog/",
+    "description": "Practical guides on multi-unit financial consolidation, AI analysis, and closing the books faster.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Datatrixs",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.datatrixs.com/assets/CoreLogo-w-with-gradient.png"
       }
     }
-
-    .card {
-      background: white;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-      transition: box-shadow 0.2s ease;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .card:hover {
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    }
-
-    .card h2 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .card p {
-      font-size: 1rem;
-      color: #4b5563;
-      margin-bottom: 16px;
-    }
-
-    .card .date {
-      font-size: 0.875rem;
-      color: #9ca3af;
-    }
-
-    .subscribe {
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .subscribe a {
-      display: inline-block;
-      padding: 10px 20px;
-      border: 1px solid #d1d5db;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #111827;
-      font-weight: 500;
-      transition: background-color 0.2s ease;
-    }
-
-    .subscribe a:hover {
-      background-color: #f3f4f6;
-    }
-  </style>
+  }
+  </script>
 </head>
-<body class="bg-white text-gray-800">
+<body>
 
-<nav class="fixed top-4 left-4 right-4 z-50 bg-black shadow-lg rounded-full px-6 py-2 flex items-center justify-between max-w-5xl mx-auto border border-gray-800">
-    <div class="text-xl font-bold text-white flex">
-        <a href="./../index.html" class="h-5">
-            <img src="./../assets/CoreLogo-w-with-gradient.png" class="h-5 mr-2" alt="Datatrixs Logo">
-        </a>
+<!-- Nav -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/CoreLogo-w-with-gradient.png" alt="Datatrixs" />
+    </a>
+    <div class="nav-links">
+      <a href="../product.html">Product</a>
+      <a href="../integrations.html">Integrations</a>
+      <a href="../pricing.html">Pricing</a>
+      <a href="../blog/index.html" style="color:var(--text-1)">Blog</a>
+      <a href="../about.html">About</a>
     </div>
-    <div class="hidden md:flex space-x-6 text-[#00FF85] font-medium text-white">
-        <a href="./../index.html" class="hover:text-[#00FF85] transition">Home</a>
-        <a href="./../about.html" class="hover:text-[#00FF85] transition">About Us</a>
-        <a href="./../pricing.html" class="hover:text-[#00FF85] transition">Pricing</a>
-        <a href="index.html" class="hover:text-[#00FF85] transition">Blog</a>
+    <div class="nav-actions">
+      <a href="https://app.datatrixs.com" target="_blank" class="nav-login">Log in</a>
+      <a href="../demo-request.html" class="nav-cta">Request a demo</a>
     </div>
-    <div class="hidden md:flex space-x-4">
-        <a href="https://app.datatrixs.com" target="_blank" class="px-4 py-2 text-sm font-medium text-white hover:text-[#00FF85] transition">Login</a>
-        <a href="https://app.datatrixs.com/signup" target="_blank" class="px-4 py-2 bg-[#00FF85] text-black rounded-xl text-sm font-medium hover:bg-[#00E67E] transition">Sign Up</a>
-    </div>
-    <div class="md:hidden">
-        <button id="mobile-menu-button" class="text-white focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        </button>
-    </div>
+    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Open menu">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
 </nav>
-    
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="md:hidden text-center fixed top-20 left-4 right-4 z-40 bg-black shadow-xl rounded-xl py-2 px-6 space-y-4 hidden">
-    <a href="./../index.html" class="block text-white font-medium hover:text-[#00FF85]">Home</a>
-    <a href="./../about.html" class="block text-white font-medium hover:text-[#00FF85]">About Us</a>
-    <a href="./../pricing.html" class="block text-white font-medium hover:text-[#00FF85]">Pricing</a>
-    <a href="index.html" class="block text-white font-medium hover:text-[#00FF85]">Blog</a>
-    <a href="https://app.datatrixs.com" target="_blank" class="block text-white font-medium hover:text-[#00FF85]">Login</a>
-    <a href="https://app.datatrixs.com/signup" target="_blank" class="block text-black bg-[#00FF85] px-4 py-2 rounded-xl font-medium text-center hover:bg-[#00E67E]">Sign Up</a>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="../product.html">Product</a>
+  <a href="../integrations.html">Integrations</a>
+  <a href="../pricing.html">Pricing</a>
+  <a href="../blog/index.html">Blog</a>
+  <a href="../about.html">About</a>
+  <a href="https://app.datatrixs.com" target="_blank">Log in</a>
+  <a href="../demo-request.html" class="btn btn-primary" style="text-align:center;margin-top:8px">Request a demo</a>
 </div>
 
-<script>
-    const menuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-</script>
-  
-  <!-- <style>
-    body {
-      padding-top: 100px; /* ensure space for fixed nav */
-    }
-  </style> -->
-<style>
-    @keyframes fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    }
-    .animate-fade-in-up {
-    animation: fade-in-up 0.5s ease-out forwards;
-    }  
-</style>  
-
-<!-- HERO -->
-<section class="bg-black text-white px-4 pt-24 mb-24 text-center min-h-[50vh] rounded-2xl flex flex-col justify-center items-center overflow-visible">
-    <span class="text-sm text-rose-500 px-4 py-2 mt-12 font-semibold tracking-widest border border-gray-800 rounded-full">Blog</span>
-    
-    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up max-w-4xl pt-12">
-      Insights & Impacts    
+<!-- Hero -->
+<section class="section" style="padding-top:120px;padding-bottom:48px;">
+  <div class="container" style="max-width:720px;text-align:center;">
+    <div class="label" style="margin:0 auto 16px;">Datatrixs blog</div>
+    <h1 style="font-size:clamp(28px,4vw,44px);font-weight:800;color:var(--text-1);line-height:1.2;margin-bottom:16px;">
+      Finance intelligence for operators who run more than one of everything
     </h1>
-  
-    <p class="text-lg md:text-xl mb-8 max-w-xl">
-      Stories, strategies, and product updates from the team building Datatrixs.
+    <p style="font-size:17px;color:var(--text-2);line-height:1.7;">
+      Practical writing on multi-unit consolidation, faster closes, and what AI actually does (and doesn't) do for finance teams.
     </p>
-  
-    <!-- Blog Cards (Overlapping Effect) -->
-    <div class="relative -bottom-20 w-full max-w-7xl flex flex-col md:flex-row gap-6 justify-center items-stretch z-10 px-4 text-left">
-
-      <!-- Blog Post 1 -->
-      <a href="data-accessibility-enterprise.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-        <img src="./../assets/data-accessibility-enterprise.png" alt="Data Accessibility Enterprise" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col justify-between flex-grow">
-            <div>
-              <p class="text-sm text-gray-500 mb-1">May 7, 2025</p>
-              <h3 class="font-semibold text-lg mb-2">Why Enterprises Must Rethink Data Analytics Accessibility—Now</h3>
-              <p class="text-sm text-gray-600 mb-6">In an era where data is the new oil, enterprises are still struggling to
-                democratize access to financial insights. Here’s why it matters.</p>
-            </div>
-    
-            <!-- Bottom row: Author info and read more -->
-            <div class="flex justify-between items-center mt-auto">
-              <div class="flex items-center">
-                <img src="./../assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                <div class="text-sm">
-                  <p class="font-semibold">Datatrixs Team</p>
-                </div>
-              </div>
-              <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-            </div>
-          </div>      
-        </a>      
-      
-      <!-- Blog Post 2 -->
-      <a href="read-pl-like-a-pro.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-        <img src="./../assets/solopreneurs-blog-banner.png" alt="Blog Post 1" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col justify-between flex-grow">
-            <div>
-              <p class="text-sm text-gray-500 mb-1">April 12, 2025</p>
-              <h3 class="font-semibold text-lg mb-2">How to Read Your P&L Like a Pro</h3>
-              <p class="text-sm text-gray-600 mb-6">Learn the essentials of interpreting financial reports for smarter decisions.</p>
-            </div>
-    
-            <!-- Bottom row: Author info and read more -->
-            <div class="flex justify-between items-center mt-auto">
-              <div class="flex items-center">
-                <img src="./../assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                <div class="text-sm">
-                  <p class="font-semibold">Datatrixs Team</p>
-                </div>
-              </div>
-              <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-            </div>
-          </div>      
-        </a>
-  
-    </div>
+  </div>
 </section>
 
-  <!-- Latest Blog SECTION -->
-  <section class="max-w-7xl mx-auto py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-8 text-left">Discover Our Latest Posts</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-        <!-- Blog Post 1 -->
-        <a href="data-accessibility-enterprise.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-          <img src="./../assets/data-accessibility-enterprise.png" alt="Data Accessibility Enterprise" class="w-full h-48 object-cover">
-          <div class="p-6 flex flex-col justify-between flex-grow">
-              <div>
-                <p class="text-sm text-gray-500 mb-1">May 7, 2025</p>
-                <h3 class="font-semibold text-lg mb-2">Why Enterprises Must Rethink Data Analytics Accessibility—Now </h3>
-                <p class="text-sm text-gray-600 mb-6">In an era where data is the new oil, enterprises are still struggling to
-                  democratize access to financial insights. Here’s why it matters.</p>
-              </div>
-      
-              <!-- Bottom row: Author info and read more -->
-              <div class="flex justify-between items-center mt-auto">
-                <div class="flex items-center">
-                  <img src="./../assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                  <div class="text-sm">
-                    <p class="font-semibold">Datatrixs Team</p>
-                  </div>
-                </div>
-                <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-              </div>
-          </div>      
-      </a>    
-      
-      <!-- Blog Post 1 -->
-      <a href="read-pl-like-a-pro.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-        <img src="./../assets/solopreneurs-blog-banner.png" alt="Blog Post 1" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col justify-between flex-grow">
-            <div>
-              <p class="text-sm text-gray-500 mb-1">April 12, 2025</p>
-              <h3 class="font-semibold text-lg mb-2">How to Read Your P&L Like a Pro</h3>
-              <p class="text-sm text-gray-600 mb-6">Learn the essentials of interpreting financial reports for smarter decisions.</p>
-            </div>
-    
-            <!-- Bottom row: Author info and read more -->
-            <div class="flex justify-between items-center mt-auto">
-              <div class="flex items-center">
-                <img src="./../assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                <div class="text-sm">
-                  <p class="font-semibold">Datatrixs Team</p>
-                </div>
-              </div>
-              <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-            </div>
-        </div>      
-      </a>
-      <!-- Blog Post 2 -->
-      <a href="rise-of-ai-in-finance.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-        <img src="./../assets/ai-cfo-blog-banner.png" alt="Blog Post 2" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col justify-between flex-grow">
-            <div>
-                <p class="text-sm text-gray-500 mb-1">April 5, 2025</p>
-                <h3 class="font-semibold text-lg mb-2">The Rise of AI in Finance</h3>
-                <p class="text-sm text-gray-600 mb-6">Why more founders and finance teams are turning to AI-powered copilots.</p>
-            </div>
-            <!-- Bottom row: Author info and read more -->
-            <div class="flex justify-between items-center mt-auto">
-                <div class="flex items-center">
-                  <img src="./../assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                  <div class="text-sm">
-                    <p class="font-semibold">Datatrixs Team</p>
-                  </div>
-                </div>
-                <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-            </div>
-        </div>
-      </a>
-
-      <!-- Blog Post 3 -->
-      <a href="how-we-built-datatrixs.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-        <img src="./../assets/product-hunt-launch-blog-banner.png" alt="Blog Post 2" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col justify-between flex-grow">
-            <div>
-                <p class="text-sm text-gray-500 mb-1">April 5, 2025</p>
-                <h3 class="font-semibold text-lg mb-2">How We Built Datatrixs</h3>
-                <p class="text-sm text-gray-600 mb-6">From solo-founder to AI infrastructure — a peek behind the product.</p>
-            </div>
-            <div class="flex justify-between items-center mt-auto">
-                <div class="flex items-center">
-                    <img src="./../assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                    <div class="text-sm">
-                    <p class="font-semibold">Datatrixs Team</p>
-                    </div>
-                </div>
-                <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-            </div>
-        </div>
-      </a>
-
-      <!-- Blog Post 4 -->
-      <a href="cpa-firms-the-benefits-of-automating.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-        <img src="./../assets/benefits-of-automation.svg" alt="Blog Post 2" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col justify-between flex-grow">
-            <div>
-                <p class="text-sm text-gray-500 mb-1">November 5, 2024</p>
-                <h3 class="font-semibold text-lg mb-2">AI's Benefits in Automating Financials for CPA Firms</h3>
-                <p class="text-sm text-gray-600 mb-6">In an industry where accuracy, efficiency, and compliance are paramount, CPA firms often face the challenge of managing increasing workloads while maintaining the highest levels of precision.</p>
-            </div>
-            <div class="flex justify-between items-center mt-auto">
-                <div class="flex items-center">
-                    <img src="./../assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                    <div class="text-sm">
-                    <p class="font-semibold">Datatrixs Team</p>
-                    </div>
-                </div>
-                <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-            </div>
-        </div>
-      </a>
-
-      <!-- Blog Post 5 -->
-      <a href="enhancing-compliance-reporting-in-healthcare.html" class="flex-1 bg-white rounded-xl overflow-hidden transform transition duration-300 hover:scale-[1.02] text-black">
-        <img src="./../assets/blog-graphic-compliance-healthcare.svg" alt="Blog Post 2" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col justify-between flex-grow">
-            <div>
-                <p class="text-sm text-gray-500 mb-1">October 1, 2024</p>
-                <h3 class="font-semibold text-lg mb-2">Enhancing Compliance & Reporting in Healthcare with AI</h3>
-                <p class="text-sm text-gray-600 mb-6">Artificial intelligence (AI) offers healthcare organizations the ability to streamline compliance and reporting processes while minimizing risk.
-                </p>
-            </div>
-            <div class="flex justify-between items-center mt-auto">
-                <div class="flex items-center">
-                    <img src="./../assets/dx-avatar.png" alt="Author Avatar" class="w-8 h-8 rounded-full mr-2">
-                    <div class="text-sm">
-                    <p class="font-semibold">Datatrixs Team</p>
-                    </div>
-                </div>
-                <span class="text-blue-600 font-semibold text-sm">Read more →</span>
-            </div>
-        </div>
-      </a>
-    
-  
+<!-- Featured Q1 2026 posts -->
+<section class="section" style="padding-top:0;padding-bottom:56px;">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+      <span style="font-size:13px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;">Featured</span>
+      <div style="flex:1;height:1px;background:var(--border);"></div>
     </div>
+    <div class="blog-featured-grid">
+      <a href="multi-entity-financial-consolidation-guide.html" class="blog-card featured reveal">
+        <span class="blog-card-tag">Guide</span>
+        <h3>Multi-Entity Financial Consolidation: The Complete Guide for Finance Leaders</h3>
+        <p>Everything finance leaders need to know about consolidating books across multiple legal entities — intercompany eliminations, currency translation, chart of accounts alignment, and where AI fits in.</p>
+        <div class="blog-card-meta">March 9, 2026 &middot; 14 min read</div>
+      </a>
+      <div style="display:flex;flex-direction:column;gap:24px;">
+        <a href="financial-questions-every-cfo-should-ask.html" class="blog-card reveal">
+          <span class="blog-card-tag amber">AI &amp; Analysis</span>
+          <h3>5 Financial Questions Every CFO Should Be Asking Across Their Business Units</h3>
+          <p>The questions that separate reactive finance from strategic finance — and how to get answers in minutes instead of days.</p>
+          <div class="blog-card-meta">February 3, 2026 &middot; 8 min read</div>
+        </a>
+        <a href="multi-unit-financial-close-process.html" class="blog-card reveal">
+          <span class="blog-card-tag">Operations</span>
+          <h3>How Finance Teams at Multi-Unit Businesses Are Closing the Books Faster</h3>
+          <p>Where the time actually goes during month-end close and the process changes that compress a three-week ritual into days.</p>
+          <div class="blog-card-meta">January 6, 2026 &middot; 9 min read</div>
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-      
-<!-- <section class="max-w-7xl container mx-auto px-4">
-    <div class="grid">
-      <a href="/blog/solopreneurs-spreadsheet-overload.html" class="card">
-        <img src="./../assets/solopreneurs-blog-banner.png" alt="Solopreneurs Are Drowning in Spreadsheets" class="rounded-lg mb-4">
-        <h2>Solopreneurs Are Drowning in Spreadsheets — We Built a Lifeboat</h2>
-        <p>Most tools are built for teams. But what about the millions of solo operators juggling finances, taxes, and strategy alone?</p>
-        <div class="date">April 12, 2025</div>
+<!-- All posts grid -->
+<section class="section" style="padding-top:0;background:var(--bg-surface);border-top:1px solid var(--border);">
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:32px;">
+      <span style="font-size:13px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em;">All articles</span>
+      <div style="flex:1;height:1px;background:var(--border);"></div>
+    </div>
+    <div class="blog-grid">
+
+      <a href="data-accessibility-enterprise.html" class="blog-card reveal">
+        <span class="blog-card-tag">Data</span>
+        <h3>Data Accessibility in Enterprise Finance</h3>
+        <p>How enterprise finance teams are breaking down data silos and making financial information accessible across the organization.</p>
+        <div class="blog-card-meta">2025</div>
       </a>
 
-      <a href="/blog/ai-cfo-future.html" class="card">
-        <img src="./../assets/ai-cfo-blog-banner.png" alt="How AI Can Automate the CFO Role for Freelancers and Creators" class="rounded-lg mb-4">
-        <h2>How AI Can Automate the CFO Role for Freelancers and Creators</h2>
-        <p>An inside look at how Datatrixs uses natural language, embeddings, and finance-specific AI to replace what used to take an entire finance team.</p>
-        <div class="date">April 5, 2025</div>
+      <a href="rise-of-ai-in-finance.html" class="blog-card reveal">
+        <span class="blog-card-tag amber">AI &amp; Analysis</span>
+        <h3>The Rise of AI in Finance</h3>
+        <p>How artificial intelligence is changing the way finance teams analyze data, generate reports, and make strategic decisions.</p>
+        <div class="blog-card-meta">2025</div>
       </a>
 
-      <a href="/blog/product-hunt-launch-playbook.html" class="card">
-        <img src="./../assets/product-hunt-launch-blog-banner.png" alt="The Product Hunt Launch Strategy That Helped Us Build Momentum" class="rounded-lg mb-4">
-        <h2>The Product Hunt Launch Strategy That Helped Us Build Momentum</h2>
-        <p>We leaned into community, transparency, and a merch drop to get 10k+ impressions before launch day.</p>
-        <div class="date">March 30, 2025</div>
+      <a href="streamlining-financial-reporting.html" class="blog-card reveal">
+        <span class="blog-card-tag">Reporting</span>
+        <h3>Streamlining Financial Reporting</h3>
+        <p>Practical approaches for reducing the time and manual effort involved in monthly and quarterly financial reporting cycles.</p>
+        <div class="blog-card-meta">2025</div>
       </a>
-    </div>
 
-    <div class="subscribe">
-      <a href="/newsletter">Subscribe for Updates</a>
+      <a href="how-we-built-datatrixs.html" class="blog-card reveal">
+        <span class="blog-card-tag">Company</span>
+        <h3>How We Built Datatrixs</h3>
+        <p>The product decisions, early customer conversations, and technical choices that shaped the Datatrixs platform.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="ai-analytics-for-cpa-firms.html" class="blog-card reveal">
+        <span class="blog-card-tag amber">AI &amp; Analysis</span>
+        <h3>AI Analytics for CPA Firms</h3>
+        <p>How accounting firms are using AI-powered analytics to deliver faster, more insightful advisory services to clients.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="5-key-metrics.html" class="blog-card reveal">
+        <span class="blog-card-tag">Metrics</span>
+        <h3>5 Key Metrics Every Multi-Unit Business Should Track</h3>
+        <p>The unit economics and cross-entity KPIs that matter most for operators running multiple locations or business lines.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="the-importance-of-financial-automation.html" class="blog-card reveal">
+        <span class="blog-card-tag">Operations</span>
+        <h3>The Importance of Financial Automation</h3>
+        <p>Where automation delivers real leverage in the finance function — and where human judgment still can't be replaced.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="streamlining-management-discussion-and-analysis.html" class="blog-card reveal">
+        <span class="blog-card-tag">Reporting</span>
+        <h3>Streamlining Management Discussion &amp; Analysis</h3>
+        <p>How finance teams are using structured data and AI to produce MD&amp;A narratives faster and with fewer revision cycles.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="read-pl-like-a-pro.html" class="blog-card reveal">
+        <span class="blog-card-tag">Education</span>
+        <h3>How to Read a P&amp;L Like a Pro</h3>
+        <p>A practical breakdown of the income statement for operators who want to understand their numbers, not just report them.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="transforming-client-advisory-services.html" class="blog-card reveal">
+        <span class="blog-card-tag amber">AI &amp; Analysis</span>
+        <h3>Transforming Client Advisory Services with AI</h3>
+        <p>How accounting and advisory firms are embedding AI tools into their client engagements to deliver more proactive advice.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="the-importance-of-data-integrity.html" class="blog-card reveal">
+        <span class="blog-card-tag">Data</span>
+        <h3>The Importance of Data Integrity in Financial Reporting</h3>
+        <p>Why data integrity issues cost more than bad data — and how to build systems that catch errors before reports go out.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="how-data-analytics-can-transform.html" class="blog-card reveal">
+        <span class="blog-card-tag">Data</span>
+        <h3>How Data Analytics Can Transform Your Finance Function</h3>
+        <p>The shift from descriptive to predictive analytics in finance — and what it actually requires to make it happen.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="cpa-firms-the-benefits-of-automating.html" class="blog-card reveal">
+        <span class="blog-card-tag">Operations</span>
+        <h3>CPA Firms: The Benefits of Automating Routine Work</h3>
+        <p>Which tasks are worth automating first in an accounting practice — and what the time savings enable downstream.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="how-startups-can-scale-efficiently.html" class="blog-card reveal">
+        <span class="blog-card-tag">Growth</span>
+        <h3>How Startups Can Scale Finance Efficiently</h3>
+        <p>The finance infrastructure decisions that determine whether a scaling company's books keep up with its growth.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="ai-beyond-real-time-dasboard.html" class="blog-card reveal">
+        <span class="blog-card-tag amber">AI &amp; Analysis</span>
+        <h3>AI Beyond the Real-Time Dashboard</h3>
+        <p>Why dashboards are a starting point, not the destination — and what AI analysis looks like when it actually drives decisions.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="data-strategies-for-real-estate-success.html" class="blog-card reveal">
+        <span class="blog-card-tag">Verticals</span>
+        <h3>Data Strategies for Real Estate Success</h3>
+        <p>How real estate operators are using financial analytics to manage portfolio performance across properties and funds.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="enhancing-compliance-reporting-in-healthcare.html" class="blog-card reveal">
+        <span class="blog-card-tag">Verticals</span>
+        <h3>Enhancing Compliance Reporting in Healthcare</h3>
+        <p>Financial compliance in multi-entity healthcare organizations and the reporting infrastructure that makes it manageable.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="revolutionizing-research-and-innovation.html" class="blog-card reveal">
+        <span class="blog-card-tag">Verticals</span>
+        <h3>Revolutionizing Research &amp; Innovation Finance</h3>
+        <p>How biotech and R&amp;D-heavy organizations manage grant tracking, burn rate, and multi-entity financial consolidation.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="transforming-healthcare-with-data-insights.html" class="blog-card reveal">
+        <span class="blog-card-tag">Verticals</span>
+        <h3>Transforming Healthcare with Data Insights</h3>
+        <p>Where data-driven decision-making is changing financial management in healthcare networks and multi-site practices.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="tax-advisory-for-entrepreneurs.html" class="blog-card reveal">
+        <span class="blog-card-tag">Tax</span>
+        <h3>Tax Advisory for Entrepreneurs</h3>
+        <p>Key tax planning considerations for business owners running multiple entities — and how to work more effectively with your advisors.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="green-tax-credits-in-the-federal-ira.html" class="blog-card reveal">
+        <span class="blog-card-tag">Tax</span>
+        <h3>Green Tax Credits in the Federal IRA</h3>
+        <p>A breakdown of IRA energy tax credits relevant to multi-unit operators — what qualifies, what the documentation requirements are.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="how-to-avoid-pcaob-fines.html" class="blog-card reveal">
+        <span class="blog-card-tag">Compliance</span>
+        <h3>How to Avoid PCAOB Fines</h3>
+        <p>Common audit deficiencies that result in PCAOB enforcement actions — and the internal controls that prevent them.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="understanding-pcaob.html" class="blog-card reveal">
+        <span class="blog-card-tag">Compliance</span>
+        <h3>Understanding PCAOB Standards</h3>
+        <p>What finance leaders need to know about PCAOB oversight — inspections, standards, and what they mean for your audit process.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="how-to-reconnect-quickBooks-online-to-datatrixs.html" class="blog-card reveal">
+        <span class="blog-card-tag">Product</span>
+        <h3>How to Reconnect QuickBooks Online to Datatrixs</h3>
+        <p>Step-by-step guide to reauthorizing your QuickBooks Online connection when the token expires or the sync stops updating.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
+      <a href="reconnect-quickbooks.html" class="blog-card reveal">
+        <span class="blog-card-tag">Product</span>
+        <h3>Reconnecting QuickBooks: Troubleshooting Guide</h3>
+        <p>Common reasons your QuickBooks connection drops in Datatrixs and how to resolve each one quickly.</p>
+        <div class="blog-card-meta">2025</div>
+      </a>
+
     </div>
-</section> -->
+  </div>
+</section>
 
 <!-- CTA -->
-<section class="max-w-7xl mx-auto rounded-2xl py-20 bg-gray-900 mb-16 text-white text-center">
-<div class="container mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">Start Understanding Your Business — Instantly</h2>
-    <p class="text-lg mb-6">Sign up today and transform the way you see your data.</p>
-    <a href="https://app.datatrixs.com/signup" target="_blank" class="bg-[#00FF85] text-black px-6 py-3 rounded-xl hover:bg-[#00E67E] transition">Sign Up</a>
-</div>
+<section class="section" style="border-top:1px solid var(--border);">
+  <div class="container" style="text-align:center;max-width:520px;">
+    <h2 style="font-size:26px;font-weight:800;color:var(--text-1);margin-bottom:12px;">See Datatrixs in action</h2>
+    <p style="font-size:15px;color:var(--text-2);margin-bottom:24px;">30-minute demo with your actual data. No slides.</p>
+    <a href="../demo-request.html" class="btn btn-primary btn-lg">Request a demo</a>
+  </div>
 </section>
 
-  <!-- Footer Section -->
-  <footer class="bg-black text-white py-12">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- Logo and Tagline (50%) -->
-        <div class="flex flex-col items-center md:items-start">
-          <div class="text-xl font-bold text-white mb-4">
-            <a href="./../index.html">
-              <img src="./../assets/CoreLogo-w-with-gradient.png" class="h-5 mr-2" alt="Datatrixs Logo">
-            </a>
-          </div>
-          <p class="text-gray-400 mb-6">The Fastest Way to Understand Your Business</p>
-          <a href="https://app.datatrixs.com/signup" target="_blank" class="bg-[#00FF85] text-black px-6 py-3 rounded-xl hover:bg-[#00E67E] transition">Sign Up</a>
-        </div>
-  
-        <!-- Menu + Contact (50%) -->
-        <div class="flex flex-col md:flex-row justify-around space-y-8 md:space-y-0 md:space-x-12">
-          <!-- Menu Section -->
-          <div class="flex flex-col items-center md:items-start space-y-4">
-            <h4 class="text-lg font-semibold text-white">Menu</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="./../index.html" class="hover:text-white">Home</a></li>
-              <li><a href="./../about.html" class="hover:text-white">About Us</a></li>
-              <li><a href="./../pricing.html" class="hover:text-white">Pricing</a></li>
-              <li><a href="index.html" class="hover:text-white">Blog</a></li>
-            </ul>
-          </div>
-  
-          <!-- Contact Section -->
-          <div class="flex flex-col items-center md:items-start space-y-4">
-            <h4 class="text-lg font-semibold text-white">Contact</h4>
-            <p class="text-gray-400">1 Ferry Building, Suite 201<br>San Francisco, CA 94105</p>
-            <p class="text-gray-400">support@datatrixs.com</p>
-            <a href="https://www.linkedin.com/company/datatrixs" target="_blank" class="text-gray-400 hover:text-white">
-              <img src="./../assets/linkedin.png" alt="LinkedIn" class="h-5 inline-block mr-2">
-            </a>
-          </div>
-        </div>
-      </div>
-  
-      <hr class="my-6 border-gray-700" />
-  
-      <!-- Copyright and Terms -->
-      <div class="text-left text-gray-400 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <p>&copy; 2025 Datatrixs. All rights reserved.</p>
-        <div class="space-x-6 md:text-right">
-          <a href="./../privacy-policy.html" class="hover:text-white">Privacy Policy</a>
-          <a href="./../terms-of-service.html" class="hover:text-white">Terms of Use</a>
-        </div>
-      </div>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:32px;">
+      <img src="../assets/CoreLogo-w-with-gradient.png" alt="Datatrixs" style="height:24px;" />
+      <nav style="display:flex;gap:24px;flex-wrap:wrap;">
+        <a href="../product.html">Product</a>
+        <a href="../integrations.html">Integrations</a>
+        <a href="../pricing.html">Pricing</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../about.html">About</a>
+        <a href="../demo-request.html">Request demo</a>
+      </nav>
     </div>
-  </footer>
+    <div style="border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+      <p style="font-size:13px;color:var(--text-3);margin:0;">©<script>document.write(new Date().getFullYear())</script> Datatrixs. All rights reserved.</p>
+      <p style="font-size:13px;color:var(--text-3);margin:0;">support@datatrixs.com</p>
+    </div>
+  </div>
+</footer>
 
+<script>
+  // Mobile nav
+  const mobileBtn = document.getElementById('mobileBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const mobileClose = document.getElementById('mobileClose');
+  mobileBtn.addEventListener('click', () => mobileNav.classList.add('open'));
+  mobileClose.addEventListener('click', () => mobileNav.classList.remove('open'));
+
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
