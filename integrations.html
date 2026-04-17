@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HZ3K9DRTXM');</script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-HZ3K9DRTXM');</script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Integrations — Datatrixs | QuickBooks, NetSuite, Sage Intacct</title>
-  <meta name="description" content="Connect Datatrixs to QuickBooks Online, Oracle NetSuite, Sage Intacct, or upload CSV/Excel files. Direct integrations with no engineering required.">
+  <meta name="description"
+    content="Connect Datatrixs to QuickBooks Online, Oracle NetSuite, Sage Intacct, or upload CSV/Excel files. Direct integrations with no engineering required.">
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Integrations — Datatrixs">
-  <meta property="og:description" content="Connect your accounting systems in minutes. QuickBooks, NetSuite, Sage Intacct, CSV/Excel.">
+  <meta property="og:description"
+    content="Connect your accounting systems in minutes. QuickBooks, NetSuite, Sage Intacct, CSV/Excel.">
   <meta property="og:image" content="https://datatrixs.com/assets/product-meta.png">
   <link rel="canonical" href="https://datatrixs.com/integrations" />
 
@@ -26,363 +29,514 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="dx-design.css">
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav class="nav-bar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="assets/CoreLogo-w-with-gradient.png" alt="Datatrixs"></a>
-    <ul class="nav-links">
-      <li><a href="product.html">Product</a></li>
-      <li><a href="integrations.html" style="color: var(--text-1);">Integrations</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="blog/index.html">Blog</a></li>
-    </ul>
-    <div class="nav-actions">
-      <a href="https://app.datatrixs.com" target="_blank" rel="noopener" class="nav-login">Login</a>
-      <a href="demo-request.html" class="nav-cta">Request a Demo</a>
+  <!-- NAV -->
+  <nav class="nav-bar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/CoreLogo-w-with-gradient.png" alt="Datatrixs"></a>
+      <ul class="nav-links">
+        <li><a href="product.html">Product</a></li>
+        <li><a href="integrations.html" style="color: var(--text-1);">Integrations</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://app.datatrixs.com" target="_blank" rel="noopener" class="nav-login">Login</a>
+        <a href="demo-request.html" class="nav-cta">Request a Demo</a>
+      </div>
+      <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
     </div>
-    <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Open menu">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="mobileNavClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg></button>
+    <a href="product.html">Product</a>
+    <a href="integrations.html">Integrations</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog/index.html">Blog</a>
+    <a href="https://app.datatrixs.com" target="_blank">Login</a>
+    <a href="demo-request.html" style="color: var(--primary);">Request a Demo</a>
   </div>
-</nav>
-
-<div class="mobile-nav" id="mobileNav">
-  <button class="close-btn" id="mobileNavClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
-  <a href="product.html">Product</a>
-  <a href="integrations.html">Integrations</a>
-  <a href="pricing.html">Pricing</a>
-  <a href="blog/index.html">Blog</a>
-  <a href="https://app.datatrixs.com" target="_blank">Login</a>
-  <a href="demo-request.html" style="color: var(--primary);">Request a Demo</a>
-</div>
 
 
-<!-- HERO -->
-<section class="hero-bg" style="padding: 140px 0 80px; position: relative; overflow: hidden;">
-  <div class="hero-grid" style="position: absolute; inset: 0; pointer-events: none;"></div>
-  <div class="container" style="position: relative; text-align: center;">
-    <div style="display: flex; justify-content: center; margin-bottom: 24px;">
-      <span class="label">Data Integrations</span>
-    </div>
-    <h1 style="font-size: clamp(2.2rem, 4.5vw, 3.6rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 20px; max-width: 720px; margin-left: auto; margin-right: auto;">
-      Connect in minutes,<br><span class="text-gradient">not months.</span>
-    </h1>
-    <p style="font-size: 1.125rem; color: var(--text-2); max-width: 520px; margin: 0 auto 48px; line-height: 1.75;">
-      Direct integrations with the accounting systems your teams already use. No custom development. No IT project. No data migration.
-    </p>
-    <!-- 4 integration logos -->
-    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-      <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" stroke="#2CA01C" stroke-width="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="#2CA01C" stroke-width="2"/></svg>
-        <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">QuickBooks</span>
+  <!-- HERO -->
+  <section class="hero-bg" style="padding: 140px 0 80px; position: relative; overflow: hidden;">
+    <div class="hero-grid" style="position: absolute; inset: 0; pointer-events: none;"></div>
+    <div class="container" style="position: relative; text-align: center;">
+      <div style="display: flex; justify-content: center; margin-bottom: 24px;">
+        <span class="label">Data Integrations</span>
       </div>
-      <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#E0401A" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#E0401A" stroke-width="2" stroke-linecap="round"/></svg>
-        <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">NetSuite</span>
-      </div>
-      <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#00857A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">Sage Intacct</span>
-      </div>
-      <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#217346" stroke-width="2" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8" stroke="#217346" stroke-width="2"/></svg>
-        <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">Excel / CSV</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- HOW IT WORKS -->
-<section style="padding: 64px 0; background: var(--bg-surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-  <div class="container">
-    <div class="reveal" style="text-align: center; margin-bottom: 48px;">
-      <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; letter-spacing: -0.02em;">How connection works</h2>
-    </div>
-    <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; max-width: 800px; margin: 0 auto;">
-      <div style="text-align: center;">
-        <div class="step-num" style="margin: 0 auto 16px;">1</div>
-        <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 8px;">Add a business unit</h3>
-        <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">Name the entity and choose its data source — QuickBooks, NetSuite, Sage Intacct, or CSV upload.</p>
-      </div>
-      <div style="text-align: center;">
-        <div class="step-num" style="margin: 0 auto 16px;">2</div>
-        <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 8px;">Authorize access</h3>
-        <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">For direct integrations, click "Connect" and authenticate with your existing credentials. Read-only by default.</p>
-      </div>
-      <div style="text-align: center;">
-        <div class="step-num" style="margin: 0 auto 16px;">3</div>
-        <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 8px;">Your data appears</h3>
-        <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">Datatrixs normalizes and loads your financial data. Your dashboard updates. Warren is ready to answer questions.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- QUICKBOOKS -->
-<section class="section" id="quickbooks">
-  <div class="container">
-    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" id="qbo-grid">
-      <div>
-        <div style="width: 52px; height: 52px; background: rgba(44,160,28,0.12); border: 1px solid rgba(44,160,28,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" stroke="#2CA01C" stroke-width="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="#2CA01C" stroke-width="2"/></svg>
-        </div>
-        <h2 style="font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px;">QuickBooks Online</h2>
-        <p style="font-size: 1rem; color: var(--text-2); line-height: 1.75; margin-bottom: 24px;">
-          The most common setup for multi-unit businesses running QBO. Each business unit connects its own QuickBooks account — Datatrixs normalizes everything across all of them.
-        </p>
-        <div style="display: flex; flex-direction: column; gap: 12px;">
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p style="font-size: 14px; color: var(--text-2);">Direct OAuth — no credentials stored, no CSV exports, no middleware</p>
-          </div>
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p style="font-size: 14px; color: var(--text-2);">Syncs P&amp;L, balance sheet, and cash flow in under 2 minutes</p>
-          </div>
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p style="font-size: 14px; color: var(--text-2);">Each business unit can have a different QBO company — handled automatically</p>
-          </div>
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p style="font-size: 14px; color: var(--text-2);">Reconnect or update at any time from unit settings</p>
-          </div>
-        </div>
-      </div>
-      <div class="browser-frame">
-        <div class="browser-chrome">
-          <div class="browser-dot" style="background:#FF5F57;"></div>
-          <div class="browser-dot" style="background:#FFBD2E;"></div>
-          <div class="browser-dot" style="background:#28C840;"></div>
-          <div class="browser-url">app.datatrixs.com/connect/quickbooks</div>
-        </div>
-        <img src="assets/connecttoQBO.webp" alt="Connecting QuickBooks to Datatrixs" style="width:100%;display:block;max-height:380px;object-fit:cover;object-position:top;" loading="lazy">
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- NETSUITE -->
-<section class="section" id="netsuite">
-  <div class="container">
-    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" id="ns-grid">
-      <div class="card" style="padding: 40px;">
-        <div style="width: 52px; height: 52px; background: rgba(224,64,26,0.12); border: 1px solid rgba(224,64,26,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#E0401A" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#E0401A" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
-        <h2 style="font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px;">Oracle NetSuite</h2>
-        <p style="font-size: 14px; color: var(--text-2); line-height: 1.75; margin-bottom: 20px;">Built for organizations already running NetSuite with multi-subsidiary structures. Datatrixs connects via API and pulls consolidated data across subsidiaries without any custom SuiteScripts.</p>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Multi-subsidiary support built in — no custom configuration
-          </div>
-          <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            API-based connection with token authentication
-          </div>
-          <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Read-only access — no write permissions required
-          </div>
-        </div>
-      </div>
-      <div>
-        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px;">Who this is for</h3>
-        <p style="font-size: 14px; color: var(--text-2); line-height: 1.75; margin-bottom: 24px;">Mid-market companies that have grown into NetSuite and need consolidated visibility without rebuilding their reporting stack. Finance teams managing 5–50 subsidiaries in a single NetSuite instance.</p>
-        <div class="card-elevated" style="padding: 20px;">
-          <p style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-3); margin-bottom: 12px;">Example use case</p>
-          <p style="font-size: 14px; color: var(--text-2); line-height: 1.65; font-style: italic;">"We have 18 subsidiaries in NetSuite. Our FP&amp;A team was spending two weeks every quarter manually pulling subsidiary reports. With Datatrixs, they get consolidated P&amp;Ls in the dashboard before the quarter even closes."</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- SAGE INTACCT -->
-<section class="section" id="sage">
-  <div class="container">
-    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" id="sage-grid">
-      <div>
-        <div style="width: 52px; height: 52px; background: rgba(0,133,122,0.12); border: 1px solid rgba(0,133,122,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#00857A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h2 style="font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px;">Sage Intacct</h2>
-        <p style="font-size: 1rem; color: var(--text-2); line-height: 1.75; margin-bottom: 24px;">
-          Sage Intacct's multi-entity architecture maps naturally to Datatrixs. The integration handles Intacct's entity structure natively — no manual mapping of entities or accounts.
-        </p>
-        <div style="display: flex; flex-direction: column; gap: 12px;">
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p style="font-size: 14px; color: var(--text-2);">Native API connection — no data exports or scheduled syncs needed</p>
-          </div>
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p style="font-size: 14px; color: var(--text-2);">Pulls across all Intacct entities in a single connection</p>
-          </div>
-          <div style="display: flex; gap: 12px; align-items: flex-start;">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p style="font-size: 14px; color: var(--text-2);">Handles Intacct's dimension-based chart of accounts with automatic normalization</p>
-          </div>
-        </div>
-      </div>
-      <div class="card" style="padding: 40px;">
-        <p style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-3); margin-bottom: 16px;">Great fit for</p>
-        <div style="display: flex; flex-direction: column; gap: 12px;">
-          <div class="card-elevated" style="padding: 14px 16px;">
-            <p style="font-size: 14px; font-weight: 600; color: var(--text-1); margin-bottom: 4px;">Professional services firms</p>
-            <p style="font-size: 13px; color: var(--text-2);">Multiple offices or practice groups, each in Intacct</p>
-          </div>
-          <div class="card-elevated" style="padding: 14px 16px;">
-            <p style="font-size: 14px; font-weight: 600; color: var(--text-1); margin-bottom: 4px;">Healthcare organizations</p>
-            <p style="font-size: 13px; color: var(--text-2);">Multi-site operators tracking per-facility financials</p>
-          </div>
-          <div class="card-elevated" style="padding: 14px 16px;">
-            <p style="font-size: 14px; font-weight: 600; color: var(--text-1); margin-bottom: 4px;">Nonprofits &amp; fund managers</p>
-            <p style="font-size: 13px; color: var(--text-2);">Multi-entity fund or program tracking in Intacct</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- CSV / EXCEL -->
-<section class="section" id="csv">
-  <div class="container">
-    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" id="csv-grid">
-      <div class="card" style="padding: 40px;">
-        <div style="width: 52px; height: 52px; background: rgba(33,115,70,0.12); border: 1px solid rgba(33,115,70,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#217346" stroke-width="2" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8" stroke="#217346" stroke-width="2"/><line x1="8" y1="13" x2="16" y2="13" stroke="#217346" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
-        <h2 style="font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px;">Excel / CSV Upload</h2>
-        <p style="font-size: 14px; color: var(--text-2); line-height: 1.75; margin-bottom: 20px;">
-          Not on QuickBooks, NetSuite, or Sage? No problem. Upload a CSV or Excel export from any accounting system and Datatrixs maps your columns automatically.
-        </p>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Auto-maps common column formats and account structures
-          </div>
-          <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Upload once or re-upload at any time to refresh data
-          </div>
-          <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Mix with live integrations — some units can be CSV, others direct-connected
-          </div>
-        </div>
-      </div>
-      <div>
-        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px;">When CSV upload is the right move</h3>
-        <div style="display: flex; flex-direction: column; gap: 12px;">
-          <div style="display: flex; gap: 14px; align-items: flex-start;">
-            <div class="step-num" style="font-size: 12px;">→</div>
-            <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">A business unit runs on a legacy or custom ERP that doesn't have a direct integration yet</p>
-          </div>
-          <div style="display: flex; gap: 14px; align-items: flex-start;">
-            <div class="step-num" style="font-size: 12px;">→</div>
-            <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">You want to load historical data before a live connection is set up</p>
-          </div>
-          <div style="display: flex; gap: 14px; align-items: flex-start;">
-            <div class="step-num" style="font-size: 12px;">→</div>
-            <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">An acquired entity hasn't migrated to your standard accounting system yet</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- FINAL CTA -->
-<section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border);">
-  <div class="container">
-    <div class="reveal" style="text-align: center; max-width: 580px; margin: 0 auto;">
-      <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 20px;">Ready to connect your first unit?</h2>
-      <p style="font-size: 1rem; color: var(--text-2); margin-bottom: 36px; line-height: 1.75;">
-        We'll walk you through connecting your accounting systems in a 30-minute demo. Your data, your entities, live in the platform.
+      <h1
+        style="font-size: clamp(2.2rem, 4.5vw, 3.6rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 20px; max-width: 720px; margin-left: auto; margin-right: auto;">
+        Connect in minutes,<br><span class="text-gradient">not months.</span>
+      </h1>
+      <p style="font-size: 1.125rem; color: var(--text-2); max-width: 520px; margin: 0 auto 48px; line-height: 1.75;">
+        Direct integrations with the accounting systems your teams already use. No custom development. No IT project. No
+        data migration.
       </p>
-      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-        <a href="demo-request.html" class="btn btn-primary btn-lg">Request a Demo</a>
-        <a href="https://app.datatrixs.com/login" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">Start free trial</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 64px;" id="footer-grid">
-      <div>
-        <a href="index.html"><img src="assets/CoreLogo-w-with-gradient.png" alt="Datatrixs" style="height: 22px; margin-bottom: 16px; display: block;"></a>
-        <p style="font-size: 14px; color: var(--text-3); line-height: 1.75; max-width: 260px;">Financial intelligence for multi-unit businesses. One view of every entity you manage.</p>
-      </div>
-      <div>
-        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Product</p>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <a href="product.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Features</a>
-          <a href="integrations.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Integrations</a>
-          <a href="pricing.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Pricing</a>
-          <a href="demo-request.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Request Demo</a>
+      <!-- 4 integration logos -->
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <div
+          style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="7" width="20" height="14" rx="2" stroke="#2CA01C" stroke-width="2" />
+            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="#2CA01C" stroke-width="2" />
+          </svg>
+          <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">QuickBooks</span>
         </div>
-      </div>
-      <div>
-        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Company</p>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <a href="about.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">About</a>
-          <a href="blog/index.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Blog</a>
-          <a href="https://app.datatrixs.com" target="_blank" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Login</a>
+        <div
+          style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="#E0401A" stroke-width="2" />
+            <path d="M8 12h8M12 8v8" stroke="#E0401A" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">NetSuite</span>
         </div>
-      </div>
-      <div>
-        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Legal</p>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <a href="privacy-policy.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Privacy Policy</a>
-          <a href="terms-of-service.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Terms of Service</a>
+        <div
+          style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#00857A" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">Sage Intacct</span>
+        </div>
+        <div
+          style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#217346" stroke-width="2"
+              stroke-linejoin="round" />
+            <polyline points="14 2 14 8 20 8" stroke="#217346" stroke-width="2" />
+          </svg>
+          <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">Excel / CSV</span>
         </div>
       </div>
     </div>
-    <div style="border-top: 1px solid var(--border); padding-top: 32px;">
-      <p style="font-size: 13px; color: var(--text-3);">©<script>document.write(new Date().getFullYear())</script> Datatrixs. All rights reserved.</p>
+  </section>
+
+
+  <!-- HOW IT WORKS -->
+  <section
+    style="padding: 64px 0; background: var(--bg-surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="reveal" style="text-align: center; margin-bottom: 48px;">
+        <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; letter-spacing: -0.02em;">How connection works
+        </h2>
+      </div>
+      <div class="reveal"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; max-width: 800px; margin: 0 auto;">
+        <div style="text-align: center;">
+          <div class="step-num" style="margin: 0 auto 16px;">1</div>
+          <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 8px;">Add a business unit</h3>
+          <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">Name the entity and choose its data
+            source — QuickBooks, NetSuite, Sage Intacct, or CSV upload.</p>
+        </div>
+        <div style="text-align: center;">
+          <div class="step-num" style="margin: 0 auto 16px;">2</div>
+          <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 8px;">Authorize access</h3>
+          <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">For direct integrations, click "Connect"
+            and authenticate with your existing credentials. Read-only by default.</p>
+        </div>
+        <div style="text-align: center;">
+          <div class="step-num" style="margin: 0 auto 16px;">3</div>
+          <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 8px;">Your data appears</h3>
+          <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">Datatrixs normalizes and loads your
+            financial data. Your dashboard updates. Warren is ready to answer questions.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
+  </section>
 
-<script>
-document.getElementById('mobileMenuBtn').addEventListener('click', () => document.getElementById('mobileNav').classList.add('open'));
-document.getElementById('mobileNavClose').addEventListener('click', () => document.getElementById('mobileNav').classList.remove('open'));
 
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  <!-- QUICKBOOKS -->
+  <section class="section" id="quickbooks">
+    <div class="container">
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;"
+        id="qbo-grid">
+        <div>
+          <div
+            style="width: 52px; height: 52px; background: rgba(44,160,28,0.12); border: 1px solid rgba(44,160,28,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="7" width="20" height="14" rx="2" stroke="#2CA01C" stroke-width="2" />
+              <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="#2CA01C" stroke-width="2" />
+            </svg>
+          </div>
+          <h2
+            style="font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px;">
+            QuickBooks Online</h2>
+          <p style="font-size: 1rem; color: var(--text-2); line-height: 1.75; margin-bottom: 24px;">
+            The most common setup for multi-unit businesses running QBO. Each business unit connects its own QuickBooks
+            account — Datatrixs normalizes everything across all of them.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p style="font-size: 14px; color: var(--text-2);">Direct OAuth — no credentials stored, no CSV exports, no
+                middleware</p>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p style="font-size: 14px; color: var(--text-2);">Syncs P&amp;L, balance sheet, and cash flow in under 2
+                minutes</p>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p style="font-size: 14px; color: var(--text-2);">Each business unit can have a different QBO company —
+                handled automatically</p>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p style="font-size: 14px; color: var(--text-2);">Reconnect or update at any time from unit settings</p>
+            </div>
+          </div>
+        </div>
+        <div class="browser-frame">
+          <div class="browser-chrome">
+            <div class="browser-dot" style="background:#FF5F57;"></div>
+            <div class="browser-dot" style="background:#FFBD2E;"></div>
+            <div class="browser-dot" style="background:#28C840;"></div>
+            <div class="browser-url">app.datatrixs.com/connect/quickbooks</div>
+          </div>
+          <img src="assets/integrations.png" alt="Connecting QuickBooks to Datatrixs"
+            style="width:100%;display:block;max-height:380px;object-fit:cover;object-position:top;" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
 
-function applyMobileLayouts() {
-  const isMobile = window.innerWidth < 768;
-  ['qbo-grid','ns-grid','sage-grid','csv-grid'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.style.gridTemplateColumns = isMobile ? '1fr' : '1fr 1fr';
-  });
-  const fg = document.getElementById('footer-grid');
-  if (fg) fg.style.gridTemplateColumns = isMobile ? '1fr 1fr' : '2fr 1fr 1fr 1fr';
-}
-applyMobileLayouts();
-window.addEventListener('resize', applyMobileLayouts);
-</script>
+  <div class="divider"></div>
+
+  <!-- NETSUITE -->
+  <section class="section" id="netsuite">
+    <div class="container">
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;"
+        id="ns-grid">
+        <div class="card" style="padding: 40px;">
+          <div
+            style="width: 52px; height: 52px; background: rgba(224,64,26,0.12); border: 1px solid rgba(224,64,26,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="#E0401A" stroke-width="2" />
+              <path d="M8 12h8M12 8v8" stroke="#E0401A" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h2 style="font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px;">Oracle NetSuite
+          </h2>
+          <p style="font-size: 14px; color: var(--text-2); line-height: 1.75; margin-bottom: 20px;">Built for
+            organizations already running NetSuite with multi-subsidiary structures. Datatrixs connects via API and
+            pulls consolidated data across subsidiaries without any custom SuiteScripts.</p>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Multi-subsidiary support built in — no custom configuration
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              API-based connection with token authentication
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Read-only access — no write permissions required
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px;">Who this is for</h3>
+          <p style="font-size: 14px; color: var(--text-2); line-height: 1.75; margin-bottom: 24px;">Mid-market companies
+            that have grown into NetSuite and need consolidated visibility without rebuilding their reporting stack.
+            Finance teams managing 5–50 subsidiaries in a single NetSuite instance.</p>
+          <div class="card-elevated" style="padding: 20px;">
+            <p
+              style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-3); margin-bottom: 12px;">
+              Example use case</p>
+            <p style="font-size: 14px; color: var(--text-2); line-height: 1.65; font-style: italic;">"We have 18
+              subsidiaries in NetSuite. Our FP&amp;A team was spending two weeks every quarter manually pulling
+              subsidiary reports. With Datatrixs, they get consolidated P&amp;Ls in the dashboard before the quarter
+              even closes."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SAGE INTACCT -->
+  <section class="section" id="sage">
+    <div class="container">
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;"
+        id="sage-grid">
+        <div>
+          <div
+            style="width: 52px; height: 52px; background: rgba(0,133,122,0.12); border: 1px solid rgba(0,133,122,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#00857A" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h2
+            style="font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 16px;">
+            Sage Intacct</h2>
+          <p style="font-size: 1rem; color: var(--text-2); line-height: 1.75; margin-bottom: 24px;">
+            Sage Intacct's multi-entity architecture maps naturally to Datatrixs. The integration handles Intacct's
+            entity structure natively — no manual mapping of entities or accounts.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p style="font-size: 14px; color: var(--text-2);">Native API connection — no data exports or scheduled
+                syncs needed</p>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p style="font-size: 14px; color: var(--text-2);">Pulls across all Intacct entities in a single connection
+              </p>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <p style="font-size: 14px; color: var(--text-2);">Handles Intacct's dimension-based chart of accounts with
+                automatic normalization</p>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="padding: 40px;">
+          <p
+            style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-3); margin-bottom: 16px;">
+            Great fit for</p>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div class="card-elevated" style="padding: 14px 16px;">
+              <p style="font-size: 14px; font-weight: 600; color: var(--text-1); margin-bottom: 4px;">Professional
+                services firms</p>
+              <p style="font-size: 13px; color: var(--text-2);">Multiple offices or practice groups, each in Intacct</p>
+            </div>
+            <div class="card-elevated" style="padding: 14px 16px;">
+              <p style="font-size: 14px; font-weight: 600; color: var(--text-1); margin-bottom: 4px;">Healthcare
+                organizations</p>
+              <p style="font-size: 13px; color: var(--text-2);">Multi-site operators tracking per-facility financials
+              </p>
+            </div>
+            <div class="card-elevated" style="padding: 14px 16px;">
+              <p style="font-size: 14px; font-weight: 600; color: var(--text-1); margin-bottom: 4px;">Nonprofits &amp;
+                fund managers</p>
+              <p style="font-size: 13px; color: var(--text-2);">Multi-entity fund or program tracking in Intacct</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CSV / EXCEL -->
+  <section class="section" id="csv">
+    <div class="container">
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;"
+        id="csv-grid">
+        <div class="card" style="padding: 40px;">
+          <div
+            style="width: 52px; height: 52px; background: rgba(33,115,70,0.12); border: 1px solid rgba(33,115,70,0.25); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#217346" stroke-width="2"
+                stroke-linejoin="round" />
+              <polyline points="14 2 14 8 20 8" stroke="#217346" stroke-width="2" />
+              <line x1="8" y1="13" x2="16" y2="13" stroke="#217346" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h2 style="font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px;">Excel / CSV
+            Upload</h2>
+          <p style="font-size: 14px; color: var(--text-2); line-height: 1.75; margin-bottom: 20px;">
+            Not on QuickBooks, NetSuite, or Sage? No problem. Upload a CSV or Excel export from any accounting system
+            and Datatrixs maps your columns automatically.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Auto-maps common column formats and account structures
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Upload once or re-upload at any time to refresh data
+            </div>
+            <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--text-2);">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M2 8l4 4 8-8" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Mix with live integrations — some units can be CSV, others direct-connected
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px;">When CSV upload is the right move</h3>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <div class="step-num" style="font-size: 12px;">→</div>
+              <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">A business unit runs on a legacy or
+                custom ERP that doesn't have a direct integration yet</p>
+            </div>
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <div class="step-num" style="font-size: 12px;">→</div>
+              <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">You want to load historical data
+                before a live connection is set up</p>
+            </div>
+            <div style="display: flex; gap: 14px; align-items: flex-start;">
+              <div class="step-num" style="font-size: 12px;">→</div>
+              <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">An acquired entity hasn't migrated to
+                your standard accounting system yet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FINAL CTA -->
+  <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="reveal" style="text-align: center; max-width: 580px; margin: 0 auto;">
+        <h2
+          style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -0.025em; margin-bottom: 20px;">
+          Ready to connect your first unit?</h2>
+        <p style="font-size: 1rem; color: var(--text-2); margin-bottom: 36px; line-height: 1.75;">
+          We'll walk you through connecting your accounting systems in a 30-minute demo. Your data, your entities, live
+          in the platform.
+        </p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="demo-request.html" class="btn btn-primary btn-lg">Request a Demo</a>
+          <a href="https://app.datatrixs.com/login" target="_blank" rel="noopener"
+            class="btn btn-secondary btn-lg">Start free trial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 64px;"
+        id="footer-grid">
+        <div>
+          <a href="index.html"><img src="assets/CoreLogo-w-with-gradient.png" alt="Datatrixs"
+              style="height: 22px; margin-bottom: 16px; display: block;"></a>
+          <p style="font-size: 14px; color: var(--text-3); line-height: 1.75; max-width: 260px;">Financial intelligence
+            for multi-unit businesses. One view of every entity you manage.</p>
+        </div>
+        <div>
+          <p
+            style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">
+            Product</p>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="product.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Features</a>
+            <a href="integrations.html"
+              style="font-size: 14px; color: var(--text-2); text-decoration: none;">Integrations</a>
+            <a href="pricing.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Pricing</a>
+            <a href="demo-request.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Request
+              Demo</a>
+          </div>
+        </div>
+        <div>
+          <p
+            style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">
+            Company</p>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="about.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">About</a>
+            <a href="blog/index.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Blog</a>
+            <a href="https://app.datatrixs.com" target="_blank"
+              style="font-size: 14px; color: var(--text-2); text-decoration: none;">Login</a>
+          </div>
+        </div>
+        <div>
+          <p
+            style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">
+            Legal</p>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="privacy-policy.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Privacy
+              Policy</a>
+            <a href="terms-of-service.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Terms
+              of Service</a>
+          </div>
+        </div>
+      </div>
+      <div style="border-top: 1px solid var(--border); padding-top: 32px;">
+        <p style="font-size: 13px; color: var(--text-3);">©
+          <script>document.write(new Date().getFullYear())</script> Datatrixs. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => document.getElementById('mobileNav').classList.add('open'));
+    document.getElementById('mobileNavClose').addEventListener('click', () => document.getElementById('mobileNav').classList.remove('open'));
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    function applyMobileLayouts() {
+      const isMobile = window.innerWidth < 768;
+      ['qbo-grid', 'ns-grid', 'sage-grid', 'csv-grid'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.gridTemplateColumns = isMobile ? '1fr' : '1fr 1fr';
+      });
+      const fg = document.getElementById('footer-grid');
+      if (fg) fg.style.gridTemplateColumns = isMobile ? '1fr 1fr' : '2fr 1fr 1fr 1fr';
+    }
+    applyMobileLayouts();
+    window.addEventListener('resize', applyMobileLayouts);
+  </script>
 
 </body>
+
 </html>
