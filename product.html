@@ -358,6 +358,185 @@
 
   <div class="divider"></div>
 
+  <!-- FEATURE: FP&A FORECASTING -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;" id="feat5-grid">
+
+        <!-- TEXT -->
+        <div>
+          <div class="feature-icon fi-amber" style="margin-bottom: 20px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+              <polyline points="16 7 22 7 22 13"/>
+            </svg>
+          </div>
+          <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.2; margin-bottom: 16px;">
+            FP&amp;A &amp; Forecasting</h2>
+          <p style="font-size: 1rem; color: var(--text-2); line-height: 1.75; margin-bottom: 24px;">
+            Most financial planning happens in spreadsheets that break the moment a formula changes. Datatrixs FP&amp;A lets you build Bear, Base, and Bull forecasts in one view — grounded in your actual normalized data. Set assumptions on the left. Watch your full P&amp;L build on the right.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px;">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p style="font-size: 14px; color: var(--text-2);">Bear / Base / Bull scenario builder with independent assumptions per scenario</p>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p style="font-size: 14px; color: var(--text-2);">New unit revenue ramp modeling with auto-derived AUV from your actuals</p>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p style="font-size: 14px; color: var(--text-2);">Live P&amp;L projection: Revenue → Gross Profit → EBITDA with period-over-period deltas</p>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0; margin-top: 2px;"><path d="M2 8l4 4 8-8" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p style="font-size: 14px; color: var(--text-2);">Save forecast versions as budgets; track Plan vs. Actual automatically as data syncs</p>
+            </div>
+          </div>
+
+          <!-- Vertical callout -->
+          <div style="background: var(--bg-elevated); border: 1px solid var(--border); border-left: 3px solid var(--amber); border-radius: 10px; padding: 20px 20px 20px 20px;">
+            <p style="font-size: 13px; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 10px;">Vertical-aware by default</p>
+            <p style="font-size: 13px; color: var(--text-2); line-height: 1.7; margin-bottom: 16px;">A biotech founder models R&amp;D burn and milestone value. A retail operator models same-store sales growth and new unit ramp. Datatrixs adapts the entire forecasting framework — labels, defaults, and profit metrics — to your business model automatically.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;" id="vertical-table">
+              <div style="font-size: 11px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; padding-bottom: 6px; border-bottom: 1px solid var(--border);">Vertical</div>
+              <div style="font-size: 11px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; padding-bottom: 6px; border-bottom: 1px solid var(--border);">Profit metric</div>
+              <div style="font-size: 12px; color: var(--text-2); padding: 4px 0;">Retail</div>
+              <div style="font-size: 12px; color: var(--text-1); padding: 4px 0;">EBITDA</div>
+              <div style="font-size: 12px; color: var(--text-2); padding: 4px 0;">SaaS</div>
+              <div style="font-size: 12px; color: var(--text-1); padding: 4px 0;">Operating Income</div>
+              <div style="font-size: 12px; color: var(--text-2); padding: 4px 0;">Biotech</div>
+              <div style="font-size: 12px; color: var(--text-1); padding: 4px 0;">Operating Income/(Loss)</div>
+              <div style="font-size: 12px; color: var(--text-2); padding: 4px 0;">Prof. Services</div>
+              <div style="font-size: 12px; color: var(--text-1); padding: 4px 0;">Operating Income</div>
+              <div style="font-size: 12px; color: var(--text-2); padding: 4px 0;">Hardware</div>
+              <div style="font-size: 12px; color: var(--text-1); padding: 4px 0;">EBITDA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VISUAL: scenario P&L mockup -->
+        <div class="browser-frame">
+          <div class="browser-chrome">
+            <div class="browser-dot" style="background:#FF5F57;"></div>
+            <div class="browser-dot" style="background:#FFBD2E;"></div>
+            <div class="browser-dot" style="background:#28C840;"></div>
+            <div class="browser-url">app.datatrixs.com/forecast</div>
+          </div>
+          <div style="background: var(--bg-surface); padding: 20px 16px; font-family: inherit;">
+
+            <!-- Scenario selector tabs -->
+            <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+              <div style="font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 100px; background: rgba(239,68,68,0.12); color: #f87171; border: 1px solid rgba(239,68,68,0.25);">Bear</div>
+              <div style="font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 100px; background: rgba(59,130,246,0.12); color: #60a5fa; border: 1px solid rgba(59,130,246,0.25);">Base</div>
+              <div style="font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 100px; background: rgba(0,255,133,0.12); color: var(--primary); border: 1px solid rgba(0,255,133,0.25);">Bull</div>
+              <div style="margin-left: auto; font-size: 11px; color: var(--text-3); padding: 4px 0;">12 periods</div>
+            </div>
+
+            <!-- Assumption sliders (left side suggestion) -->
+            <div style="background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 14px;">
+              <p style="font-size: 11px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px;">Assumptions — Base</p>
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                    <span style="font-size: 12px; color: var(--text-2);">SSS Growth</span>
+                    <span style="font-size: 12px; font-weight: 600; color: var(--text-1);">+6.0%</span>
+                  </div>
+                  <div style="height: 4px; background: var(--border); border-radius: 2px; position: relative;">
+                    <div style="width: 55%; height: 100%; background: #60a5fa; border-radius: 2px;"></div>
+                    <div style="position: absolute; top: -4px; left: 55%; width: 12px; height: 12px; border-radius: 50%; background: #60a5fa; border: 2px solid var(--bg-elevated); transform: translateX(-50%);"></div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                    <span style="font-size: 12px; color: var(--text-2);">New Units / Period</span>
+                    <span style="font-size: 12px; font-weight: 600; color: var(--text-1);">2</span>
+                  </div>
+                  <div style="height: 4px; background: var(--border); border-radius: 2px; position: relative;">
+                    <div style="width: 35%; height: 100%; background: #60a5fa; border-radius: 2px;"></div>
+                    <div style="position: absolute; top: -4px; left: 35%; width: 12px; height: 12px; border-radius: 50%; background: #60a5fa; border: 2px solid var(--bg-elevated); transform: translateX(-50%);"></div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                    <span style="font-size: 12px; color: var(--text-2);">COGS %</span>
+                    <span style="font-size: 12px; font-weight: 600; color: var(--text-1);">31%</span>
+                  </div>
+                  <div style="height: 4px; background: var(--border); border-radius: 2px; position: relative;">
+                    <div style="width: 42%; height: 100%; background: #60a5fa; border-radius: 2px;"></div>
+                    <div style="position: absolute; top: -4px; left: 42%; width: 12px; height: 12px; border-radius: 50%; background: #60a5fa; border: 2px solid var(--bg-elevated); transform: translateX(-50%);"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- P&L projection table -->
+            <div style="font-size: 11px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border);">
+              <!-- Header -->
+              <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; background: var(--bg-elevated); border-bottom: 1px solid var(--border);">
+                <div style="padding: 8px 10px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.05em;">Metric</div>
+                <div style="padding: 8px 6px; text-align: right; font-weight: 600; color: #f87171;">Bear</div>
+                <div style="padding: 8px 6px; text-align: right; font-weight: 600; color: #60a5fa;">Base</div>
+                <div style="padding: 8px 6px; text-align: right; font-weight: 600; color: var(--primary);">Bull</div>
+                <div style="padding: 8px 6px; text-align: right; font-weight: 600; color: var(--text-3);">Δ B/B</div>
+              </div>
+              <!-- Revenue -->
+              <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; border-bottom: 1px solid var(--border);">
+                <div style="padding: 7px 10px; color: var(--text-1); font-weight: 600;">Revenue</div>
+                <div style="padding: 7px 6px; text-align: right; color: #f87171;">$4.1M</div>
+                <div style="padding: 7px 6px; text-align: right; color: #60a5fa;">$5.3M</div>
+                <div style="padding: 7px 6px; text-align: right; color: var(--primary);">$6.8M</div>
+                <div style="padding: 7px 6px; text-align: right; color: var(--primary); font-weight: 600;">+28%</div>
+              </div>
+              <!-- Gross Profit -->
+              <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+                <div style="padding: 7px 10px; color: var(--text-2);">Gross Profit</div>
+                <div style="padding: 7px 6px; text-align: right; color: #f87171;">$2.7M</div>
+                <div style="padding: 7px 6px; text-align: right; color: #60a5fa;">$3.6M</div>
+                <div style="padding: 7px 6px; text-align: right; color: var(--primary);">$4.7M</div>
+                <div style="padding: 7px 6px; text-align: right; color: var(--primary); font-weight: 600;">+30%</div>
+              </div>
+              <!-- Labor -->
+              <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; border-bottom: 1px solid var(--border);">
+                <div style="padding: 7px 10px; color: var(--text-2);">Labor</div>
+                <div style="padding: 7px 6px; text-align: right; color: var(--text-2);">$1.1M</div>
+                <div style="padding: 7px 6px; text-align: right; color: var(--text-2);">$1.4M</div>
+                <div style="padding: 7px 6px; text-align: right; color: var(--text-2);">$1.7M</div>
+                <div style="padding: 7px 6px; text-align: right; color: #f87171; font-weight: 600;">+21%</div>
+              </div>
+              <!-- OpEx -->
+              <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);">
+                <div style="padding: 7px 10px; color: var(--text-2);">OpEx</div>
+                <div style="padding: 7px 6px; text-align: right; color: var(--text-2);">$0.8M</div>
+                <div style="padding: 7px 6px; text-align: right; color: var(--text-2);">$0.9M</div>
+                <div style="padding: 7px 6px; text-align: right; color: var(--text-2);">$1.1M</div>
+                <div style="padding: 7px 6px; text-align: right; color: #f87171; font-weight: 600;">+22%</div>
+              </div>
+              <!-- EBITDA -->
+              <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; background: rgba(0,255,133,0.04); border-top: 1px solid rgba(0,255,133,0.15);">
+                <div style="padding: 8px 10px; color: var(--primary); font-weight: 700;">EBITDA</div>
+                <div style="padding: 8px 6px; text-align: right; color: #f87171; font-weight: 700;">$0.8M</div>
+                <div style="padding: 8px 6px; text-align: right; color: #60a5fa; font-weight: 700;">$1.3M</div>
+                <div style="padding: 8px 6px; text-align: right; color: var(--primary); font-weight: 700;">$1.9M</div>
+                <div style="padding: 8px 6px; text-align: right; color: var(--primary); font-weight: 700;">+46%</div>
+              </div>
+            </div>
+
+            <!-- Plan vs actual badge -->
+            <div style="display: flex; align-items: center; gap: 8px; margin-top: 12px; padding: 8px 12px; background: var(--bg-elevated); border-radius: 6px; border: 1px solid var(--border);">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <span style="font-size: 11px; color: var(--text-2);">Saved as <strong style="color: var(--text-1);">FY2026 Base Budget</strong> — tracking vs. actuals automatically</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
   <!-- ADDITIONAL FEATURES GRID -->
   <section class="section">
     <div class="container">
@@ -430,6 +609,18 @@
             <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Org &amp; Holding Structures</h3>
             <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">Model parent-subsidiary relationships.
               Roll up entities under a holding or portfolio layer. Access and reporting follow the org chart.</p>
+          </div>
+        </div>
+        <div class="card" style="padding: 28px; display: flex; gap: 20px; align-items: flex-start;">
+          <div class="feature-icon fi-amber" style="margin-top: 2px; flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+              <polyline points="16 7 22 7 22 13"/>
+            </svg>
+          </div>
+          <div>
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">FP&amp;A &amp; Forecasting</h3>
+            <p style="font-size: 14px; color: var(--text-2); line-height: 1.65;">Bear, Base, and Bull scenario modeling grounded in your actuals. New unit ramp curves, live P&L projection, and automatic Plan vs. Actual tracking.</p>
           </div>
         </div>
       </div>
@@ -523,7 +714,7 @@
 
     function applyMobileLayouts() {
       const isMobile = window.innerWidth < 768;
-      ['feat1-grid', 'feat2-grid', 'feat3-grid', 'feat4-grid'].forEach(id => {
+      ['feat1-grid', 'feat2-grid', 'feat3-grid', 'feat4-grid', 'feat5-grid'].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.style.gridTemplateColumns = isMobile ? '1fr' : '1fr 1fr';
       });
