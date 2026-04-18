@@ -89,44 +89,220 @@
         Direct integrations with the accounting systems your teams already use. No custom development. No IT project. No
         data migration.
       </p>
-      <!-- 4 integration logos -->
-      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-        <div
-          style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <rect x="2" y="7" width="20" height="14" rx="2" stroke="#2CA01C" stroke-width="2" />
-            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" stroke="#2CA01C" stroke-width="2" />
-          </svg>
-          <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">QuickBooks</span>
-        </div>
-        <div
-          style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="12" r="9" stroke="#E0401A" stroke-width="2" />
-            <path d="M8 12h8M12 8v8" stroke="#E0401A" stroke-width="2" stroke-linecap="round" />
-          </svg>
-          <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">NetSuite</span>
-        </div>
-        <div
-          style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#00857A" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-          <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">Sage Intacct</span>
-        </div>
-        <div
-          style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; display: flex; align-items: center; gap: 10px;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#217346" stroke-width="2"
-              stroke-linejoin="round" />
-            <polyline points="14 2 14 8 20 8" stroke="#217346" stroke-width="2" />
-          </svg>
-          <span style="font-size: 15px; font-weight: 600; color: var(--text-1);">Excel / CSV</span>
-        </div>
+      <!-- Flow diagram -->
+      <div style="width: 100%; max-width: 780px; margin: 0 auto; position: relative;" id="flow-diagram">
+        <svg id="flow-svg" viewBox="0 0 780 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;overflow:visible;">
+
+          <!-- ── CONNECTION PATHS (drawn first, behind nodes) ── -->
+
+          <!-- Source → Datatrixs -->
+          <path id="path-qb"  d="M 178,52  C 310,52  310,130 370,130" stroke="#2CA01C" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+          <path id="path-ns"  d="M 178,104 C 310,104 310,130 370,130" stroke="#E0401A" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+          <path id="path-si"  d="M 178,156 C 310,156 310,130 370,130" stroke="#00857A" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+          <path id="path-csv" d="M 178,208 C 310,208 310,130 370,130" stroke="#217346" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+
+          <!-- Datatrixs → Reports -->
+          <path id="path-r1" d="M 410,130 C 470,130 470,60  602,60"  stroke="#00FF85" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+          <path id="path-r2" d="M 410,130 C 470,130 470,105 602,105" stroke="#00FF85" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+          <path id="path-r3" d="M 410,130 C 470,130 470,155 602,155" stroke="#00FF85" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+          <path id="path-r4" d="M 410,130 C 470,130 470,200 602,200" stroke="#00FF85" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+
+          <!-- ── MOVING DOTS ON PATHS ── -->
+          <circle id="dot-qb"  r="4" fill="#2CA01C" opacity="0"><animateMotion dur="1.4s" begin="indefinite" fill="freeze" path="M 178,52  C 310,52  310,130 370,130"/></circle>
+          <circle id="dot-ns"  r="4" fill="#E0401A" opacity="0"><animateMotion dur="1.4s" begin="indefinite" fill="freeze" path="M 178,104 C 310,104 310,130 370,130"/></circle>
+          <circle id="dot-si"  r="4" fill="#00857A" opacity="0"><animateMotion dur="1.4s" begin="indefinite" fill="freeze" path="M 178,156 C 310,156 310,130 370,130"/></circle>
+          <circle id="dot-csv" r="4" fill="#217346" opacity="0"><animateMotion dur="1.4s" begin="indefinite" fill="freeze" path="M 178,208 C 310,208 310,130 370,130"/></circle>
+
+          <circle id="dot-r1" r="4" fill="#00FF85" opacity="0"><animateMotion dur="1.2s" begin="indefinite" fill="freeze" path="M 410,130 C 470,130 470,60  602,60"/></circle>
+          <circle id="dot-r2" r="4" fill="#00FF85" opacity="0"><animateMotion dur="1.2s" begin="indefinite" fill="freeze" path="M 410,130 C 470,130 470,105 602,105"/></circle>
+          <circle id="dot-r3" r="4" fill="#00FF85" opacity="0"><animateMotion dur="1.2s" begin="indefinite" fill="freeze" path="M 410,130 C 470,130 470,155 602,155"/></circle>
+          <circle id="dot-r4" r="4" fill="#00FF85" opacity="0"><animateMotion dur="1.2s" begin="indefinite" fill="freeze" path="M 410,130 C 470,130 470,200 602,200"/></circle>
+
+          <!-- ── SOURCE NODES ── -->
+          <!-- QuickBooks -->
+          <g id="node-qb" opacity="0" transform="translate(0,0)">
+            <rect x="10" y="30" width="168" height="44" rx="10" fill="#111118" stroke="#2CA01C" stroke-width="1.5" stroke-opacity="0.5"/>
+            <rect x="10" y="30" width="168" height="44" rx="10" fill="url(#grad-qb)" opacity="0.08"/>
+            <rect x="28" y="44" width="20" height="16" rx="3" stroke="#2CA01C" stroke-width="1.5" fill="none"/>
+            <path d="M36 44v-3a4 4 0 0 1 4-4 4 4 0 0 1 4 4v3" stroke="#2CA01C" stroke-width="1.5" fill="none"/>
+            <text x="58" y="57" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#F4F4F5">QuickBooks</text>
+          </g>
+
+          <!-- NetSuite -->
+          <g id="node-ns" opacity="0">
+            <rect x="10" y="82" width="168" height="44" rx="10" fill="#111118" stroke="#E0401A" stroke-width="1.5" stroke-opacity="0.5"/>
+            <rect x="10" y="82" width="168" height="44" rx="10" fill="url(#grad-ns)" opacity="0.08"/>
+            <circle cx="38" cy="104" r="10" stroke="#E0401A" stroke-width="1.5" fill="none"/>
+            <path d="M34 104h8M38 100v8" stroke="#E0401A" stroke-width="1.5" stroke-linecap="round"/>
+            <text x="58" y="109" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#F4F4F5">NetSuite</text>
+          </g>
+
+          <!-- Sage Intacct -->
+          <g id="node-si" opacity="0">
+            <rect x="10" y="134" width="168" height="44" rx="10" fill="#111118" stroke="#00857A" stroke-width="1.5" stroke-opacity="0.5"/>
+            <rect x="10" y="134" width="168" height="44" rx="10" fill="url(#grad-si)" opacity="0.08"/>
+            <path d="M38 146l-10 5 10 5 10-5-10-5zM28 161l10 5 10-5M28 156l10 5 10-5" stroke="#00857A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <text x="58" y="161" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#F4F4F5">Sage Intacct</text>
+          </g>
+
+          <!-- CSV / Excel -->
+          <g id="node-csv" opacity="0">
+            <rect x="10" y="186" width="168" height="44" rx="10" fill="#111118" stroke="#217346" stroke-width="1.5" stroke-opacity="0.5"/>
+            <rect x="10" y="186" width="168" height="44" rx="10" fill="url(#grad-csv)" opacity="0.08"/>
+            <path d="M42 192h-8a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-10z" stroke="#217346" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+            <polyline points="42,192 42,198 48,198" stroke="#217346" stroke-width="1.5" fill="none"/>
+            <text x="58" y="213" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#F4F4F5">Excel / CSV</text>
+          </g>
+
+          <!-- ── DATATRIXS CENTER NODE ── -->
+          <g id="node-dx" opacity="0">
+            <!-- glow ring -->
+            <circle cx="390" cy="130" r="46" fill="#00FF85" opacity="0.06"/>
+            <circle cx="390" cy="130" r="38" fill="#00FF85" opacity="0.06"/>
+            <!-- main circle -->
+            <circle cx="390" cy="130" r="30" fill="#111118" stroke="#00FF85" stroke-width="2"/>
+            <!-- D logo mark -->
+            <path d="M381 119h7a11 11 0 0 1 0 22h-7z" stroke="#00FF85" stroke-width="2" stroke-linejoin="round" fill="none"/>
+            <text x="390" y="148" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#00FF85" text-anchor="middle"></text>
+            <!-- label -->
+            <text x="390" y="175" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#F4F4F5" text-anchor="middle">Datatrixs</text>
+          </g>
+
+          <!-- ── REPORT CARDS ── -->
+          <!-- Consolidated P&L -->
+          <g id="report-1" opacity="0">
+            <rect x="602" y="38" width="168" height="44" rx="10" fill="#111118" stroke="#00FF85" stroke-width="1.5" stroke-opacity="0.4"/>
+            <rect x="602" y="38" width="168" height="44" rx="10" fill="#00FF85" opacity="0.04"/>
+            <rect x="618" y="50" width="4" height="20" rx="2" fill="#00FF85" opacity="0.7"/>
+            <rect x="626" y="56" width="4" height="14" rx="2" fill="#00FF85" opacity="0.5"/>
+            <rect x="634" y="53" width="4" height="17" rx="2" fill="#00FF85" opacity="0.6"/>
+            <text x="648" y="57" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#F4F4F5">Consolidated P&amp;L</text>
+            <text x="648" y="72" font-family="Inter,sans-serif" font-size="10" fill="#71717A">All entities · live</text>
+          </g>
+
+          <!-- Entity Comparison -->
+          <g id="report-2" opacity="0">
+            <rect x="602" y="83" width="168" height="44" rx="10" fill="#111118" stroke="#00FF85" stroke-width="1.5" stroke-opacity="0.4"/>
+            <rect x="602" y="83" width="168" height="44" rx="10" fill="#00FF85" opacity="0.04"/>
+            <rect x="618" y="95" width="4" height="20" rx="2" fill="#F59E0B" opacity="0.8"/>
+            <rect x="626" y="100" width="4" height="15" rx="2" fill="#F59E0B" opacity="0.6"/>
+            <rect x="634" y="97" width="4" height="18" rx="2" fill="#F59E0B" opacity="0.7"/>
+            <text x="648" y="102" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#F4F4F5">Entity Comparison</text>
+            <text x="648" y="117" font-family="Inter,sans-serif" font-size="10" fill="#71717A">Unit vs unit · variance</text>
+          </g>
+
+          <!-- Cash Position -->
+          <g id="report-3" opacity="0">
+            <rect x="602" y="128" width="168" height="44" rx="10" fill="#111118" stroke="#00FF85" stroke-width="1.5" stroke-opacity="0.4"/>
+            <rect x="602" y="128" width="168" height="44" rx="10" fill="#00FF85" opacity="0.04"/>
+            <path d="M618 160 C626 148 634 154 642 144" stroke="#00FF85" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <circle cx="642" cy="144" r="3" fill="#00FF85"/>
+            <text x="652" y="147" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#F4F4F5">Cash Position</text>
+            <text x="652" y="162" font-family="Inter,sans-serif" font-size="10" fill="#71717A">Rolling 13-week</text>
+          </g>
+
+          <!-- Warren AI -->
+          <g id="report-4" opacity="0">
+            <rect x="602" y="173" width="168" height="44" rx="10" fill="#111118" stroke="#F59E0B" stroke-width="1.5" stroke-opacity="0.5"/>
+            <rect x="602" y="173" width="168" height="44" rx="10" fill="#F59E0B" opacity="0.04"/>
+            <circle cx="628" cy="195" r="10" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+            <text x="628" y="199" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#F59E0B" text-anchor="middle">W</text>
+            <text x="648" y="192" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#F4F4F5">Warren AI</text>
+            <text x="648" y="207" font-family="Inter,sans-serif" font-size="10" fill="#71717A">Ask anything · sourced</text>
+          </g>
+
+          <!-- ── GRADIENTS ── -->
+          <defs>
+            <linearGradient id="grad-qb"  x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2CA01C"/><stop offset="100%" stop-color="#2CA01C" stop-opacity="0"/></linearGradient>
+            <linearGradient id="grad-ns"  x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#E0401A"/><stop offset="100%" stop-color="#E0401A" stop-opacity="0"/></linearGradient>
+            <linearGradient id="grad-si"  x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00857A"/><stop offset="100%" stop-color="#00857A" stop-opacity="0"/></linearGradient>
+            <linearGradient id="grad-csv" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#217346"/><stop offset="100%" stop-color="#217346" stop-opacity="0"/></linearGradient>
+          </defs>
+
+        </svg>
       </div>
     </div>
   </section>
+
+  <style>
+    @keyframes dash-flow {
+      to { stroke-dashoffset: -18; }
+    }
+    .path-animated {
+      animation: dash-flow 0.8s linear infinite;
+    }
+    @keyframes pulse-ring {
+      0%, 100% { r: 46; opacity: 0.06; }
+      50%       { r: 50; opacity: 0.10; }
+    }
+  </style>
+
+  <script>
+  (function() {
+    function fadeIn(el, duration, delay) {
+      setTimeout(() => {
+        el.style.transition = 'opacity ' + duration + 'ms ease';
+        el.style.opacity = 1;
+      }, delay);
+    }
+
+    function fireDot(dotId, delay) {
+      setTimeout(() => {
+        const dot = document.getElementById(dotId);
+        dot.style.opacity = 1;
+        dot.querySelector('animateMotion').beginElement();
+        setTimeout(() => { dot.style.opacity = 0; }, 1400);
+      }, delay);
+    }
+
+    function animatePath(pathId, delay) {
+      setTimeout(() => {
+        const p = document.getElementById(pathId);
+        p.style.opacity = 1;
+        p.classList.add('path-animated');
+      }, delay);
+    }
+
+    function runSequence() {
+      // 1. Source nodes appear
+      ['node-qb','node-ns','node-si','node-csv'].forEach((id, i) => {
+        fadeIn(document.getElementById(id), 400, 200 + i * 120);
+      });
+
+      // 2. Paths from sources appear + dots travel
+      const srcPaths = ['path-qb','path-ns','path-si','path-csv'];
+      const srcDots  = ['dot-qb','dot-ns','dot-si','dot-csv'];
+      srcPaths.forEach((id, i) => {
+        animatePath(id, 800 + i * 120);
+        fireDot(srcDots[i], 900 + i * 120);
+      });
+
+      // 3. Datatrixs center node appears
+      fadeIn(document.getElementById('node-dx'), 500, 1600);
+
+      // 4. Output paths + dots
+      const outPaths   = ['path-r1','path-r2','path-r3','path-r4'];
+      const outDots    = ['dot-r1','dot-r2','dot-r3','dot-r4'];
+      const reportNodes = ['report-1','report-2','report-3','report-4'];
+      outPaths.forEach((id, i) => {
+        animatePath(id, 2100 + i * 150);
+        fireDot(outDots[i], 2200 + i * 150);
+        fadeIn(document.getElementById(reportNodes[i]), 400, 2400 + i * 150);
+      });
+    }
+
+    // Trigger when diagram scrolls into view
+    const diagram = document.getElementById('flow-diagram');
+    let played = false;
+    const obs = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && !played) {
+        played = true;
+        runSequence();
+      }
+    }, { threshold: 0.3 });
+    obs.observe(diagram);
+  })();
+  </script>
 
 
   <!-- HOW IT WORKS -->
@@ -493,6 +669,7 @@
           <div style="display: flex; flex-direction: column; gap: 10px;">
             <a href="about.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">About</a>
             <a href="blog/index.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Blog</a>
+          <a href="faq.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">FAQ</a>
             <a href="https://app.datatrixs.com" target="_blank"
               style="font-size: 14px; color: var(--text-2); text-decoration: none;">Login</a>
           </div>

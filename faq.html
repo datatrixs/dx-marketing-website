@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HZ3K9DRTXM');</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Datatrixs | Frequently Asked Questions</title>
+  <meta name="description" content="Answers to the most common questions about Datatrixs — integrations, security, Warren AI, onboarding, and pricing." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.datatrixs.com/faq.html" />
+
+  <link rel="icon" type="image/png" href="assets/faveicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/faveicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/faveicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/faveicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/faveicon/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="dx-design.css">
+
+  <style>
+    .faq-category { margin-bottom: 56px; }
+    .faq-category-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 0;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-1);
+      user-select: none;
+    }
+    .faq-q:hover { color: var(--primary); }
+    .faq-chevron {
+      flex-shrink: 0;
+      color: var(--text-3);
+      transition: transform 0.25s ease;
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-a {
+      font-size: 14px;
+      color: var(--text-2);
+      line-height: 1.8;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.25s ease;
+      padding-bottom: 0;
+    }
+    .faq-item.open .faq-a {
+      max-height: 400px;
+      padding-bottom: 20px;
+    }
+    .faq-a a { color: var(--primary); text-decoration: none; }
+    .faq-a a:hover { text-decoration: underline; }
+
+    .category-nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+    .category-nav a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-2);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 6px 14px;
+      text-decoration: none;
+      transition: color .15s, border-color .15s;
+    }
+    .category-nav a:hover {
+      color: var(--text-1);
+      border-color: var(--text-3);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/CoreLogo-w-with-gradient.png" alt="Datatrixs"></a>
+    <ul class="nav-links">
+      <li><a href="product.html">Product</a></li>
+      <li><a href="integrations.html">Integrations</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://app.datatrixs.com" target="_blank" rel="noopener" class="nav-login">Login</a>
+      <a href="demo-request.html" class="nav-cta">Request a Demo</a>
+    </div>
+    <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-btn" id="mobileNavClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <a href="product.html">Product</a>
+  <a href="integrations.html">Integrations</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="blog/index.html">Blog</a>
+  <a href="about.html">About</a>
+  <a href="https://app.datatrixs.com" target="_blank">Login</a>
+  <a href="demo-request.html" style="color: var(--primary);">Request a Demo</a>
+</div>
+
+<!-- HERO -->
+<section style="padding: 140px 0 64px; text-align: center;">
+  <div class="container" style="max-width: 640px;">
+    <div class="label" style="margin: 0 auto 16px;">Support</div>
+    <h1 style="font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: var(--text-1); line-height: 1.15; margin-bottom: 16px;">
+      Frequently asked questions
+    </h1>
+    <p style="font-size: 17px; color: var(--text-2); line-height: 1.7;">
+      Can't find what you're looking for? Email us at <a href="mailto:info@datatrixs.com" style="color: var(--primary);">info@datatrixs.com</a>.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ CONTENT -->
+<section style="padding: 0 0 100px;">
+  <div class="container" style="max-width: 720px;">
+
+    <!-- Category jump links -->
+    <nav class="category-nav" aria-label="FAQ categories">
+      <a href="#product">Product</a>
+      <a href="#integrations">Integrations</a>
+      <a href="#security">Security &amp; Data</a>
+      <a href="#warren">Warren AI</a>
+      <a href="#onboarding">Onboarding</a>
+      <a href="#pricing">Pricing &amp; Billing</a>
+    </nav>
+
+    <!-- PRODUCT -->
+    <div class="faq-category" id="product">
+      <div class="faq-category-label">Product</div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What exactly does Datatrixs do?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Datatrixs connects to your accounting systems — QuickBooks Online, NetSuite, Sage Intacct, or CSV exports — and consolidates financial data across all your entities into a single view. You get a live, consolidated picture of your books without any manual assembly. On top of that sits Warren, our AI financial analyst, which lets you ask questions about your numbers in plain English and get precise, sourced answers.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Who is Datatrixs built for?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Datatrixs is built for finance teams running multi-unit businesses — PE-backed operators, franchise groups, multi-location businesses, and any organization that manages more than one legal entity. If your month-end close involves pulling from multiple accounting files and stitching them into a master workbook, Datatrixs is built for you.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Does Datatrixs replace my accounting software?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">No. Datatrixs sits on top of your existing accounting systems — it reads your data but doesn't replace where that data is created. Your teams keep doing bookkeeping in QuickBooks, NetSuite, or Sage Intacct exactly as they do today. Datatrixs pulls the data, consolidates it, and makes it analyzable. It's the intelligence layer, not the ledger.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What reports and views does Datatrixs provide?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Datatrixs provides consolidated P&amp;L, balance sheet, and cash flow across all connected entities. You can view financials at the entity level, compare units side by side, drill into specific accounts or time periods, and track KPIs across your portfolio. All views update automatically as your accounting data syncs.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>How often does data sync?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">For direct integrations (QuickBooks Online, NetSuite, Sage Intacct), data syncs automatically on a regular schedule — typically daily, with more frequent syncs available on higher tiers. CSV uploads are manual and update whenever you upload a new file.</div>
+      </div>
+
+    </div>
+
+    <!-- INTEGRATIONS -->
+    <div class="faq-category" id="integrations">
+      <div class="faq-category-label">Integrations</div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Which accounting systems does Datatrixs connect to?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Datatrixs currently supports QuickBooks Online, Oracle NetSuite, Sage Intacct, and CSV/Excel file uploads. More integrations are on the roadmap. If you're on a different system, <a href="mailto:info@datatrixs.com">contact us</a> — we may be able to accommodate it through a custom CSV export.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Can I mix accounting systems across my entities?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Yes. You can have some entities on QuickBooks, others on NetSuite, and others uploading CSV exports — all in the same Datatrixs organization. The platform normalizes across all sources so you can compare entities regardless of which system they use.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>How long does it take to connect an accounting system?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">For QuickBooks Online, connection typically takes under five minutes — you click Connect, authenticate with your existing Intuit credentials, and the initial sync begins immediately. NetSuite and Sage Intacct require a few additional configuration steps (API credentials) that our team walks you through during onboarding. Most customers are fully connected within a day.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What happens if my QuickBooks connection drops?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">OAuth tokens for QuickBooks Online expire periodically and require reauthorization. Datatrixs will notify you when a connection needs to be refreshed. Reconnecting takes about 30 seconds. See our <a href="blog/how-to-reconnect-quickBooks-online-to-datatrixs.html">reconnection guide</a> for step-by-step instructions.</div>
+      </div>
+
+    </div>
+
+    <!-- SECURITY & DATA -->
+    <div class="faq-category" id="security">
+      <div class="faq-category-label">Security &amp; Data</div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Can Datatrixs modify my accounting data?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">No. All integrations use read-only credentials. Datatrixs cannot create transactions, modify records, delete entries, or write anything back to your accounting systems. We only pull data — we never push.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Is my financial data used to train AI models?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">No. Your financial data is never used to train machine learning models — ours or anyone else's. Warren's analysis is grounded in your specific data at query time. We don't aggregate customer financial data across organizations for model training purposes.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>How is my data stored and protected?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Data is encrypted in transit (TLS) and at rest. Access to your data within Datatrixs is governed by role-based permissions — only users you authorize can see your organization's financials. Our security controls are aligned with SOC 2 Type II requirements. For enterprise security reviews or questionnaires, contact <a href="mailto:info@datatrixs.com">info@datatrixs.com</a>.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What happens to my data if I cancel?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">After your subscription ends, your data is retained for 30 days in case you want to reactivate. After 30 days, all financial data is permanently deleted from our systems. We can provide a data export before deletion upon request.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Does Datatrixs sell my data to third parties?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">No. We do not sell, rent, or share your personal or financial data with third parties for their own purposes. Data is shared only with subprocessors necessary to operate the service (such as cloud infrastructure providers), and only under strict contractual obligations. See our <a href="privacy-policy.html">Privacy Policy</a> for the full list.</div>
+      </div>
+
+    </div>
+
+    <!-- WARREN AI -->
+    <div class="faq-category" id="warren">
+      <div class="faq-category-label">Warren AI</div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What is Warren?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Warren is Datatrixs's AI financial analyst. You ask a question in plain English — "Which of my locations had the highest margin last quarter?" or "What drove the revenue variance in March?" — and Warren returns a precise, sourced answer based on your actual financial data. Every answer cites the underlying transactions and accounts it pulled from.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>How accurate is Warren?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Warren is grounded in your actual data — it doesn't generate estimates or fabricate numbers. Every answer traces back to real transactions in your connected accounting systems. If Warren can't give a confident answer from the available data, it says so rather than guessing. We'd rather surface no answer than a wrong one.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Can Warren replace my CFO or controller?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">No — and we're not trying to. Warren handles the data retrieval and analysis work that currently consumes hours of a finance professional's time. It's designed to make your CFO, controller, and FP&amp;A team faster and more effective, not to replace their judgment. Strategic decisions, external relationships, and audit-level oversight still require humans.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What kinds of questions can I ask Warren?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">You can ask Warren anything your financial data can answer — entity comparisons, period-over-period variance analysis, margin breakdowns, cash positions, top expense categories, underperforming locations, and more. Good examples: "Show me EBITDA by entity for Q1 2026," "Which units are below 20% gross margin?", "What changed in operating expenses vs last month?"</div>
+      </div>
+
+    </div>
+
+    <!-- ONBOARDING -->
+    <div class="faq-category" id="onboarding">
+      <div class="faq-category-label">Onboarding</div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>How does onboarding work?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">After you request a demo, our team schedules a 30-minute call to understand your setup — how many entities, which accounting systems, what your current close process looks like. From there we guide you through connecting your first entities, verifying the data looks right, and configuring your consolidated views. Most customers are up and running within 1–3 business days.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Do I need IT or engineering resources to get set up?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">No. QuickBooks Online connects via OAuth — no technical setup required. NetSuite and Sage Intacct need API credentials that your accounting admin can generate, but no engineering work is needed. There's no code to write, no data pipeline to maintain, and no infrastructure to manage.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Can I try Datatrixs before committing?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Yes. We offer a free trial that lets you connect up to 2 business units and explore the platform. For a more complete evaluation with your full entity set, we recommend the guided demo — it's faster to get value from the platform when our team helps configure it for your specific setup from the start.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What support is available after onboarding?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">All customers have access to email support at <a href="mailto:info@datatrixs.com">info@datatrixs.com</a>. Growth and Enterprise plans include dedicated onboarding support and ongoing account management. Enterprise customers get a named customer success contact and priority response times.</div>
+      </div>
+
+    </div>
+
+    <!-- PRICING -->
+    <div class="faq-category" id="pricing">
+      <div class="faq-category-label">Pricing &amp; Billing</div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>How is Datatrixs priced?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Pricing is based on the number of connected business units — not per seat. This means your whole finance team can access the platform without the cost scaling with headcount. See the <a href="pricing.html">pricing page</a> for tier details, or contact us for a custom quote based on your entity count.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>What counts as a business unit?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">A business unit is any entity that connects its own data source — a retail location with its own QuickBooks file, a subsidiary with its own NetSuite company, or a CSV upload for a standalone entity. One data source = one business unit. Multiple users can access the same unit; users are not priced separately.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Is there a contract or can I cancel anytime?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">Monthly plans can be cancelled at any time and take effect at the end of your current billing period. Annual plans are prepaid for 12 months and include a discount. We don't lock you into multi-year contracts — we'd rather earn your renewal.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Do you offer discounts for nonprofits or early-stage companies?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-a">We handle pricing on a case-by-case basis for nonprofits and early-stage companies. Reach out to <a href="mailto:info@datatrixs.com">info@datatrixs.com</a> and tell us about your organization — we'll see what we can do.</div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div style="border-top: 1px solid var(--border); padding-top: 48px; text-align: center;">
+      <p style="font-size: 16px; color: var(--text-2); margin-bottom: 24px;">Still have questions?</p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="mailto:info@datatrixs.com" class="btn btn-secondary">Email us</a>
+        <a href="demo-request.html" class="btn btn-primary">Request a demo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 64px;" id="footer-grid">
+      <div>
+        <a href="index.html"><img src="assets/CoreLogo-w-with-gradient.png" alt="Datatrixs" style="height: 22px; margin-bottom: 16px; display: block;"></a>
+        <p style="font-size: 14px; color: var(--text-3); line-height: 1.75; max-width: 260px;">Financial intelligence for multi-unit businesses. One view of every entity you manage.</p>
+      </div>
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Product</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="product.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Features</a>
+          <a href="integrations.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Integrations</a>
+          <a href="pricing.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Pricing</a>
+          <a href="demo-request.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Request Demo</a>
+        </div>
+      </div>
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Company</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="about.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">About</a>
+          <a href="blog/index.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Blog</a>
+          <a href="faq.html" style="font-size: 14px; color: var(--text-1); text-decoration: none;">FAQ</a>
+          <a href="https://app.datatrixs.com" target="_blank" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Login</a>
+        </div>
+      </div>
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Legal</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="privacy-policy.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Privacy Policy</a>
+          <a href="terms-of-service.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div style="border-top: 1px solid var(--border); padding-top: 32px;">
+      <p style="font-size: 13px; color: var(--text-3);">©<script>document.write(new Date().getFullYear())</script> Datatrixs. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('mobileMenuBtn').addEventListener('click', () => document.getElementById('mobileNav').classList.add('open'));
+document.getElementById('mobileNavClose').addEventListener('click', () => document.getElementById('mobileNav').classList.remove('open'));
+
+// Accordion
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// Footer grid responsive
+const fg = document.getElementById('footer-grid');
+function applyFooterLayout() {
+  if (fg) fg.style.gridTemplateColumns = window.innerWidth < 768 ? '1fr 1fr' : '2fr 1fr 1fr 1fr';
+}
+applyFooterLayout();
+window.addEventListener('resize', applyFooterLayout);
+</script>
+</body>
+</html>
