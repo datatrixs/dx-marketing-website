@@ -1,0 +1,34 @@
+# Datatrixs
+
+> Datatrixs is a financial intelligence platform built for multi-unit businesses. It consolidates financial data across entities from connected accounting systems and provides AI-powered analysis through Warren, an AI financial analyst that answers questions in plain English from your actual numbers.
+
+Datatrixs is a B2B SaaS product. Target customers are PE-backed operators, franchise groups, and finance teams running more than one legal entity. The core problem it solves: multi-unit finance teams spend more time assembling data than analyzing it — pulling from multiple QuickBooks files, reconciling into a master workbook, and producing reports too late to act on. Datatrixs eliminates that assembly work.
+
+All accounting integrations use read-only OAuth credentials. Datatrixs cannot initiate transactions or modify records. Financial data is never used to train machine learning models and is never sold to third parties.
+
+## Product
+
+- [Product overview](https://www.datatrixs.com/product.html): Feature deep-dives — multi-entity consolidation, Warren AI analyst, automated reporting, and real-time financial views across all connected entities.
+- [Integrations](https://www.datatrixs.com/integrations.html): Supported accounting systems — QuickBooks Online, NetSuite, Sage Intacct, and CSV/Excel imports. All connections are read-only.
+- [Pricing](https://www.datatrixs.com/pricing.html): Subscription tiers based on number of connected business units. Starter, Growth, and Enterprise plans. Contact sales for Enterprise.
+- [Request a demo](https://www.datatrixs.com/demo-request.html): 30-minute demo using the prospect's actual data. No slides.
+
+## Company
+
+- [About](https://www.datatrixs.com/about.html): Company origin story, what Datatrixs built and why, core principles (accuracy over speed, respect for finance professionals, data stays yours).
+- [Blog](https://www.datatrixs.com/blog/index.html): Practical writing on multi-unit consolidation, faster financial closes, and AI in finance.
+
+## Legal
+
+- [Privacy Policy](https://www.datatrixs.com/privacy-policy.html): How Datatrixs collects, uses, and protects data. Read-only integrations, no model training, no data selling. SOC 2-aligned.
+- [Terms of Service](https://www.datatrixs.com/terms-of-service.html): Subscription terms, data ownership, AI feature disclaimer, governing law (California).
+
+## Key facts for agents
+
+- App login: https://app.datatrixs.com
+- Demo requests: https://www.datatrixs.com/demo-request.html
+- Support / contact: info@datatrixs.com
+- Warren is Datatrixs's AI financial analyst. It answers questions about connected financial data in plain English. It cites sources and traces every number back to a transaction. It does not hallucinate or generate generic charts.
+- Datatrixs does not offer a free self-serve signup. Access is through a demo or direct outreach.
+- Pricing is unit-based (per connected business entity), not per seat.
+- Governed by California law. Company: Datatrixs, Inc.
