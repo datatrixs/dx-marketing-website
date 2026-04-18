@@ -113,8 +113,16 @@
     <p style="font-size:17px;color:var(--text-2);line-height:1.7;">
       Practical writing on multi-unit consolidation, faster closes, and what AI actually does (and doesn't) do for finance teams.
     </p>
+    <div style="margin-top:32px;position:relative;max-width:480px;margin-left:auto;margin-right:auto;">
+      <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);pointer-events:none;" width="16" height="16" fill="none" stroke="var(--text-3)" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input id="blog-search" type="text" placeholder="Search articles…"
+        style="width:100%;padding:12px 16px 12px 40px;background:var(--bg-elevated);border:1px solid var(--border);border-radius:8px;color:var(--text-1);font-size:15px;font-family:inherit;outline:none;transition:border-color .15s;"
+        onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--border)'">
+    </div>
   </div>
 </section>
+
+<div id="no-results" style="display:none;text-align:center;padding:64px 24px;color:var(--text-3);font-size:15px;">No articles match your search.</div>
 
 <!-- Featured Q1 2026 posts -->
 <section class="section" style="padding-top:0;padding-bottom:56px;">
@@ -348,20 +356,38 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
-    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:32px;">
-      <img src="../assets/CoreLogo-w-with-gradient.png" alt="Datatrixs" style="height:24px;" />
-      <nav style="display:flex;gap:24px;flex-wrap:wrap;">
-        <a href="../product.html">Product</a>
-        <a href="../integrations.html">Integrations</a>
-        <a href="../pricing.html">Pricing</a>
-        <a href="../blog/index.html">Blog</a>
-        <a href="../about.html">About</a>
-        <a href="../demo-request.html">Request demo</a>
-      </nav>
+    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 64px;" id="footer-grid">
+      <div>
+        <a href="../index.html"><img src="../assets/CoreLogo-w-with-gradient.png" alt="Datatrixs" style="height: 22px; margin-bottom: 16px; display: block;"></a>
+        <p style="font-size: 14px; color: var(--text-3); line-height: 1.75; max-width: 260px;">Financial intelligence for multi-unit businesses. One view of every entity you manage.</p>
+      </div>
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Product</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="../product.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Features</a>
+          <a href="../integrations.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Integrations</a>
+          <a href="../pricing.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Pricing</a>
+          <a href="../demo-request.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Request Demo</a>
+        </div>
+      </div>
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Company</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="../about.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">About</a>
+          <a href="../blog/index.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Blog</a>
+          <a href="https://app.datatrixs.com" target="_blank" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Login</a>
+        </div>
+      </div>
+      <div>
+        <p style="font-size: 12px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px;">Legal</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <a href="../privacy-policy.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Privacy Policy</a>
+          <a href="../terms-of-service.html" style="font-size: 14px; color: var(--text-2); text-decoration: none;">Terms of Service</a>
+        </div>
+      </div>
     </div>
-    <div style="border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
-      <p style="font-size:13px;color:var(--text-3);margin:0;">©<script>document.write(new Date().getFullYear())</script> Datatrixs. All rights reserved.</p>
-      <p style="font-size:13px;color:var(--text-3);margin:0;">support@datatrixs.com</p>
+    <div style="border-top: 1px solid var(--border); padding-top: 32px;">
+      <p style="font-size: 13px; color: var(--text-3);">©<script>document.write(new Date().getFullYear())</script> Datatrixs. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -379,6 +405,37 @@
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.08 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Blog search
+  const searchInput = document.getElementById('blog-search');
+  const noResults = document.getElementById('no-results');
+  const featuredSection = document.querySelector('.blog-featured-grid').closest('section');
+  const featuredLabel = featuredSection.querySelector('[style*="Featured"]')?.closest('div[style*="flex"]');
+
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.blog-card');
+    let visible = 0;
+
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      const match = !q || text.includes(q);
+      card.style.display = match ? '' : 'none';
+      if (match) visible++;
+    });
+
+    // Hide the featured section entirely when searching
+    featuredSection.style.display = q ? 'none' : '';
+    noResults.style.display = visible === 0 ? 'block' : 'none';
+  });
+
+  // Footer grid responsive
+  const fg = document.getElementById('footer-grid');
+  function applyFooterLayout() {
+    if (fg) fg.style.gridTemplateColumns = window.innerWidth < 768 ? '1fr 1fr' : '2fr 1fr 1fr 1fr';
+  }
+  applyFooterLayout();
+  window.addEventListener('resize', applyFooterLayout);
 </script>
 </body>
 </html>
