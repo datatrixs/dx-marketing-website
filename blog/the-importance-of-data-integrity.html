@@ -1,325 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
-    <script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZ3K9DRTXM"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-HZ3K9DRTXM');
-    </script>
+  </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Importance of Data Integrity in Financial Analysis | Datatrixs</title>
+  <meta name="description" content="Data integrity is the foundation of reliable financial analysis. Here's what it means, why it breaks down, and how to protect it." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.datatrixs.com/blog/the-importance-of-data-integrity.html" />
 
-    <meta name="description" content="Discover the importance of data integrity in financial analysis and how it impacts decision-making, compliance, and risk management. Learn strategies to ensure accurate and reliable financial data.">
-    <meta name="keywords" content="data integrity, financial analysis, risk management, regulatory compliance, accurate financial data, data governance, financial reporting, data validation tools">
-    <meta name="author" content="Datatrixs">
-    <title>The Importance of Data Integrity in Financial Analysis | Insights & Impact Blog</title>    
+  <meta property="og:title" content="The Importance of Data Integrity in Financial Analysis" />
+  <meta property="og:description" content="Data integrity is the foundation of reliable financial analysis. Here's what it means, why it breaks down, and how to protect it." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.datatrixs.com/blog/the-importance-of-data-integrity.html" />
+  <meta property="og:image" content="https://www.datatrixs.com/assets/product-meta.png" />
 
-    <link rel="stylesheet" href="../styles.css">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Importance of Data Integrity in Financial Analysis" />
+  <meta name="twitter:description" content="What data integrity means for financial teams and how to protect it across systems and processes." />
+  <meta name="twitter:image" content="https://www.datatrixs.com/assets/product-meta.png" />
 
-    <link rel="icon" type="image/png" href="../assets/faveicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="../assets/faveicon/favicon.svg" />
-    <link rel="shortcut icon" href="../assets/faveicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/faveicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="../assets/faveicon/site.webmanifest" />
+  <link rel="icon" type="image/png" href="../assets/faveicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../assets/faveicon/favicon.svg" />
+  <link rel="shortcut icon" href="../assets/faveicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/faveicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Datatrixs" />
+  <link rel="manifest" href="../assets/faveicon/site.webmanifest" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../dx-design.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="blog.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome for Social Media Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Importance of Data Integrity in Financial Analysis",
+    "description": "Data integrity is the foundation of reliable financial analysis. Here's what it means, why it breaks down, and how to protect it.",
+    "datePublished": "2024-10-01",
+    "author": {"@type": "Organization", "name": "Datatrixs"},
+    "publisher": {"@type": "Organization", "name": "Datatrixs", "logo": {"@type": "ImageObject", "url": "https://www.datatrixs.com/assets/CoreLogo-w-with-gradient.png"}},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.datatrixs.com/blog/the-importance-of-data-integrity.html"}
+  }
+  </script>
 </head>
-<body style="background-color: #00396D; background-image: none; color: #FFFFFF;">
+<body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container mt-1 mb-1">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../assets/logo.png" alt="Company Logo" width="150">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                            <li><a class="dropdown-item" href="../product.html">Streamline your firm</a></li>
-                            <li><a class="dropdown-item" href="#">Product 2</a></li>
-                        </ul>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="../product.html" id="" role="button">Product</a>
-                    </li>
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo"><img src="../assets/CoreLogo-w-with-gradient.png" alt="Datatrixs" /></a>
+    <div class="nav-links">
+      <a href="../product.html">Product</a>
+      <a href="../integrations.html">Integrations</a>
+      <a href="../pricing.html">Pricing</a>
+      <a href="../blog/index.html" style="color:var(--text-1)">Blog</a>
+      <a href="../about.html">About</a>
+    </div>
+    <div class="nav-actions">
+      <a href="https://app.datatrixs.com" target="_blank" class="nav-login">Log in</a>
+      <a href="../demo-request.html" class="nav-cta">Request a demo</a>
+    </div>
+    <button class="nav-mobile-btn" id="mobileBtn" aria-label="Open menu">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</nav>
 
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Solutions
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                            <li><a class="dropdown-item" href="#">Teams</a></li>
-                            <li><a class="dropdown-item" href="../industries.html">Industries</a></li>
-                        </ul>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="../industries.html" id="" role="button">Industries</a>
-                    </li>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="../product.html">Product</a>
+  <a href="../integrations.html">Integrations</a>
+  <a href="../pricing.html">Pricing</a>
+  <a href="../blog/index.html">Blog</a>
+  <a href="../about.html">About</a>
+  <a href="https://app.datatrixs.com" target="_blank">Log in</a>
+  <a href="../demo-request.html" class="btn btn-primary" style="text-align:center;margin-top:8px">Request a demo</a>
+</div>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Resources
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
-                            <li><a class="dropdown-item" href="../integrations.html">Integrations</a></li>
-                            <li><a class="dropdown-item" href="index.html">Blog</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pricing.html" id="" role="button">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../about.html" id="" role="button">
-                            Company
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">                        
-                        <a class="btn btn-outline-primary btn-lg m-1" href="https://app.datatrixs.com/login">Login</a>
-                        <a class="btn btn-primary btn-lg m-1" href="https://app.datatrixs.com/login">Sign Up</a>
-                        <!-- <a class="btn btn-primary btn-lg m-1" data-cal-link="serge-amouzou-boprul/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}'>Get a Demo</a> -->
-                        <!-- Cal element-click embed code begins -->
-                        <script type="text/javascript">
-                            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-                        Cal("init", "30min", {origin:"https://cal.com"});
-                        
-                                            
-                            Cal.ns["30min"]("ui", {"styles":{"branding":{"brandColor":"#00396D"}},"hideEventTypeDetails":false,"layout":"month_view"});
-                            </script>
-                        <!-- Cal element-click embed code ends -->
+<div class="article-header">
+  <a href="index.html" style="font-size:13px;color:var(--text-3);text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:20px;">
+    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+    Back to blog
+  </a>
+  <span class="article-tag">Data</span>
+  <h1>The Importance of Data Integrity in Financial Analysis</h1>
+  <div class="article-meta">
+    <span>Datatrixs</span>
+    <span>October 1, 2024</span>
+    <span>7 min read</span>
+  </div>
+</div>
 
-                    </li>
-                </ul>
-            </div>
+<article class="article-body">
 
-        </div>
-    </nav>
+  <p>
+    Every financial analysis is only as good as the data it's built on. This is obvious in principle and routinely underestimated in practice. Teams invest heavily in analytical capability — sophisticated models, experienced analysts, visualization tools — while allowing data quality to remain inconsistent. The result is high-effort analysis built on an unreliable foundation.
+  </p>
 
-    <header class="hero-section" style="background-color: #FFFFFF; padding: 50px 0; margin-top: 60px;">
-        <a href="index.html">
-            <img src="./../assets/insights-impact-horiz.svg">
-        </a>    
-    </header>
+  <p>
+    Data integrity is the property that makes financial data trustworthy: accurate, consistent, complete, and reliable over time. When it's present, analysis produces decisions that reflect reality. When it's absent, analysis produces confident conclusions that are wrong in ways that are often hard to detect until the damage is done.
+  </p>
 
+  <h2>What data integrity actually means</h2>
 
-    <section class="feature-section text-white mb-4" style="background-color: #00396D; border-bottom: 2px solid #FFFFFF; padding: 0;">
-        <div class="row">
-            
-            <!-- Image Column (Left Section) -->
-            <div class="col-md-5 order-1 order-md-2 d-flex align-items-center justify-content-center" 
-                 style="background-image: url('../assets/grid-2.svg'); background-size: cover; background-position: center; overflow: hidden;">
-                <img src="./../assets/blog-graphic-data-integrity.svg" alt="QuickBooks Online Reconnect Guide" class="w-100">
-            </div>
-            
-            <!-- Content Column (Right Section) -->
-            <div class="col-md-7 p-5 my-5 order-2 order-md-1 d-flex align-items-center justify-content-center">
-                <div class="row">
-                    <!-- Spacer column for vertical alignment on larger screens -->
-                    <div class="col-2 d-none d-md-flex"></div>
-            
-                    <!-- Content column -->
-                    <div class="col-md-10 col-sm-12 pe-1">
-                        <h1 class="display-4 fw-semibold mb-4">
-                            The Importance of Data Integrity in Financial Analysis                        
-                        </h1>    
-                    </div>    
-                </div>
-            </div>
-                        
-        </div>
-    </section>
-    
-    <div class="container pb-5">
+  <p>
+    Three dimensions define data integrity in financial contexts:
+  </p>
 
-        <!-- Author Info, Publish Date -->
-        <div class="post-meta" style="display: flex; align-items: center; margin-bottom: 100px;">
-            <img src="./../assets/dx-avatar.png" alt="Author Avatar" class="author-avatar" style="border-radius: 50%; margin-right: 10px;">
-            <div class="author-info">
-                <p><strong>By Datatrixs Team</strong></p>
-                <p>Published on October 1, 2024</p>
-            </div>
-        </div> 
-        
-        <!-- Content Layout Wrapper -->
+  <ul>
+    <li><strong>Accuracy:</strong> The data reflects what actually happened. A transaction recorded in the wrong amount or in the wrong account is an accuracy failure.</li>
+    <li><strong>Consistency:</strong> The same concept is measured and represented the same way across time periods and across systems. If "revenue" means one thing in the CRM and something different in the accounting system, you can't meaningfully combine them.</li>
+    <li><strong>Reliability:</strong> The data is stable — it doesn't change after the fact without documentation, and the same query on the same period produces the same result regardless of when it's run.</li>
+  </ul>
 
-        <!-- Social Sharing Section -->
-        <section class="blog-post-section d-flex mb-4" style="gap: 50px;">
-            <!-- Social Sharing Buttons (Left Section) -->
-            <aside class="social-sharing d-flex flex-column align-items-start d-none d-md-flex" style="margin-bottom: 50px;">
-                <a id="twitter-share" class="btn btn-outline-tertiary btn-lg mb-2" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
-                    Twitter
-                </a>
-                <a id="linkedin-share" class="btn btn-outline-tertiary btn-lg mb-2" title="Share on LinkedIn" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-            </aside>
-        
-            <!-- Blog Post Content (Right Section) -->
-            <article>
-                <section>
-                <h2>Understanding Data Integrity</h2>
-                <h3>What Is Data Integrity?</h3>
-                <p>Data integrity refers to the accuracy, consistency, and reliability of data throughout its lifecycle. In financial analysis, it ensures that the information used for decision-making, reporting, and forecasting is trustworthy.</p>
-            
-                <h3>Why It Matters:</h3>
-                <ul>
-                    <li><strong>Accuracy:</strong> Essential for assessing financial performance, evaluating investments, and making strategic decisions.</li>
-                    <li><strong>Consistency:</strong> Enables reliable comparisons over time and across metrics.</li>
-                    <li><strong>Reliability:</strong> Builds stakeholder confidence in financial reporting.</li>
-                </ul>
-                </section>
-            
-                <section>
-                <h2>Impact of Data Integrity on Financial Analysis</h2>
-                <h3>1. Improved Decision-Making</h3>
-                <p>High-quality data allows finance teams to make informed decisions based on accurate insights. Poor data quality can lead to misinterpretations and misguided strategies.</p>
-            
-                <h3>2. Enhanced Risk Management</h3>
-                <p>Accurate and consistent data is vital for identifying potential risks and developing proactive mitigation strategies, ensuring effective risk management.</p>
-            
-                <h3>3. Regulatory Compliance</h3>
-                <p>Compliance with regulations like the Sarbanes-Oxley Act (SOX) and International Financial Reporting Standards (IFRS) hinges on maintaining data integrity, helping organizations avoid penalties and legal risks.</p>
-            
-                <h3>4. Trust and Credibility</h3>
-                <p>Organizations with high data integrity foster stakeholder trust. Accurate financial reports instill confidence, encouraging investment and support for initiatives.</p>
-                </section>
-            
-                <section>
-                <h2>Challenges to Data Integrity</h2>
-                <h3>1. Human Error</h3>
-                <p>Errors during data entry, analysis, or reporting can compromise data integrity. This includes transcription mistakes, spreadsheet errors, and incorrect assumptions.</p>
-            
-                <h3>2. System Vulnerabilities</h3>
-                <p>Weaknesses in data management systems can lead to data corruption or unauthorized access, threatening data accuracy and reliability.</p>
-            
-                <h3>3. Inconsistent Data Sources</h3>
-                <p>Data sourced from multiple systems without standardization often results in inconsistencies, complicating financial analysis.</p>
-            
-                <h3>4. Lack of Governance</h3>
-                <p>Organizations without a strong data governance framework face challenges in enforcing data integrity policies, leading to poor data management practices.</p>
-                </section>
-            
-                <section>
-                <h2>Strategies to Ensure Data Integrity</h2>
-                <h3>1. Implement Data Governance Policies</h3>
-                <p>Establish a framework outlining roles, responsibilities, and processes for managing financial data. Include quality standards, access controls, and lifecycle management.</p>
-            
-                <h3>2. Utilize Data Validation Tools</h3>
-                <p>Incorporate tools that automatically detect errors, inconsistencies, and anomalies, ensuring high-quality financial data.</p>
-            
-                <h3>3. Conduct Regular Audits</h3>
-                <p>Perform audits to assess data accuracy and consistency, identifying areas for improvement and reinforcing the importance of data integrity.</p>
-            
-                <h3>4. Provide Training and Awareness</h3>
-                <p>Educate employees about data integrity's significance and best practices. Training reduces human error and instills accountability.</p>
-            
-                <h3>5. Leverage Technology</h3>
-                <p>Adopt advanced data management systems, such as blockchain for secure records and cloud solutions for centralized data management, to enhance data integrity.</p>
-                </section>
-            
-                <section>
-                <h2>Conclusion</h2>
-                <p>Data integrity is the cornerstone of effective financial analysis, decision-making, and compliance. By prioritizing data integrity through robust governance, advanced technology, and employee training, organizations can safeguard their financial data and position themselves for long-term success. Embrace data integrity today to enhance trust, mitigate risks, and achieve regulatory excellence.</p>
-                </section>            
-            </article>        
-        </section>
+  <p>
+    All three are required. Data that's accurate but inconsistent produces reconciliation failures. Data that's consistent but unreliable produces conclusions that can't be reproduced. Data that's reliable but inaccurate produces confident wrong answers.
+  </p>
 
-        <div class="social-sharing d-flex flex-column align-items-center" style="margin-bottom: 50px;">
-            <h3 class="display-3">Share article</h3>
-            <div>
-                <a id="twitter-share" class="btn btn-outline-tertiary btn-lg mb-2" title="Share on Twitter" target="_blank" rel="noopener noreferrer">
-                    Twitter
-                </a>
-                <a id="linkedin-share" class="btn btn-outline-tertiary btn-lg mb-2" title="Share on LinkedIn" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-            </div>
-        </div>
-        <a href="index.html" class="back-btn">← Back to Blog</a>
-    </div>     
+  <h2>Why data integrity breaks down</h2>
 
-    <!-- Footer -->
-    <footer class="footer text-white" style="background: #F8FAFC;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h5>Products</h5>
-                    <ul class="footer-links">
-                        <li><a href="../product.html">Streamline your firm</a></li>
-                        <!-- <li><a href="#">Start free trial</a></li>
-                        <li><a href="#">Log in</a></li> -->
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Solutions</h5>
-                    <ul class="footer-links">
-                        <li><a href="../industries.html">Industries</a></li>
-                        <!-- <li><a href="#">Start free trial</a></li>
-                        <li><a href="#">Log in</a></li> -->
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Resources</h5>
-                    <ul class="footer-links">
-                        <li><a href="../integrations.html">Integrations</a></li>
-                        <li><a href="index.html">Blog</a></li>
-                        <!-- <li><a href="#">Log in</a></li> -->
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Company</h5>
-                    <ul class="footer-links">
-                        <li><a href="../about.html">About Us</a></li>
-                        <!-- <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Support</a></li> -->
-                        <li><a href="../terms-of-service.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom footer-brand">
-                <img src="../assets/logo.png" alt="Company Logo" width="120">
-                <p>&copy; <span id="year"></span> Datatrixs. All rights reserved. <a href="../privacy-policy.html">Privacy Policy</a></p>
+  <h3>Human error in data entry</h3>
+  <p>
+    Manual data entry introduces errors at a predictable rate. Transcription mistakes, duplicate entries, incorrect account coding — these are inevitable consequences of human involvement in data flows. They're not signs of negligence; they're properties of manual systems. The solution is automation, not better intentions.
+  </p>
 
-                <script>
-                  document.getElementById('year').textContent = new Date().getFullYear();
-                </script>
-            </div>
-        </div>
-    </footer>
+  <h3>Multiple disconnected systems</h3>
+  <p>
+    Most businesses accumulate data in several systems — accounting software, CRM, payroll platform, expense management tool — that don't automatically sync. When data needs to be reconciled across these systems manually, each reconciliation is an opportunity for inconsistency to enter.
+  </p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="../script.js"></script>
-    <script src="../logoSlider.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    
+  <h3>No data governance framework</h3>
+  <p>
+    Data governance defines who is responsible for data quality, what the standards are, and how violations are caught and corrected. Without it, data quality is everyone's vague responsibility and no one's specific accountability. This tends to produce deteriorating quality over time as exceptions accumulate and become convention.
+  </p>
+
+  <h3>Retroactive changes without documentation</h3>
+  <p>
+    Financial data needs to be stable after a period is closed. When prior-period entries are modified without documentation — even for legitimate adjusting entries — it creates inconsistency between what the analysis showed when decisions were made and what the system now shows for the same period. This makes variance analysis impossible and undermines trust in historical data.
+  </p>
+
+  <h2>The consequences of poor data integrity</h2>
+
+  <p>
+    The consequences compound in three directions:
+  </p>
+
+  <p>
+    <strong>Decision quality:</strong> Analysis built on compromised data produces conclusions that don't reflect reality. Decisions based on those conclusions — hiring plans, pricing changes, capital allocation — can be materially wrong in ways that become apparent only after the fact.
+  </p>
+
+  <p>
+    <strong>Compliance risk:</strong> Financial reporting under GAAP, IFRS, SOX, or SEC rules requires accurate underlying data. Data integrity failures that produce misstatements in financial reports create compliance exposure — fines, required restatements, loss of auditor confidence.
+  </p>
+
+  <p>
+    <strong>Stakeholder trust:</strong> Investors, lenders, and boards rely on financial data to evaluate the business. Discovering data integrity issues after sharing financial information damages credibility in ways that are difficult to recover from.
+  </p>
+
+  <h2>Strategies to protect data integrity</h2>
+
+  <h3>Automate data flows where possible</h3>
+  <p>
+    Every manual step in a data pipeline is a point where errors can enter. Connecting systems through APIs — accounting software to analytics platform, payroll to general ledger, billing system to revenue recognition — eliminates manual entry and produces consistent data without human intervention.
+  </p>
+
+  <h3>Implement validation rules at ingestion</h3>
+  <p>
+    Data validation catches errors at the point of entry rather than downstream in analysis. Rules that flag transactions outside expected ranges, accounts that don't balance, or duplicate entries prevent compromised data from propagating into downstream reports.
+  </p>
+
+  <h3>Conduct regular reconciliations</h3>
+  <p>
+    Monthly reconciliation between systems — bank statements and accounting records, billing system and revenue accounts, payroll platform and expense entries — catches discrepancies while they're recent and traceable. Quarterly reconciliations catch discrepancies when they're 90 days old and the root cause is difficult to determine.
+  </p>
+
+  <h3>Document changes to closed periods</h3>
+  <p>
+    Any modification to a closed period should require documentation: what changed, why it changed, who authorized it, and what the original entry was. This creates an audit trail that makes historical analysis trustworthy and protects against unauthorized modifications.
+  </p>
+
+  <div class="cta-box">
+    <h3>Build financial analysis on data you can trust</h3>
+    <p>Datatrixs connects your accounting systems through live integrations — no manual exports, no reconciliation gaps, consistent data for every analysis.</p>
+    <a href="../demo-request.html" class="btn btn-primary">Request a demo</a>
+  </div>
+
+</article>
+
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:32px;">
+      <img src="../assets/CoreLogo-w-with-gradient.png" alt="Datatrixs" style="height:24px;" />
+      <nav style="display:flex;gap:24px;flex-wrap:wrap;">
+        <a href="../product.html">Product</a>
+        <a href="../integrations.html">Integrations</a>
+        <a href="../pricing.html">Pricing</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../about.html">About</a>
+        <a href="../demo-request.html">Request demo</a>
+      </nav>
+    </div>
+    <div style="border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+      <p style="font-size:13px;color:var(--text-3);margin:0;">©<script>document.write(new Date().getFullYear())</script> Datatrixs. All rights reserved.</p>
+      <p style="font-size:13px;color:var(--text-3);margin:0;">support@datatrixs.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const mobileBtn = document.getElementById('mobileBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const mobileClose = document.getElementById('mobileClose');
+  mobileBtn.addEventListener('click', () => mobileNav.classList.add('open'));
+  mobileClose.addEventListener('click', () => mobileNav.classList.remove('open'));
+</script>
 </body>
 </html>
